@@ -160,7 +160,7 @@ global $STD;
 return <<<HTML
 <tr>
   <td class='newsleftw'><a href='{$res['url']}'><b>{$res['title']}</b></a></td>
-  <td class='newsleftw' style="width:30%;"'>By {$res['username']}</td>
+  <td class='newsleftw' style="width:30%;">By {$res['username']}</td>
 </tr>
 HTML;
 }
