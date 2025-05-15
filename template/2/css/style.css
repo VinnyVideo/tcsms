@@ -139,8 +139,8 @@ form {
 	font-weight : bold;
 	color : #FFFFFF;
 	display:inline-block;
-    width:100%;
-    height:80%;
+	width:100%;
+	height:80%;
 	text-shadow: 2px 2px #222222;
 	padding-top: 9px;
 	padding-left: 8px;
@@ -155,8 +155,8 @@ form {
 	font-weight : bold;
 	color : #FFFFFF;
 	display:inline-block;
-    width:100%;
-    height:80%;
+	width:100%;
+	height:80%;
 	text-shadow: 2px 2px #222222;
 	padding-top: 0px;
 	padding-left: 8px;
@@ -311,22 +311,50 @@ form {
 	margin: 0 10px;
 }
 
+
+.leftmenu {
+	margin: 0 10px;
+	z-index: 1; /* Menu shows above content */
+}
+
+.leftmenu .leftmenutoggle {
+	box-shadow: black 5px 5px 10px;
+	color: white;
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.leftmenu {
+		position: absolute;
+	}
+	.leftmenu .leftmenutoggle {
+		display: block;
+	}
+	.leftmenu .canvas_left {
+		transform: translateX(-150%);
+	}
+	.leftmenu.expanded .canvas_left {
+		transform: translateX(0);
+	}
+}
+
 .canvas_left {
+	width: 160px;
+
 	margin-right: auto;
 	text-align: left;
 	margin-left: 0;
 	margin-right: 0;
+	
+	transition: transform 1s;
+	transform: translateX(0);
+	transform-origin: 0 0;
+	box-shadow: black 5px 5px 10px;
 }
 
 .canvas_center {
 	text-align: left;
-	margin-left: 2vw;
-	margin-right: 0;
 }
-
-.canvas_right {
-}
-
 
 .newsform {
 	text-align: left;
@@ -341,7 +369,7 @@ form {
 	border-bottom-style: none;
 	text-align: left;
 	font-weight: bold;
-    	padding: 8px;
+	padding: 8px;
 }
 
 .newssubstrip {
@@ -381,6 +409,11 @@ form {
 	border-collapse: collapse;
 }
 
+.sformtable img {
+	/** Keep images from being too large on small screens */
+	max-width: 55vw;
+}
+
 .sformtablex {
 	width: 100%;
 }
@@ -398,7 +431,7 @@ form {
 .sformstrip {
 	background-color: #101f79;
 	text-align: left;
-    padding: 8px 12px;
+	padding: 8px 12px;
 	background: url("../images/menutitlebg.png")  repeat;
 	border-bottom: 2px solid #1c2c8f;
 }
@@ -411,7 +444,7 @@ form {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	-webkit-box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
-	        box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
+	box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
 }
 
 .sformleft {
@@ -500,35 +533,34 @@ form {
 }
 
 .navigation {
-    color: #FFF636;
-    padding: 24px 0px 10px 0px;
-    background-image: url("../images/headerbg2.png");
-    background-repeat: repeat-x;
-    margin-top: -25px;
-    position: relative;
-    border-bottom: 3px solid #9d0002;
+	color: #FFF636;
+	padding: 24px 0px 10px 0px;
+	background-image: url("../images/headerbg2.png");
+	background-repeat: repeat-x;
+	position: relative;
+	border-bottom: 3px solid #9d0002;
 	font-size: 22px;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: bold;
 }
 .navigation:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 4px);
-    left: -2px;
-    right: calc(100% + 4px);
-    z-index: -1;
-    top: 9px;
-    height: calc(100% - 6px);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#680001), to(#9d0002));
-    background-image: -webkit-linear-gradient(#680001, #9d0002);
-    background-image: -o-linear-gradient(#680001, #9d0002);
-    background-image: linear-gradient(#680001, #9d0002);
+	content: "";
+	position: absolute;
+	width: calc(100% + 4px);
+	left: -2px;
+	right: calc(100% + 4px);
+	z-index: -1;
+	top: 9px;
+	height: calc(100% - 6px);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#680001), to(#9d0002));
+	background-image: -webkit-linear-gradient(#680001, #9d0002);
+	background-image: -o-linear-gradient(#680001, #9d0002);
+	background-image: linear-gradient(#680001, #9d0002);
 }
 
 .sformlowline table {
-    min-height: 20px;
+	min-height: 20px;
 }
 
 .sformlowline {
