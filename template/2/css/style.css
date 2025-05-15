@@ -340,11 +340,10 @@ form {
 
 .canvas_left {
 	width: 160px;
+	margin: 10px 0;
 
 	margin-right: auto;
 	text-align: left;
-	margin-left: 0;
-	margin-right: 0;
 	
 	transition: transform 1s;
 	transform: translateX(0);
