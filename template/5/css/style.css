@@ -1,22 +1,22 @@
 body {
-	background : url(../images/background.gif);
-	color : #FFFFFF;
-	font-size : 10pt;
-	font-family : Verdana, Helvetica, Arial, Sans-Serif;
+	background: url(../images/background.gif);
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
 }
 
 td {
-	font-size : 10pt;
+	font-size: 10pt;
 }
 
 a:link, a:visited {
-	color : #C8FF00;
-	text-decoration : none;
+	color: #C8FF00;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-	color : #FFC90E;
-	text-decoration : none;
+	color: #FFC90E;
+	text-decoration: none;
 }
 
 form {
@@ -24,20 +24,20 @@ form {
 }
 
 .onclick {
-	color : #FFC90E;
+	color: #FFC90E;
 }
 
 .header {
 	border: 0px;
 	padding: 0px;
-	background : #000058;
+	background: #000058;
 	width: 100%;
 }
 
 .menu {
 	border: 1px solid #8D41E2;
 	border-bottom: 2px solid #8D41E2;
-	background : #5D19A5;
+	background: #5D19A5;
 	width: 100%;
 }
 
@@ -82,27 +82,27 @@ form {
 }
 
 .title {
-	font-weight : bold;
-	color : pink;
+	font-weight: bold;
+	color: pink;
 }
 
 .sidebarheader {
-	color : #FFFFFF;
-	font-weight : bold;
-	text-align : center;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
 }
 
 .sidetextbox {
-	border : 1px solid #8D41E2;
-	background-color : #5D19A5;
+	border: 1px solid #8D41E2;
+	background-color: #5D19A5;
 	color: white;
 	width: 99%;
 }
 
 .sidebutton {
-	border : 1px solid #8D41E2;
+	border: 1px solid #8D41E2;
 	color: #ffffff;
-	background-color : #5D19A5;
+	background-color: #5D19A5;
 }
 
 .login {
@@ -121,22 +121,22 @@ form {
 }
 
 .textbox {
-	border : 1px solid #000059;
-	background : #5d19a5;
-	color : white;
+	border: 1px solid #000059;
+	background: #5d19a5;
+	color: white;
 	padding: 2px;
 }
 
 .button {
-	border : 1px solid #8d41e2;
-	background : #5d19a5;
-	color : white;
+	border: 1px solid #8d41e2;
+	background: #5d19a5;
+	color: white;
 	padding: 1px;
 }
 
 .selectbox {
 	color: white;
-	border : 1px solid #8d41e2;
+	border: 1px solid #8d41e2;
 	background: #5d19a5;
 }
 
@@ -159,15 +159,15 @@ form {
 
 .boxpageheader {
 	background-color: black;
-	color : #FFC90E;
-	font-size : 20pt;
+	color: #FFC90E;
+	font-size: 20pt;
 	font-weight: bold;
 	vertical-align: middle;
 }
 
 .boxheader {
-	color : white;
-	font-size : 20pt;
+	color: white;
+	font-size: 20pt;
 	font-weight: bold;
 }
 
@@ -334,7 +334,7 @@ form {
 }
 
 .adminwrap {
-	color : #FFB93F;
+	color: #FFB93F;
 }
 
 .staffwrap {
@@ -343,15 +343,15 @@ form {
 
 .staffwrap:link, .staffwrap:visited {
 	color: #3afffb;
-	text-decoration : none;
+	text-decoration: none;
 }
 
 .adminwrap:link, .adminwrap:visited {
-	color : #FFB93F;
-	text-decoration : none;
+	color: #FFB93F;
+	text-decoration: none;
 }
 
 .adminwrap:hover, .adminwrap:active, .staffwrap:hover, .staffwrap:active {
-	color : yellow;
-	text-decoration : none;
+	color: yellow;
+	text-decoration: none;
 }
