@@ -1,7 +1,7 @@
 body {
-	background : url('../images/background.png');
+	background: url('../images/background.png');
 	background-attachment: fixed;
-	color : #000;
+	color: #000;
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	background-color: #005511;
 	font-size: 10pt;
@@ -47,13 +47,13 @@ form {
 }
 
 .onclick {
-	color : #FFFF00;
+	color: #FFFF00;
 }
 
 .header {
 	border: 0px;
 	padding: 0px;
-	background : green;
+	background: green;
 	width: 100%;
 	background-image: url('../images/header.png'), url('../images/header_br.png');
 	background-position: left top;
@@ -120,26 +120,26 @@ form {
 }
 
 .title {
-	font-weight : bold;
-	color : pink;
+	font-weight: bold;
+	color: pink;
 }
 
 .sidebarheader {
-	color : #FFFFFF;
-	font-weight : bold;
-	text-align : left;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
 }
 /*
 .sidetextbox {
-	border : 1px solid black;
-	background-color : #5060A9;
+	border: 1px solid black;
+	background-color: #5060A9;
 	color: black;
 }
 
 .sidebutton {
-	border : 1px solid black;
+	border: 1px solid black;
 	color: black;
-	background-color : #5060A9;
+	background-color: #5060A9;
 }*/
 
 .login {
@@ -241,8 +241,8 @@ textarea {
 }
 
 .boxheader {
-	color : white;
-	font-size : 20pt;
+	color: white;
+	font-size: 20pt;
 	font-weight: bold;
 }
 
@@ -335,8 +335,6 @@ textarea {
 	width: 100%;
 	border-collapse: collapse;
 }
-
-
 
 .sformtablex {
 	width: 100%;
@@ -477,12 +475,12 @@ textarea {
 }
 
 /*.adminwrap {
-	color : #ffff00;
+	color: #ffff00;
 }*/
 
 .adminwrap, .adminwrap:link, .adminwrap:visited {
-	color : #D19900;
-	text-decoration : none;
+	color: #D19900;
+	text-decoration: none;
 }
 
 .staffwrap {
@@ -494,6 +492,6 @@ textarea {
 }
 
 .adminwrap:hover, .adminwrap:active, .staffwrap:hover, .staffwrap:active {
-	color : #ff0000;
-	text-decoration : none;
+	color: #ff0000;
+	text-decoration: none;
 }
