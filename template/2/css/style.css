@@ -3,35 +3,35 @@ html {
 }
 
 body {
-	background : url(../images/background.png) fixed;
-	color : #FFFFFF;
-	font-size : 10pt;
-	font-family : Verdana, Helvetica, Arial, Sans-Serif;
+	background: url(../images/background.png) fixed;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
 	margin: 0px 0px 0px 0px;
 }
 
 td {
-	font-size : 10pt;
+	font-size: 10pt;
 }
 
 a:link, a:visited {
-	color : #FFFF00;
-	text-decoration : none;
+	color: #FFFF00;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-	color : #00FF00;
-	text-decoration : underline;
+	color: #00FF00;
+	text-decoration: underline;
 }
 
 ::-moz-selection {
 	background: #FF5758;
-	color : #FFF;
+	color: #FFF;
 }
 
 ::selection {
 	background: #FF5758;
-	color : #FFF;
+	color: #FFF;
 }
 
 form {
@@ -39,19 +39,19 @@ form {
 }
 
 .onclick {
-	color : #FFFF00;
+	color: #FFFF00;
 }
 
 .header {
 	border: 0px;
 	padding: 0px;
-	background : #000058;
+	background: #000058;
 	width: 100%;
 }
 
 .menu {
 	border: 0px;
-	background :#101f79;
+	background:#101f79;
 }
 
 .menutitle {
@@ -136,8 +136,8 @@ form {
 }
 
 .menuitemsidebar a {
-	font-weight : bold;
-	color : #FFFFFF;
+	font-weight: bold;
+	color: #FFFFFF;
 	display:inline-block;
 	width:100%;
 	height:80%;
@@ -148,12 +148,12 @@ form {
 }
 
 .menuitemsidebar a:hover, .menuitemsidebar a:active {
-	text-decoration : none;
+	text-decoration: none;
 }
 
 .menuitemsidebarlong a {
-	font-weight : bold;
-	color : #FFFFFF;
+	font-weight: bold;
+	color: #FFFFFF;
 	display:inline-block;
 	width:100%;
 	height:80%;
@@ -169,32 +169,32 @@ form {
 }
 
 .menuitemsidebarlong a:hover, .menuitemsidebarlong a:active {
-	text-decoration : none;
+	text-decoration: none;
 }
 
 .title {
-	font-weight : bold;
-	color : pink;
+	font-weight: bold;
+	color: pink;
 }
 
 .sidebarheader {
-	color : #FFFFFF;
-	font-weight : bold;
-	text-align : left;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
 }
 
 .sidetextbox {
 	border: 0px;
 	padding: 7px 6px;
 	font-size: 14px;
-	background-color : #4F57DC;
+	background-color: #4F57DC;
 	-webkit-transition: background-color 0.125s ease-in-out;
 	-o-transition: background-color 0.125s ease-in-out;
 	transition: background-color 0.125s ease-in-out;
 	color: white;
 }
 .sidetextbox:focus {
-	background : #636BE5;
+	background: #636BE5;
 }
 
 .sidebutton {
@@ -207,10 +207,10 @@ form {
 	font-size: 14px;
 	color: white;
 	margin-right: 4px;
-	background-color : #4F57DC;
+	background-color: #4F57DC;
 }
 .sidebutton:hover, .sidebutton:active {
-	background : #7880EF;
+	background: #7880EF;
 }
 
 .login {
@@ -229,9 +229,9 @@ form {
 }
 
 .textbox {
-	border : none;
-	background : #4F57DC;
-	color : white;
+	border: none;
+	background: #4F57DC;
+	color: white;
 	font-size: 14px;
 	padding: 6px 8px;
 	margin: 4px;
@@ -240,14 +240,14 @@ form {
 	transition: background-color 0.125s ease-in-out;
 }
 .textbox:focus {
-	background : #636BE5;
+	background: #636BE5;
 }
 
 .button {
-	border : none;
-	background : #4F57DC;
+	border: none;
+	background: #4F57DC;
 	cursor: pointer;
-	color : white;
+	color: white;
 	-webkit-transition: background-color 0.125s ease-in-out;
 	-o-transition: background-color 0.125s ease-in-out;
 	transition: background-color 0.125s ease-in-out;
@@ -257,11 +257,11 @@ form {
 }
 
 .button:hover, .button:active {
-	background : #7880EF;
+	background: #7880EF;
 }
 
 .selectbox {
-	border : none;
+	border: none;
 	color: white;
 	background: #4F57DC;
 	-webkit-transition: background-color 0.125s ease-in-out;
@@ -272,10 +272,10 @@ form {
 	margin: 4px;
 }
 .selectbox:hover {
-	background : #636BE5;
+	background: #636BE5;
 }
 .selectbox:focus {
-	background : #4F57DC;
+	background: #4F57DC;
 	-webkit-transition: none;
 	-o-transition: none;
 	transition: none;
@@ -294,15 +294,15 @@ form {
 
 .boxpageheader {
 	background-color: black;
-	color : #F8F820;
-	font-size : 20pt;
+	color: #F8F820;
+	font-size: 20pt;
 	font-weight: bold;
 	vertical-align: middle;
 }
 
 .boxheader {
-	color : white;
-	font-size : 20pt;
+	color: white;
+	font-size: 20pt;
 	font-weight: bold;
 }
 
@@ -340,10 +340,10 @@ form {
 
 .canvas_left {
 	width: 160px;
-	margin: 10px 0;
 
 	margin-right: auto;
 	text-align: left;
+	margin: 10px 0;
 	
 	transition: transform 1s;
 	transform: translateX(0);
@@ -515,20 +515,20 @@ form {
 }
 
 .adminwrap {
-	color : #FFB93F;
+	color: #FFB93F;
 }
 .staffwrap {
 	color: #3afffb; /*#ff60b8;*/
 }
 
 .adminwrap:link, .adminwrap:visited {
-	color : #FFB93F;
-	text-decoration : none;
+	color: #FFB93F;
+	text-decoration: none;
 }
 
 .adminwrap:hover, .adminwrap:active, .staffwrap:hover, .staffwrap:active {
-	color : yellow;
-	text-decoration : none;
+	color: yellow;
+	text-decoration: none;
 }
 
 .navigation {
