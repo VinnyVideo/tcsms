@@ -1,6 +1,6 @@
 Online Patcher (CPS)
 
-<script type="text/javascript">
+<script>
 
 //no error checking, other than BPS signature, input size/crc and JS auto checking array bounds
 function applyBps(rom, patch)
@@ -175,20 +175,20 @@ function tryPatch()
 </script>
 
 <dl>
-<dt><span style='font-size:14pt; font-weight:bold'>BPS Patcher</span><br /><br /></dt>
+<dt><span style='font-size:14pt; font-weight:bold'>BPS Patcher</span><br><br></dt>
 
 <dd>
 <body>
-<p><label for="file1">Base file:</label><br /><br />
+<p><label for="file1">Base file:</label><br><br>
 <input id="file1" onchange="tryPatch()" type="file"></p>
-<p><label for="file2">Patch file:</label><br /><br />
+<p><label for="file2">Patch file:</label><br><br>
 <input id="file2" onchange="tryPatch()" type="file"></p>
 <p id="error" style="color: red;">
 
 </p></body>    
-<br /><br /><br /></dd>
+<br><br><br></dd>
     
-<dd><b>NOTICE: </b>ROM Files are not stored on the server. <br />
+<dd><b>NOTICE: </b>ROM Files are not stored on the server. <br>
     Floating IPS webtool made by <a href="https://www.smwcentral.net/?p=profile&id=1686">Alcaro</a>
-    <br /></dd>
+    <br></dd>
 </dl>
