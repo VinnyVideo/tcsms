@@ -13,7 +13,9 @@ class template_page {
 	global $STD;
 	return <<<HTML
 		<div class="sform">
-		<div class="sformblock">{$content}
+			<div class="sformblock">
+				{$content}
+			</div>
 		</div>
 		HTML;
 	}

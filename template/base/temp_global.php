@@ -79,6 +79,7 @@ class template_global
       <head>
         <title>{$title}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="shortcut icon" href="{$STD->tags['template_path']}/favicon.ico">
         <link rel="stylesheet" href="{$STD->tags['template_path']}/css/style.css" type="text/css">
         <link rel="stylesheet" href="{$STD->tags['base_template_path']}/css/style.css" type="text/css">
@@ -95,7 +96,7 @@ class template_global
       <div class="header">
         <div style="background: url({$STD->tags['image_path']}/header_br.png); border-spacing:0px; width:100%;">
           <a href="{$STD->tags['root_url']}act=main">
-            <img src="{$STD->tags['image_path']}/header.png" alt="Logo Image" class="logo" style="display:inline; vertical-align:middle">
+            <img src="{$STD->tags['image_path']}/header.png" alt="Logo Image" class="logo" style="display:inline; vertical-align:middle; max-width: 100vw;">
           </a>
         </div>
       </div>
@@ -116,7 +117,8 @@ class template_global
 
     $affiliates = file_get_contents(dirname(__FILE__) . "/../affiliates.html");
     return <<<HTML
-      <aside style="width:160px">
+      <aside class="leftmenu">
+        <button class="menutitle2 leftmenutoggle" onclick="document.body.querySelector('.leftmenu').classList.toggle('expanded')">Navigation</button>
         <div class="canvas_left">
           <div class="menu">
             <div class="menutitle2">Main</div>
@@ -172,17 +174,17 @@ class template_global
               </form>
             </div>
           </div>
-        </div>
-        <br>
-        {$login}
-        <br>
-        <div class="menu">
+          <div style="margin: 10px 0">
+            {$login}
+          </div>
+          <div class="menu">
             {$affiliates}
             <br>
             <div class="menu" style="padding: 0px; border:0px solid #444444; border-bottom: 0px solid #444444; display: none;">
               <div style="background: none; height: 6px;"></div>
               <div class="menusection" style="padding: 0px; background-color: #585858;"></div>
             </div>
+          </div>
         </div>
       </aside>
       HTML;
@@ -248,7 +250,6 @@ class template_global
     global $STD;
     return <<<HTML
       <div class="canvas_center">
-          <br>
           {$STD->global_template_ui->new_message()}
           {$content}
       </div>
@@ -299,12 +300,13 @@ class template_global
   {
     return <<<HTML
       <footer class="canvas_center copyright">
-        All Nintendo material is &copy; Nintendo. MFGG does not own any user-submitted content, which is &copy; the
+        <p>
+          All Nintendo material is &copy; Nintendo. MFGG does not own any user-submitted content, which is &copy; the
         submitter or a third party. All remaining material is &copy; MFGG. MFGG is a non-profit site with no affiliation to Nintendo.
-        <br><br>
-        <div style="text-align:center;">
+        </p>
+        <p style="text-align:center">
           Powered by Taloncrossing SMS v1.1.1, &copy; 2006-2025 <a href='https://www.taloncrossing.com' class='outlink'>Taloncrossing.com</a>. Modified by Hypernova, Mors, and VinnyVideo.
-        </div>
+        </p>
         <br>
       </footer>
       HTML;
