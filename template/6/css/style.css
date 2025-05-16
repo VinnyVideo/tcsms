@@ -1,22 +1,22 @@
 body {
-	background : url(../images/background.gif);
-	color : #FFFFFF;
-	font-size : 10pt;
-	font-family : Verdana, Helvetica, Arial, Sans-Serif;
+	background: url(../images/background.gif);
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
 }
 
 td {
-	font-size : 10pt;
+	font-size: 10pt;
 }
 
 a:link, a:visited {
-	color : #FFFF00;
-	text-decoration : none;
+	color: #FFFF00;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-	color : #00FF00;
-	text-decoration : none;
+	color: #00FF00;
+	text-decoration: none;
 }
 
 form {
@@ -24,13 +24,13 @@ form {
 }
 
 .onclick {
-	color : #FFFF00;
+	color: #FFFF00;
 }
 
 .header {
 	border: 0px;
 	padding: 0px;
-	background : #000058;
+	background: #000058;
 	width: 100%;
 }
 
@@ -42,7 +42,7 @@ form {
 .menu {
 	border: 1px solid #36368E;
 	border-bottom: 2px solid #36368E;
-	background : #161B80;
+	background: #161B80;
 	width: 100%;
 }
 
@@ -104,9 +104,9 @@ form {
 }
 
 .sidebutton {
-	border : 1px solid black;
+	border: 1px solid black;
 	color: white;
-	background-color : #5060A9;
+	background-color: #5060A9;
 }
 
 .login {
@@ -125,16 +125,16 @@ form {
 }
 
 .textbox {
-	border : 1px solid #000059;
-	background : #5060A9;
-	color : white;
+	border: 1px solid #000059;
+	background: #5060A9;
+	color: white;
 	padding: 2px;
 }
 
 .button {
-	border : 1px solid black;
-	background : #5060A9;
-	color : white;
+	border: 1px solid black;
+	background: #5060A9;
+	color: white;
 	padding: 1px;
 }
 
@@ -162,28 +162,26 @@ form {
 
 .boxpageheader {
 	background-color: black;
-	color : #F8F820;
-	font-size : 20pt;
+	color: #F8F820;
+	font-size: 20pt;
 	font-weight: bold;
 	vertical-align: middle;
 }
 
 .boxheader {
-	color : white;
-	font-size : 20pt;
+	color: white;
+	font-size: 20pt;
 	font-weight: bold;
 }
 
-
-
-
-
-
+.container {
+	display: flex;
+	margin: 0 10px;
+}
 
 .canvas_left {
-	width: 124px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 160px;
+	margin: 10px 0;
 	text-align: left;
 	padding-right:0px;
 }
@@ -197,7 +195,6 @@ form {
 
 .canvas_right {
 }
-
 
 .newsform {
 	text-align: left;
@@ -341,7 +338,7 @@ form {
 }
 
 .adminwrap {
-	color : #FFB93F;
+	color: #FFB93F;
 }
 
 .staffwrap {
@@ -350,15 +347,15 @@ form {
 
 .staffwrap:link, .staffwrap:visited {
 	color: #3afffb;
-	text-decoration : none;
+	text-decoration: none;
 }
 
 .adminwrap:link, .adminwrap:visited {
-	color : #FFB93F;
-	text-decoration : none;
+	color: #FFB93F;
+	text-decoration: none;
 }
 
 .adminwrap:hover, .adminwrap:active, .staffwrap:hover, .staffwrap:active  {
-	color : yellow;
-	text-decoration : none;
+	color: yellow;
+	text-decoration: none;
 }
