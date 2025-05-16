@@ -1,22 +1,22 @@
 body {
-	background : url(../images/bgimage.jpg);
-	color : #FFFFFF;
-	font-size : 10pt;
-	font-family : Verdana, Helvetica, Arial, Sans-Serif;
+	background: url(../images/bgimage.jpg);
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
 }
 
 td {
-	font-size : 10pt;
+	font-size: 10pt;
 }
 
 a:link, a:visited {
-	color : #FFFF00;
-	text-decoration : none;
+	color: #FFFF00;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-	color : #00FF00;
-	text-decoration : none;
+	color: #00FF00;
+	text-decoration: none;
 }
 
 form {
@@ -24,12 +24,12 @@ form {
 }
 
 .onclick {
-	color : #FFFF00;
+	color: #FFFF00;
 }
 
 .header {
 	border: 0px solid gray;
-	background : #444466;
+	background: #444466;
 	width: 100%;
 }
 
@@ -40,7 +40,7 @@ form {
 
 .menu {
 	border: 1px solid gray;
-	background : #444466;
+	background: #444466;
 	width: 100%;
 }
 
@@ -80,23 +80,23 @@ form {
 }
 
 .title {
-	font-weight : bold;
+	font-weight: bold;
 }
 
 .sidebarheader {
-	color : #FFFFFF;
-	font-weight : bold;
-	text-align : left;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
 }
 
 .sidetextbox {
-	border : 1px solid gray;
-	background-color : #FFFFFF;
+	border: 1px solid gray;
+	background-color: #FFFFFF;
 }
 
 .sidebutton {
-	border : 1px solid gray;
-	background-color : lightgray;
+	border: 1px solid gray;
+	background-color: lightgray;
 }
 
 .login {
@@ -112,15 +112,15 @@ form {
 }
 
 .textbox {
-	border : 1px solid #333344;
-	background : #444466;
-	color : #FFFFFF;
+	border: 1px solid #333344;
+	background: #444466;
+	color: #FFFFFF;
 }
 
 .button {
-	border : 1px solid #111122;
-	background : #333344;
-	color : #FFFFFF;
+	border: 1px solid #111122;
+	background: #333344;
+	color: #FFFFFF;
 }
 
 .selectbox {
@@ -140,63 +140,63 @@ form {
 
 .boxpageheader {
 	background-color: black;
-	color : #F8F820;
-	font-size : 22pt;
+	color: #F8F820;
+	font-size: 22pt;
 	vertical-align: middle;
 }
 
 .newsheader {
-	border : 1px solid #FFFF00;
-	border-collapse : collapse;
+	border: 1px solid #FFFF00;
+	border-collapse: collapse;
 }
 
 .newsheadercell {
-	border : 1px solid #FFFF00;
+	border: 1px solid #FFFF00;
 	background-color: #FF0000;
 }
 
 .newsbodycell {
-	border : 1px solid #FFFF00;
+	border: 1px solid #FFFF00;
 }
 
 .dbheader {
-	border : 1px solid #FFFF00;
-	border-collapse : collapse;
+	border: 1px solid #FFFF00;
+	border-collapse: collapse;
 }
 
 .dbheadercell {
-	border : 1px solid #FFFF00;
-	background : #FF0000;
-	color : #FFFFFF;
+	border: 1px solid #FFFF00;
+	background: #FF0000;
+	color: #FFFFFF;
 }
 
 .dbbodycell {
-	border : 1px solid #FFFF00;
-	color : #FFFFFF;
+	border: 1px solid #FFFF00;
+	color: #FFFFFF;
 }
 
 .dblheader {
-	border : 1px solid #666666;
-	border-collapse : collapse;
+	border: 1px solid #666666;
+	border-collapse: collapse;
 }
 
 .dblheadercell {
-	border : 1px solid #666666;
-	background : #FF0000;
-	color : #FFFFFF;
+	border: 1px solid #666666;
+	background: #FF0000;
+	color: #FFFFFF;
 }
 
 .dblbodycell {
-	border : 1px solid #666666;
-	color : #FFFFFF;
+	border: 1px solid #666666;
+	color: #FFFFFF;
 }
 
 .tableheader {
-	text-align : left;
-	border : 1px solid gray;
-	border-collapse : collapse;
-	background-color : #111122;
-	width : 90%;
+	text-align: left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	background-color: #111122;
+	width: 90%;
 }
 
 .tablecell1 {
@@ -206,7 +206,7 @@ form {
 }
 
 .tablecell3 {
-	border : 1px solid gray;
+	border: 1px solid gray;
 }
 
 .itembox {
@@ -232,8 +232,8 @@ form {
 }
 
 .boxheader {
-	color : yellow;
-	font-size : 22pt;
+	color: yellow;
+	font-size: 22pt;
 }
 
 .title_fixed {
@@ -250,8 +250,8 @@ form {
 
 .sform {
 	text-align: left;
-	border : 1px solid gray;
-	background-color : #111122;
+	border: 1px solid gray;
+	background-color: #111122;
 	width: auto;
 }
 
