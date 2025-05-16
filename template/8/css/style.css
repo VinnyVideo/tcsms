@@ -1,11 +1,11 @@
 @font-face {
-    font-family: SMS3;
-    src: url('SMS3.eot');
+	font-family: SMS3;
+	src: url('SMS3.eot');
 }
 
 @font-face {
-    font-family: SMS3;
-    src: url('SMS3.ttf') format("truetype");
+	font-family: SMS3;
+	src: url('SMS3.ttf') format("truetype");
 }
 
 html {
@@ -147,8 +147,8 @@ form {
 	font-weight : bold;
 	color : #FFFFFF;
 	display:inline-block;
-    width:100%;
-    height:80%;
+	width:100%;
+	height:80%;
 	text-shadow: 2px 2px #222222;
 	padding-top: 9px;
 	padding-left: 8px;
@@ -163,8 +163,8 @@ form {
 	font-weight : bold;
 	color : #FFFFFF;
 	display:inline-block;
-    width:100%;
-    height:80%;
+	width:100%;
+	height:80%;
 	text-shadow: 2px 2px #222222;
 	padding-top: 0px;
 	padding-left: 8px;
@@ -193,24 +193,24 @@ form {
 
 .sidetextbox {
 	color: #EEEEFF;
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    padding: 1px;
-    border: 2px solid #192296;
-    background-color: #22105A;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 1px;
+	border: 2px solid #192296;
+	background-color: #22105A;
 }
 
 .sidebutton {
 	font-weight: normal;
-    background-color: #000010;
-    background-image: url("../images/tile_back2.png");
-    border: 2px solid #000010;
-    cursor: pointer;
-    padding: 1px 5px;
-    font-size: 13px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+	background-color: #000010;
+	background-image: url("../images/tile_back2.png");
+	border: 2px solid #000010;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 13px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	color: #ffffff;
 	font-weight: bold;
@@ -233,24 +233,24 @@ form {
 
 .textbox {
 	color: #EEEEFF;
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    padding: 1px;
-    border: 2px solid #192296;
-    background-color: #22105A;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 1px;
+	border: 2px solid #192296;
+	background-color: #22105A;
 }
 
 .button {
 	font-weight: normal;
-    background-color: #000010;
-    background-image: url("../images/tile_back2.png");
-    border: 2px solid #000010;
-    cursor: pointer;
-    padding: 1px 5px;
-    font-size: 13px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+	background-color: #000010;
+	background-image: url("../images/tile_back2.png");
+	border: 2px solid #000010;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 13px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	color: #ffffff;
 	font-weight: bold;
@@ -258,12 +258,12 @@ form {
 
 .selectbox {
 	color: #EEEEFF;
-    background-color: #22105A;
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    border: 2px solid #192296;
-    padding: 1px;
+	background-color: #22105A;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	border: 2px solid #192296;
+	padding: 1px;
 }
 
 .checkbox {
@@ -328,7 +328,7 @@ form {
 	border-bottom-style: none;
 	text-align: left;
 	font-weight: bold;
-    	padding: 8px;
+	padding: 8px;
 }
 
 .newssubstrip {
@@ -386,7 +386,7 @@ form {
 .sformstrip {
 	background-color: #101f79;
 	text-align: left;
-    padding: 8px 12px 4px 12px;
+	padding: 8px 12px 4px 12px;
 	background: url("../images/tile_back2.png")  repeat;
 	border-bottom: 2px solid #00003C;
 	font-family: SMS3;
@@ -402,7 +402,7 @@ form {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	-webkit-box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
-	        box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
+	box-shadow: 0 2048px rgba(7, 15, 132, 0.75) inset;
 }
 
 .sformleft {
@@ -470,12 +470,12 @@ form {
 	margin-right: auto;
 	margin-bottom: 2px;
 	border-color: #0940A9;
-    border-width: 2px;
-    background-color: rgba(0,0,0,0.25);
-    color: #AACCff;
-    -moz-border-radius-bottomright: 40px;
-    -webkit-border-bottom-right-radius: 40px;
-    border-bottom-right-radius: 40px;	
+	border-width: 2px;
+	background-color: rgba(0,0,0,0.25);
+	color: #AACCff;
+	-moz-border-radius-bottomright: 40px;
+	-webkit-border-bottom-right-radius: 40px;
+	border-bottom-right-radius: 40px;	
 }
 
 .adminwrap {
@@ -507,29 +507,29 @@ form {
 	color: #FFF000;
 	font-family: SMS3;
 	text-shadow: 2px 2px 0px #000;
-    padding: 16px 0px 8px 0px;
-    background-repeat: repeat-x;
-    position: relative;
-    display: inline-block;
+	padding: 16px 0px 8px 0px;
+	background-repeat: repeat-x;
+	position: relative;
+	display: inline-block;
 	font-size: 22px;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: bold;
 
 	background-color: #220044;
-    border: 2px solid #482370;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    -moz-box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
-    background-image: url("../images/transbar2.png");
-    background-position: 120px;
+	border: 2px solid #482370;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
+	background-image: url("../images/transbar2.png");
+	background-position: 120px;
 }
 
 .sformlowline table {
-    min-height: 20px;
+	min-height: 20px;
 }
 
 .sformlowline {
