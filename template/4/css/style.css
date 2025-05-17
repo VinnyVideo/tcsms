@@ -125,15 +125,18 @@ form {
 	font-weight: bold;
 	text-align: left;
 }
+
 .sidetextbox {
 	width: 100%;
 }
 
+/*
 .sidebutton {
 	border: 1px solid black;
 	color: black;
 	background-color: #5060A9;
-}*/
+}
+*/
 
 .login {
 }
