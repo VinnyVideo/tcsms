@@ -106,17 +106,7 @@ form {
 	font-weight: 300;
 }
 
-.menuitemsidebar {
-	width: 168px;
-	height: 48px;
-	margin-top: 1px;
-	background-color: #e7e7e7;
-	-webkit-transition: background-color 0.125s ease-in-out;
-	-o-transition: background-color 0.125s ease-in-out;
-	transition: background-color 0.125s ease-in-out;
-}
-
-.menuitemsidebarlong {
+.menuitemsidebar, .menuitemsidebarlong {
 	width: 168px;
 	height: 48px;
 	margin-top: 1px;
@@ -131,40 +121,28 @@ form {
 	height: 48px;
 }
 
-.menuitemsidebar:hover {
-	background-color: #E60012;
-}
-.menuitemsidebarlong:hover {
+.menuitemsidebar:hover, .menuitemsidebarlong:hover {
 	background-color: #E60012;
 }
 
-.menuitemsidebar img {
+.menuitemsidebar img, .menuitemsidebarlong img {
 	float: right;
 	position: relative;
 	pointer-events: none;
-	margin-top: -4px;
-	margin-right: 10px;
 	filter: brightness(0);
 	-webkit-transition: filter 0.125s ease-in-out;
 	-o-transition: filter 0.125s ease-in-out;
 	transition: filter 0.125s ease-in-out;
+	
+	margin-top: -4px;
+	margin-right: 10px;
 }
-.menuitemsidebar:hover img {
+.menuitemsidebar:hover img, .menuitemsidebarlong:hover img {
 	filter: brightness(1);
 }
 .menuitemsidebarlong img {
-	float: right;
-	position: relative;
-	pointer-events: none;
 	margin-top: -40px;
 	margin-right: 10px;
-	filter: brightness(0);
-	-webkit-transition: filter 0.125s ease-in-out;
-	-o-transition: filter 0.125s ease-in-out;
-	transition: filter 0.125s ease-in-out;
-}
-.menuitemsidebarlong:hover img {
-	filter: brightness(1);
 }
 
 .menuitemsidebar a {

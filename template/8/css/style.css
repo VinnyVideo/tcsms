@@ -97,7 +97,7 @@ form {
 	font-size: 14px;
 }
 
-.menuitemsidebar {
+.menuitemsidebar, .menuitemsidebarlong {
 	width: 143px;
 	height: 40px;
 	margin-top: 1px;
@@ -107,28 +107,13 @@ form {
 	transition: background-image 0.125s ease-in-out;
 }
 
-.menuitemsidebarlong {
-	width: 143px;
-	height: 40px;
-	margin-top: 1px;
-	background: url("../images/mainSidebar.png")  no-repeat;
-	-webkit-transition: background-image 0.125s ease-in-out;
-	-o-transition: background-image 0.125s ease-in-out;
-	transition: background-image 0.125s ease-in-out;
-}
-
-.menuitemsidebar:hover {
-	width: 143px;
-	height: 40px;
-	background: url("../images/mainSidebarOver.png")  no-repeat;
-}
-.menuitemsidebarlong:hover {
+.menuitemsidebar:hover, .menuitemsidebarlong:hover {
 	width: 143px;
 	height: 40px;
 	background: url("../images/mainSidebarOver.png")  no-repeat;
 }
 
-.menuitemsidebar img {
+.menuitemsidebar img, .menuitemsidebarlong img {
 	float: right;
 	position: relative;
 	pointer-events: none;
@@ -136,9 +121,6 @@ form {
 	margin-right: 10px;
 }
 .menuitemsidebarlong img {
-	float: right;
-	position: relative;
-	pointer-events: none;
 	margin-top: -32px;
 	margin-right: 10px;
 }
