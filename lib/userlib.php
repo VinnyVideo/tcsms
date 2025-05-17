@@ -835,7 +835,7 @@ class session {
 		$where = $DB->format_db_where_string (array ('uid'	=> $dbsess['uid']) );
 		$DB->query ("UPDATE {$CFG['db_pfx']}_users SET {$update} WHERE {$where}");
 		
-		$this->data = unserialize ($dbsess['sessdata']);
+		$this->data = unserialize ($dbsess['sessdata']) ?: [];
 	}
 	
 	function update_guest_session ($dbsess) {
