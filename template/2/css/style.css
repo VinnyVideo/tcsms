@@ -1,3 +1,5 @@
+* { box-sizing: border-box ;}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -89,7 +91,7 @@ form {
 	font-size: 14px;
 }
 
-.menuitemsidebar {
+.menuitemsidebar, .menuitemsidebarlong {
 	width: 143px;
 	height: 40px;
 	margin-top: 1px;
@@ -99,76 +101,34 @@ form {
 	transition: background-image 0.125s ease-in-out;
 }
 
-.menuitemsidebarlong {
-	width: 143px;
-	height: 40px;
-	margin-top: 1px;
-	background: url("../images/mainSidebar.png")  no-repeat;
-	-webkit-transition: background-image 0.125s ease-in-out;
-	-o-transition: background-image 0.125s ease-in-out;
-	transition: background-image 0.125s ease-in-out;
-}
-
-.menuitemsidebar:hover {
-	width: 143px;
-	height: 40px;
-	background: url("../images/mainSidebarOver.png")  no-repeat;
-}
-.menuitemsidebarlong:hover {
+.menuitemsidebar:hover, .menuitemsidebarlong:hover {
 	width: 143px;
 	height: 40px;
 	background: url("../images/mainSidebarOver.png")  no-repeat;
 }
 
-.menuitemsidebar img {
+.menuitemsidebar img, .menuitemsidebarlong img {
 	float: right;
 	position: relative;
 	pointer-events: none;
-	margin-top: -8px;
-	margin-right: 10px;
-}
-.menuitemsidebarlong img {
-	float: right;
-	position: relative;
-	pointer-events: none;
-	margin-top: -32px;
-	margin-right: 10px;
 }
 
-.menuitemsidebar a {
+.menuitemsidebar a, .menuitemsidebarlong a  {
 	font-weight: bold;
 	color: #FFFFFF;
 	display:inline-block;
 	width:100%;
-	height:80%;
+	height: 35px;
 	text-shadow: 2px 2px #222222;
-	padding-top: 9px;
-	padding-left: 8px;
 	z-index: 1000;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 8px;
 }
 
 .menuitemsidebar a:hover, .menuitemsidebar a:active {
-	text-decoration: none;
-}
-
-.menuitemsidebarlong a {
-	font-weight: bold;
-	color: #FFFFFF;
-	display:inline-block;
-	width:100%;
-	height:80%;
-	text-shadow: 2px 2px #222222;
-	padding-top: 0px;
-	padding-left: 8px;
-	z-index: 1000;
-}
-
-.menuitemsidebarlong a span {
-	width: 60%;
-	display: block;
-}
-
-.menuitemsidebarlong a:hover, .menuitemsidebarlong a:active {
 	text-decoration: none;
 }
 

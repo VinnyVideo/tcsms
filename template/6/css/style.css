@@ -78,11 +78,7 @@ form {
 	margin-bottom: 1px;
 }
 
-.menuitemsidebar img {
-	display: none;
-}
-
-.menuitemsidebarlong img {
+.menuitemsidebar img, .menuitemsidebarlong img {
 	display: none;
 }
 
