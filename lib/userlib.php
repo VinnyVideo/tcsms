@@ -996,6 +996,16 @@ class session {
 		
 		return true;
 	}
+
+	function touch_data () {
+		$params = func_get_args();
+		
+		foreach ($params as $param) {
+			if (!isset ($this->data[$param]) ) {
+				$this->data[$param] = '';
+			}
+		}
+	}
 	
 	function protect_request () {
 		$this->data['request_token'] = md5 (uniqid (rand(), true));
