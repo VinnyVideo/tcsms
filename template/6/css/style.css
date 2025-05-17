@@ -174,7 +174,7 @@ form {
 
 .container {
 	display: flex;
-	margin: 0 10px;
+	background: url(../images/sidebar.gif) repeat-y;
 }
 
 .leftmenu {
