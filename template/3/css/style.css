@@ -130,7 +130,7 @@ form {
 	border: 1px solid black;
 	background: #435187;
 	color: white;
-	padding: 1px;
+	padding: 3px;
 }
 
 .selectbox {
@@ -161,6 +161,8 @@ form {
 	font-size: 20pt;
 	font-weight: bold;
 	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .boxheader {
