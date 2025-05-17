@@ -172,8 +172,8 @@ form {
 	font-size: 19px;
 	font-weight: 300;
 	display:inline-block;
-    width:100%;
-    height:80%;
+	width:100%;
+	height:80%;
 	padding-top: 12px;
 	padding-left: 8px;
 	z-index: 1000;
@@ -325,6 +325,38 @@ form {
 	font-weight: 300;
 }
 
+.container {
+	display: flex;
+	margin: 0 10px;
+}
+
+
+.leftmenu {
+	margin: 0 10px;
+	z-index: 1; /* Menu shows above content */
+}
+
+.leftmenu .leftmenutoggle {
+	box-shadow: black 5px 5px 10px;
+	color: white;
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.leftmenu {
+		position: absolute;
+	}
+	.leftmenu .leftmenutoggle {
+		display: block;
+	}
+	.leftmenu .canvas_left {
+		transform: translateX(-150%);
+	}
+	.leftmenu.expanded .canvas_left {
+		transform: translateX(0);
+	}
+}
+
 .canvas_left {
 	margin-right: auto;
 	text-align: left;
@@ -339,7 +371,6 @@ form {
 
 .canvas_right {
 }
-
 
 .newsform {
 	text-align: left;
@@ -505,13 +536,13 @@ form {
 }
 
 .navigation {
-    width: 100%;
+	width: 100%;
 	font-weight: 300;
-    padding-top: 16px;
+	padding-top: 16px;
 	margin-top: 16px;
 	padding-bottom: 16px;
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 	font-size: 48px;
 	text-transform: uppercase;
 	text-align: center;
