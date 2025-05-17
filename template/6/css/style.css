@@ -175,8 +175,9 @@ form {
 }
 
 .container {
+	background: url(../images/sidebar.gif) repeat-y;
+
 	display: flex;
-	margin: 0 10px;
 }
 
 .leftmenu {
@@ -206,7 +207,7 @@ form {
 }
 
 .canvas_left {
-	width: 124px;
+	width: 150px;
 	margin: 10px 0;
 	text-align: left;
 	padding-right:0px;
