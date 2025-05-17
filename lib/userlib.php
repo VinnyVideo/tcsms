@@ -374,10 +374,12 @@ class session {
 	var $data		= array();
 	
 	var $bots		= array (
+		'7Siters'				=> '7Siters',
 		'Alexa'				=> 'ia_archiver',
 		'Amazon'				=> 'Amazon',
 		'Applebot'				=> 'Applebot',
 		'Archive.org'		=> 'archive.org_bot',
+		'AwarioBot'		=> 'Awario',
 		'Baiduspider'			=> 'Baidu',
 		'Barkrowler'		=> 'Barkrowler',
 		'Bingbot'			=> 'Bingbot',
@@ -399,6 +401,7 @@ class session {
 		//'MSN'				=> 'msnbot',
 		//'MSRBOT'			=> 'MSRBOT',
 		'SemrushBot'		=> 'Semrush',
+		'Sogou'		=> 'Sogou',
 		'TikTokSpider'		=> 'TikTok',
 		//'Twiceler'			=> 'Twiceler',
 		'Twitterbot' 			=> 'Twitter',
