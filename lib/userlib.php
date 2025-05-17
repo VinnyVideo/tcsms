@@ -201,8 +201,8 @@ class user extends table_frame {
 			return;
 		}
 		
-		$session->touch_data ('digest');
-		if ($session->data['digest'] == 1) {
+
+		if (array_key_exists('digest', $session->data) && $session->data['digest'] == 1) {
 			return;
 		}
 		
@@ -838,7 +838,7 @@ class session {
 		$where = $DB->format_db_where_string (array ('uid'	=> $dbsess['uid']) );
 		$DB->query ("UPDATE {$CFG['db_pfx']}_users SET {$update} WHERE {$where}");
 		
-		$this->data = unserialize ($dbsess['sessdata']);
+		$this->data = unserialize ($dbsess['sessdata']) ?: [];
 	}
 	
 	function update_guest_session ($dbsess) {
@@ -995,16 +995,6 @@ class session {
 					 WHERE sessid = '{$this->sess_id}'");
 		
 		return true;
-	}
-	
-	function touch_data () {
-		$params = func_get_args();
-		
-		foreach ($params as $param) {
-			if (!isset ($this->data[$param]) ) {
-				$this->data[$param] = '';
-			}
-		}
 	}
 	
 	function protect_request () {
