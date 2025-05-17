@@ -21,11 +21,11 @@ Write a new news entry here.  {%recent_updates%} will insert the Recent Updates 
 <table cellspacing="0" cellpadding="1" style="width:90%;">
 <tr>
   <td width="30%" class="title"><label for="title">Title</label></td>
-  <td width="70%" class="field"><input type="text" id="title" name="title" size="40" class="textbox" /></td>
+  <td width="70%" class="field"><input type="text" id="title" name="title" size="60" class="textbox" /></td>
 </tr>
 <tr>
   <td width="30%" class="title"><label for="content">Content</label></td>
-  <td width="70%" class="field"><textarea id="content" name="content" rows="8" cols="40" class="textbox"></textarea></td>
+  <td width="70%" class="field"><textarea id="content" name="content" rows="8" cols="80" class="textbox"></textarea></td>
 </tr>
 <tr>
   <td width="30%" class="title">&nbsp;</td>
@@ -93,11 +93,11 @@ Write a new news entry here.
 <table cellspacing="0" cellpadding="1" width="90%">
 <tr>
   <td width="30%" class="title">Title</td>
-  <td width="70%" class="field"><input type="text" name="title" size="40" value="{$news['title']}" class="textbox" /></td>
+  <td width="70%" class="field"><input type="text" name="title" size="60" value="{$news['title']}" class="textbox" /></td>
 </tr>
 <tr>
   <td width="30%" class="title">Content</td>
-  <td width="70%" class="field"><textarea name="content" rows="8" cols="40" class="textbox">{$news['message']}</textarea></td>
+  <td width="70%" class="field"><textarea name="content" rows="8" cols="80" class="textbox">{$news['message']}</textarea></td>
 </tr>
 <tr>
   <td width="30%" class="title">&nbsp;</td>
