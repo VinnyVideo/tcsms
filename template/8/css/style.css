@@ -323,15 +323,8 @@ form {
 }
 
 .canvas_center {
-	width: 94%;
-	text-align: left;
-	margin-left: 0;
-	margin-right: 0;
+	width: 100%;
 }
-
-.canvas_right {
-}
-
 
 .newsform {
 	text-align: left;
