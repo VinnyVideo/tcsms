@@ -265,15 +265,15 @@ class template_global
     if (in_array($STD->tags["skin"], [3, 6, 7])) {
       return <<<HTML
         <div class="header_region">
-          <table style="width:100%; margin-left: auto; margin-right: auto; border-spacing:0px;">
+          <table style="width:100%; margin:8px auto 16px auto; border-spacing:0px;">
             <tr>
               <td style="background:url({$STD->tags['image_path']}/pipe_bg.gif); padding:0px;">
                 <img src="{$STD->tags['image_path']}/pipe_left.gif" style="float:left" alt="Left Pipe Background">
               </td>
               <td style="background:url({$STD->tags['image_path']}/pipe_bg.gif); padding:0px;">
-                <img src="{$STD->tags['image_path']}/pipe_right.gif" alt="Right Pipe Background" style="display:inline; vertical-align: top">
+                <img src="{$STD->tags['image_path']}/pipe_right.gif" alt="Right Pipe Background" style="display:inline; vertical-align: top; margin-right: -5px;">
                 <span class="boxpageheader">{$title}</span>
-                <img src="{$STD->tags['image_path']}/pipe_left.gif" alt="Left Pipe Background" style="display:inline; vertical-align: top">
+                <img src="{$STD->tags['image_path']}/pipe_left.gif" alt="Left Pipe Background" style="display:inline; vertical-align: top; margin-left: -5px;">
               </td>
               <td style="background:url({$STD->tags['image_path']}/pipe_bg.gif); padding:0px;">
                 <img src="{$STD->tags['image_path']}/pipe_right.gif" style="float:right" alt="Right Pipe Background">
