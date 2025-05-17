@@ -173,11 +173,37 @@ form {
 	font-weight: bold;
 }
 
+.container {
+	display: flex;
+	margin: 0 10px;
+}
 
 
+.leftmenu {
+	margin: 0 10px;
+	z-index: 1; /* Menu shows above content */
+}
 
+.leftmenu .leftmenutoggle {
+	box-shadow: black 5px 5px 10px;
+	color: white;
+	display: none;
+}
 
-
+@media (max-width: 600px) {
+	.leftmenu {
+		position: absolute;
+	}
+	.leftmenu .leftmenutoggle {
+		display: block;
+	}
+	.leftmenu .canvas_left {
+		transform: translateX(-150%);
+	}
+	.leftmenu.expanded .canvas_left {
+		transform: translateX(0);
+	}
+}
 
 .canvas_left {
 	width: 132px;
@@ -195,7 +221,6 @@ form {
 
 .canvas_right {
 }
-
 
 .newsform {
 	text-align: left;
@@ -219,7 +244,7 @@ form {
 }
 
 .newsleftw {
-    background-color: #00007E;
+	background-color: #00007E;
 	padding: 3px;
 }
 
@@ -228,7 +253,7 @@ form {
 }
 
 .sform {
-    background-color: #000047;
+	background-color: #000047;
 	text-align: left;
 	border: 1px solid gray;
 	width: auto;
@@ -266,7 +291,7 @@ form {
 }
 
 .sformleft {
-    background-color: #00007E;
+	background-color: #00007E;
 	width: 35%;
 	padding: 3px;
 }
