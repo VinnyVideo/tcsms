@@ -1,3 +1,5 @@
+* { box-sizing: border-box ;}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -109,12 +111,6 @@ form {
 	float: right;
 	position: relative;
 	pointer-events: none;
-	margin-top: -8px;
-	margin-right: 10px;
-}
-.menuitemsidebarlong img {
-	margin-top: -32px;
-	margin-right: 10px;
 }
 
 .menuitemsidebar a, .menuitemsidebarlong a  {
@@ -122,29 +118,17 @@ form {
 	color: #FFFFFF;
 	display:inline-block;
 	width:100%;
-	height:80%;
+	height: 35px;
 	text-shadow: 2px 2px #222222;
 	z-index: 1000;
-
-	padding-top: 9px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding-left: 8px;
 }
 
 .menuitemsidebar a:hover, .menuitemsidebar a:active {
-	text-decoration: none;
-}
-
-.menuitemsidebarlong a {
-	padding-top: 0px;
-	padding-left: 8px;
-}
-
-.menuitemsidebarlong a span {
-	width: 60%;
-	display: block;
-}
-
-.menuitemsidebarlong a:hover, .menuitemsidebarlong a:active {
 	text-decoration: none;
 }
 
