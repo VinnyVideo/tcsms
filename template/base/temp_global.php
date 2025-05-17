@@ -265,7 +265,7 @@ class template_global
     if (in_array($STD->tags["skin"], [3, 6, 7])) {
       return <<<HTML
         <div class="header_region">
-          <table style="width:100%; margin:8px auto 16px auto; border-spacing:0px;">
+          <table style="width:100%; margin:12px auto 20px auto; border-spacing:0px;">
             <tr>
               <td style="background:url({$STD->tags['image_path']}/pipe_bg.gif); padding:0px;">
                 <img src="{$STD->tags['image_path']}/pipe_left.gif" style="float:left" alt="Left Pipe Background">
