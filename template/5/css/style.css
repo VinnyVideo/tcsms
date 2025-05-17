@@ -171,6 +171,38 @@ form {
 	font-weight: bold;
 }
 
+.container {
+	display: flex;
+	margin: 0 10px;
+}
+
+
+.leftmenu {
+	margin: 0 10px;
+	z-index: 1; /* Menu shows above content */
+}
+
+.leftmenu .leftmenutoggle {
+	box-shadow: black 5px 5px 10px;
+	color: white;
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.leftmenu {
+		position: absolute;
+	}
+	.leftmenu .leftmenutoggle {
+		display: block;
+	}
+	.leftmenu .canvas_left {
+		transform: translateX(-150%);
+	}
+	.leftmenu.expanded .canvas_left {
+		transform: translateX(0);
+	}
+}
+
 .canvas_left {
 	width: 140px;
 	margin-left: auto;
