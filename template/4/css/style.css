@@ -295,6 +295,10 @@ textarea {
 	margin-right: auto;
 	text-align: left;
 	padding-right:0px;
+
+	transition: transform 1s;
+	transform: translateX(0);
+	transform-origin: 0 0;
 }
 
 .canvas_center {
