@@ -293,6 +293,7 @@ form {
 		transform: translateX(-150%);
 	}
 	.leftmenu.expanded .canvas_left {
+		position: absolute;
 		transform: translateX(0);
 	}
 }
