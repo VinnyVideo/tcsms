@@ -125,11 +125,8 @@ form {
 	font-weight: bold;
 	text-align: left;
 }
-/*
 .sidetextbox {
-	border: 1px solid black;
-	background-color: #5060A9;
-	color: black;
+	width: 100%;
 }
 
 .sidebutton {

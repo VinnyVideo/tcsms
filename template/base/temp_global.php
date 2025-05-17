@@ -165,7 +165,7 @@ class template_global
                 <input type="hidden" name="act" value="search">
                 <input type="hidden" name="param" value="02">
                 <div class="menuitem">
-                  <input type="text" name="search" title="Search" size="14" class="sidetextbox">
+                  <input type="text" name="search" title="Search" class="sidetextbox">
                 </div>
                 <div class="menuitem">
                   <input type="submit" value="Go" class="sidebutton"> 
@@ -199,10 +199,10 @@ class template_global
             <div class="menutitle">Login</div>
             <div class="menusection">
               <div class="menuitem">
-                  <input type="text" name="username" placeholder="username" title="Enter your username" size="13" class="sidetextbox">
+                  <input type="text" name="username" placeholder="username" title="Enter your username" class="sidetextbox">
               </div>
               <div class="menuitem">
-                  <input type="password" name="password" placeholder="password" title="Enter your password" size="13" class="sidetextbox">
+                  <input type="password" name="password" placeholder="password" title="Enter your password" class="sidetextbox">
               </div>
               <div class="menuitem" style="font-size:8pt">
                   <a href="{$STD->tags['root_url']}act=login&amp;param=05">I lost my password</a>

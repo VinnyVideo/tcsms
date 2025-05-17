@@ -70,6 +70,7 @@ form {
 .sidetextbox {
 	border : 1px solid gray;
 	background-color : #FFFFFF;
+	width: 100%;
 }
 
 .sidebutton {

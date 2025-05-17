@@ -204,6 +204,7 @@ form {
 	margin: 4px;
 	border-radius: 32px;
 	font-weight: 300;
+	width: 100%;
 }
 
 .sidebutton {
