@@ -117,6 +117,7 @@ form {
 	border: 1px solid #111122;
 	background: #333344;
 	color: #FFFFFF;
+	padding: 3px;
 }
 
 .selectbox {
@@ -139,6 +140,8 @@ form {
 	color: #F8F820;
 	font-size: 22pt;
 	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .newsheader {
