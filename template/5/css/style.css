@@ -210,6 +210,10 @@ form {
 	text-align: left;
 	padding: 4px;
 	padding-right:0px;
+
+	transition: transform 1s;
+	transform: translateX(0);
+	transform-origin: 0 0;
 }
 
 .canvas_center {

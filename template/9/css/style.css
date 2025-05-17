@@ -360,6 +360,10 @@ form {
 .canvas_left {
 	margin-right: auto;
 	text-align: left;
+
+	transition: transform 1s;
+	transform: translateX(0);
+	transform-origin: 0 0;
 }
 
 .canvas_center {
