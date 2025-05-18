@@ -347,10 +347,9 @@ class component_adm_manage {
 		
 		$this->output = $STD->global_template->page_header( 'Average Score Recalculation' );
 		
-		$syncmsg = "Starting recalculation...<br><br>";
+		$syncmsg = "Starting recalculation for Games...<br><br>";
 		
-		$cq = $DB->query("SELECT rid, eid FROM {$CFG['db_pfx']}_resources WHERE type = 2 or type = 7");
-		//$cq = $DB->query("SELECT rid, eid FROM {$CFG['db_pfx']}_resources WHERE type = 2");
+		$cq = $DB->query("SELECT rid, eid FROM {$CFG['db_pfx']}_resources WHERE type = 2");
 		while ($row = $DB->fetch_row($cq)) {
 			
 			$cc = $DB->query("SELECT COUNT(*) AS cnt, SUM(score) as totalscore FROM {$CFG['db_pfx']}_res_reviews WHERE gid = {$row['rid']}");
@@ -362,6 +361,22 @@ class component_adm_manage {
 			$syncmsg .= "{$row['rid']}: {$crow['totalscore']} / {$crow['cnt']}<br>";
 	
 			$DB->query("UPDATE {$CFG['db_pfx']}_res_games SET num_revs = {$crow['cnt']}, rev_score = {$crow['totalscore']} WHERE eid = {$row['eid']}");
+		}
+		
+		// We have to run a slightly different version of the same query for Hacks/Mods
+		$syncmsg .= "<br>Starting recalculation for Hacks/Mods...<br><br>";
+		
+		$cq = $DB->query("SELECT rid, eid FROM {$CFG['db_pfx']}_resources WHERE type = 7");
+		while ($row = $DB->fetch_row($cq)) {
+			
+			$cc = $DB->query("SELECT COUNT(*) AS cnt, SUM(score) as totalscore FROM {$CFG['db_pfx']}_res_reviews WHERE gid = {$row['rid']}");
+			$crow = $DB->fetch_row($cc);
+			
+			if (empty($crow['totalscore']))
+				$crow['totalscore'] = 0;
+	
+			$syncmsg .= "{$row['rid']}: {$crow['totalscore']} / {$crow['cnt']}<br>";
+	
 			$DB->query("UPDATE {$CFG['db_pfx']}_res_hacks SET num_revs = {$crow['cnt']}, rev_score = {$crow['totalscore']} WHERE eid = {$row['eid']}");
 		}
 
