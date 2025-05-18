@@ -261,6 +261,11 @@ form {
 	width: 100%;
 }
 
+.sformtable img {
+	/** Keep images from being too large on small screens */
+	max-width: 55vw;
+}
+
 .sformblock {
 	text-align: left;
 	padding: 3px;

@@ -169,6 +169,11 @@ form {
 	width: 100%;
 }
 
+.sformtable img {
+	/** Keep images from being too large on small screens */
+	max-width: 55vw;
+}
+
 .sformtablex {
 	width: 100%;
 }
