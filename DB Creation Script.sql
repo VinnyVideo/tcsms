@@ -1,11 +1,14 @@
+
+
+-- --------------------------------------------------------
 -- phpMyAdmin SQL Dump
 -- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 11, 2025 at 04:27 PM
+-- Generation Time: May 17, 2025 at 09:52 PM
 -- Server version: 5.5.68-MariaDB
--- PHP Version: 8.3.17
+-- PHP Version: 8.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -399,12 +402,6 @@ CREATE TABLE `tsms_filter_multi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tsms_filter_multi`
---
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tsms_filter_use`
 --
 
@@ -566,6 +563,19 @@ CREATE TABLE `tsms_modules` (
   `news_upd` tinyint(1) NOT NULL DEFAULT '0',
   `news_upd_collapsed` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tsms_modules`
+--
+
+INSERT INTO `tsms_modules` (`mid`, `module_name`, `class_name`, `full_name`, `table_name`, `module_file`, `template`, `num_decisions`, `proc_order`, `custom_update`, `hidden`, `children`, `ext_files`, `news_show`, `news_show_collapsed`, `news_upd`, `news_upd_collapsed`) VALUES
+(1, 'Graphics', 'mod_gfx', 'Graphics', 'res_gfx', 'gfx.php', 'mod_gfx', 2, 3, 0, 0, '', 2, 1, 0, 1, 1),
+(2, 'Games', 'mod_games', 'Games', 'res_games', 'games.php', 'mod_games', 2, 1, 1, 0, '3', 3, 1, 0, 1, 1),
+(3, 'Reviews', 'mod_reviews', 'Reviews', 'res_reviews', 'reviews.php', 'mod_reviews', 2, 7, 0, 1, '', 0, 1, 1, 0, 0),
+(4, 'Howtos', 'mod_howtos', 'How-Tos', 'res_howtos', 'howtos.php', 'mod_howtos', 1, 4, 0, 0, '', 1, 1, 0, 1, 1),
+(5, 'Sounds', 'mod_sounds', 'Sounds, Music', 'res_sounds', 'sounds.php', 'mod_sounds', 1, 5, 0, 0, '', 1, 1, 0, 1, 1),
+(6, 'Misc', 'mod_misc', 'Miscellaneous', 'res_misc', 'misc.php', 'mod_misc', 2, 6, 0, 0, '', 1, 1, 0, 1, 1),
+(7, 'Hacks', 'mod_hacks', 'Hacks & Mods', 'res_hacks', 'hacks.php', 'mod_hacks', 2, 2, 1, 0, '3', 3, 1, 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -791,7 +801,7 @@ CREATE TABLE `tsms_sessions` (
   `user_agent` varchar(150) DEFAULT NULL,
   `location` varchar(72) NOT NULL,
   `sessdata` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -883,7 +893,7 @@ CREATE TABLE `tsms_users` (
   `last_activity` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `last_ip` varchar(15) NOT NULL,
   `new_password` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -925,7 +935,9 @@ ALTER TABLE `tsms_comments`
   ADD PRIMARY KEY (`cid`),
   ADD UNIQUE KEY `hash` (`hash`) USING BTREE,
   ADD KEY `rid` (`rid`),
-  ADD KEY `uid` (`uid`);
+  ADD KEY `uid` (`uid`),
+  ADD KEY `type` (`type`),
+  ADD KEY `date` (`date`);
 
 --
 -- Indexes for table `tsms_filter_group`
@@ -1060,7 +1072,8 @@ ALTER TABLE `tsms_sec_images`
 --
 ALTER TABLE `tsms_sessions`
   ADD PRIMARY KEY (`sessid`),
-  ADD KEY `uid` (`uid`);
+  ADD KEY `uid` (`uid`),
+  ADD KEY `time` (`time`);
 
 --
 -- Indexes for table `tsms_skins`
@@ -1150,7 +1163,7 @@ ALTER TABLE `tsms_messages`
 -- AUTO_INCREMENT for table `tsms_modules`
 --
 ALTER TABLE `tsms_modules`
-  MODIFY `mid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `mid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tsms_news`
@@ -1234,7 +1247,7 @@ ALTER TABLE `tsms_users`
 -- AUTO_INCREMENT for table `tsms_version`
 --
 ALTER TABLE `tsms_version`
-  MODIFY `vid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2990;
+  MODIFY `vid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3001;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
