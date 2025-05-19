@@ -20,9 +20,6 @@ class component_user {
 	function init () {
 		global $IN, $STD;
 		
-		// Removed on 5/18/2025 - called but not used
-		//require ROOT_PATH.'lib/mailer.php';
-		
 		$this->html = $STD->template->useTemplate('user');
 		
 		if (!empty($IN['c'])) {
