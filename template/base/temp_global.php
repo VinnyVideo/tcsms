@@ -125,9 +125,9 @@ class template_global
             <div class="menusection">
               <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=main">Home<img alt="Home" src="{$STD->tags['global_image_path']}/mainMainHome.png"></a></div>
               <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=staff">Staff<img alt="Staff" src="{$STD->tags['global_image_path']}/mainMainStaff.png"></a></div>
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=submit&amp;param=01"><span>Submission Rules</span><img alt="Submission Rules" src="{$STD->tags['global_image_path']}/mainMainRules.png"></a></div>
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=page&amp;name=rules"><span>Comment Rules</span><img alt="Comment/Message Rules" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=resdb&amp;param=05&amp;c=2"><span>Hall of Fame</span><img alt="MFGG Hall of Fame" src="{$STD->tags['global_image_path']}/mainMainHall.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=submit&amp;param=01"><span>Submission Rules</span><img alt="Submission Rules" src="{$STD->tags['global_image_path']}/mainMainRules.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=page&amp;name=rules"><span>Comment Rules</span><img alt="Comment/Message Rules" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=resdb&amp;param=05&amp;c=2"><span>Hall of Fame</span><img alt="MFGG Hall of Fame" src="{$STD->tags['global_image_path']}/mainMainHall.png"></a></div>
             </div>
           </div>
           <div class="menu">
@@ -153,9 +153,9 @@ class template_global
           <div class="menu">
             <div class="menutitle2">Other</div>
             <div class="menusection">
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=main&amp;param=08"><span>Updates Archive</span><img alt="Archives" src="{$STD->tags['global_image_path']}/mainMainArchive.png"></a></div>
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=page&amp;name=patcher"><span>BPS Patcher</span><img alt="BPS Patcher" src="{$STD->tags['global_image_path']}/mainMainBPS.png"></a></div>
-              <div class="menuitemsidebarlong"><a href="{$STD->tags['root_url']}act=main&amp;param=19"><span>New Comments</span><img alt="New Comments" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=main&amp;param=08"><span>Updates Archive</span><img alt="Archives" src="{$STD->tags['global_image_path']}/mainMainArchive.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=page&amp;name=patcher"><span>BPS Patcher</span><img alt="BPS Patcher" src="{$STD->tags['global_image_path']}/mainMainBPS.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=main&amp;param=19"><span>New Comments</span><img alt="New Comments" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
             </div>
           </div>
           <div class="menu">

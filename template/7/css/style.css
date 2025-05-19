@@ -65,13 +65,13 @@ form {
 	margin-left: 6px;
 }
 
-.menuitem, .menuitemsidebar, .menuitemsidebarlong {
+.menuitem, .menuitemsidebar {
 	padding: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
 
-.menuitemsidebar img, .menuitemsidebarlong img {
+.menuitemsidebar img {
 	display: none;
 }
 

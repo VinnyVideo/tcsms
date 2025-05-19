@@ -106,7 +106,7 @@ form {
 	font-weight: 300;
 }
 
-.menuitemsidebar, .menuitemsidebarlong {
+.menuitemsidebar {
 	width: 168px;
 	height: 48px;
 	margin-top: 1px;
@@ -121,11 +121,11 @@ form {
 	height: 48px;
 }
 
-.menuitemsidebar:hover, .menuitemsidebarlong:hover {
+.menuitemsidebar:hover {
 	background-color: #E60012;
 }
 
-.menuitemsidebar img, .menuitemsidebarlong img {
+.menuitemsidebar img {
 	float: right;
 	position: relative;
 	pointer-events: none;
@@ -137,51 +137,13 @@ form {
 	margin-top: -4px;
 	margin-right: 10px;
 }
-.menuitemsidebar:hover img, .menuitemsidebarlong:hover img {
+.menuitemsidebar:hover img {
 	filter: brightness(1);
-}
-.menuitemsidebarlong img {
-	margin-top: -40px;
-	margin-right: 10px;
-}
-
-.menuitemsidebar a {
-	color: #000;
-	font-size: 19px;
-	font-weight: 300;
-	display:inline-block;
-	width:100%;
-	height:80%;
-	padding-top: 12px;
-	padding-left: 8px;
-	z-index: 1000;
 }
 
 .menuitemsidebar a:hover, .menuitemsidebar a:active {
 	text-decoration: none;
 	color: #fff;
-}
-
-.menuitemsidebarlong a {
-	color: #000;
-	font-size: 19px;
-	font-weight: 300;
-	display:inline-block;
-    width:100%;
-    height:80%;
-	padding-top: 0px;
-	padding-left: 8px;
-	z-index: 1000;
-}
-
-.menuitemsidebarlong a:hover, .menuitemsidebarlong a:active {
-	text-decoration: none;
-	color: #fff;
-}
-
-.menuitemsidebarlong a span {
-	width: 56%;
-	display: block;
 }
 
 .title {
