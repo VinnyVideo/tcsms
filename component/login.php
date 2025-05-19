@@ -287,18 +287,9 @@ class component_login {
 			$STD->error("You can only submit one password change request per hour.");
 		
 		// Dispatch an email
-		//require_once ROOT_PATH.'lib/mailer.php';
 		
 		$url = "{$CFG['root_url']}/index.php?act=login&param=07&val={$user->data['cookie']}";
 		$message = "{$user->data['username']},\n\nThis email is being sent to you because you requested to recover a lost password.  This message was sent from {$_SERVER['REMOTE_ADDR']}.  If you did not request this message, or this is not your IP, ignore this message and contact an administrator.\n\nTo proceed with changing your password, follow the link below:\n$url\n\nThis link contains sensitive information and should not be shared with anyone, just as you would not share your password.\n\nBest regards,\n{$CFG['site_name']} staff\n";
-		
-		// This code is no longer needed - 5/18/2025
-		/*$email = new mailer();
-		$email->to = $user->data['email'];
-		$email->subject = "Lost Password Request";
-		$email->message = $message;
-
-		$email->dispatch();*/
 		
 		mail($user->data['email'], "Lost Password Request", $message);
 		
