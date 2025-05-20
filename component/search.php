@@ -21,8 +21,6 @@ class component_search {
 		
 		$this->html = $STD->template->useTemplate('search');
 		
-		//$STD->sajax->sajax_allow("component_search__show_form_page");
-		
 		switch ($IN['param']) {
 			case 1: $this->show_advanced(); break;
 			case 2: $this->simple_search(); break;
@@ -76,10 +74,6 @@ class component_search {
 	
 	function show_advanced () {
 		global $IN, $STD, $DB, $CFG;
-		
-		// Generate the necessary HTML before tagging
-		//$STD->sajax->sajax_export("component_search__show_form_page");
-		//$STD->sajax->sajax_handle_client_request();
 		
 		// Get Module List
 		$type_list = "<select name=\"c\" aria-label=\"Search by Module\" size=\"1\" class=\"selectbox\">\n";

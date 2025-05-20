@@ -18,7 +18,7 @@ class component_page {
 	var $output		= "";
 	
 	function init () {
-		global $STD, $IN, $session, $SAJAX;
+		global $STD, $IN, $session;
 		
 		$this->html = $STD->template->useTemplate('page');
 		

@@ -28,15 +28,11 @@ Class template {
 	var $content_only; // 4/30/2025 dynamic properties fix for admin login
 	
 	function init () {
-//		global $SAJAX;
-		
 //		require_once ROOT_PATH.'component/menu.php';
 		
 		ob_start();
 		
 		set_error_handler('php_err_handler');
-		
-//		$SAJAX->sajax_allow("component_menu__get_menu");
 	}
 	
 //	function setTemplate ($template_name) {
@@ -68,52 +64,6 @@ Class template {
 		return $this->cur_temp;
 	}
 	
-//	function addTag ($name, $value) {
-//		
-//		$this->tags[$name] = $value;
-//	}
-	
-//	function addMeta ($meta) {
-//		
-//		$this->meta .= $meta;
-//	}
-	
-//	function build () {
-//		
-//		$this->standard_tags();
-//		$this->out = $this->template;
-//		
-//		reset ($this->tags);
-//		while (list($key,$val) = each($this->tags)) {
-//			if (is_a($val, 'template'))
-//				$val = $val->build();
-//			
-//			$this->out = str_replace('{{'.$key.'}}', $val, $this->out);
-//		}
-//		
-//		return $this->out;
-//	}
-	
-//	function site_level_tags () {
-//		global $STD, $SAJAX;
-//		
-//		if (isset($this->override['no_parse_site_tags']))
-//			return;
-//		
-//		require_once ROOT_PATH.'lib/Sajax.php';
-//			
-//		// Login Menu
-//		require_once ROOT_PATH.'component/login.php';
-//		$this->addTag('login', component_login::load_menu());
-//		
-//		// Menu
-//		require_once ROOT_PATH.'component/menu.php';
-//		$this->addTag('menu', component_menu::load_menu());
-//		
-//		$SAJAX->sajax_export("component_menu__get_menu");
-//		$SAJAX->sajax_handle_client_request();
-//	}
-	
 	function display ($out, $title='') {
 		global $DB, $STD, $session;
 		
@@ -130,8 +80,6 @@ Class template {
 		if (!isset($STD->global_template))
 			$STD->global_template = $STD->template->useTemplate('global');
 		
-		//$STD->tags['sajax'] = $STD->sajax->sajax_get_javascript();
-				
 		// We need a special mechanism for hiding all the default site elements if necessary.  This is done with the
 		// content_only flag, and uses 2 special functions in the global template.
 		if (empty($STD->template->content_only))
@@ -263,7 +211,6 @@ Class template {
 
 Class std {
 	
-	var $sajax				= null;
 	var $global_template	= null;
 	var $template			= null;
 	var $tags				= array();

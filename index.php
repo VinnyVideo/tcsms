@@ -30,15 +30,10 @@ if (!empty($_GET['debug']))
 
 require ROOT_PATH.'lib/std.php';
 require ROOT_PATH.'lib/userlib.php';
-//require ROOT_PATH.'lib/Sajax.php';
 require ROOT_PATH.'lib/module.php';
 require ROOT_PATH.'component/template_ui.php';
 
 $STD = new std;
-
-//$STD->sajax = new Sajax;
-//$STD->sajax->sajax_init();
-//$STD->sajax->sajax_set_request_type('GET');
 
 $STD->template = new template;
 $STD->template->init();
@@ -47,7 +42,6 @@ $STD->modules = new module_record;
 //$STD->modules->load_module_list();
 
 $IN	= $STD->parse_input();
-
 $session = new session;
 $session->authorize();
 /*if (!$session->authorize()) {

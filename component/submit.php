@@ -17,7 +17,7 @@ class component_submit {
 	var $output		= "";
 	
 	function init () {
-		global $STD, $IN, $session, $SAJAX;
+		global $STD, $IN;
 		
 		$this->html = $STD->template->useTemplate('submit');
 
@@ -25,8 +25,6 @@ class component_submit {
 		if ($STD->user['new_password'] != 1) {
 			header("Location: ".$_SERVER['PHP_SELF'].'?act=login&param=10');
 		}
-		
-		//$STD->sajax->sajax_allow("component_submit__show_form_page");
 		
 		switch ($IN['param']) {
 			case 1: $this->show_submission_rules(); break;
@@ -95,7 +93,7 @@ class component_submit {
 	}
 	
 	function show_submit_form () {
-		global $IN, $STD, $session, $SAJAX;
+		global $IN, $STD, $session;
 		
 		if (!$STD->user['can_submit'])
 			$STD->error("You do not have permission to submit new files to the site.");
@@ -106,10 +104,6 @@ class component_submit {
 			return;
 		} elseif (!$STD->user['first_submit'] && empty($IN['rules_agree']) && !empty($IN['rules_continue']))
 			$STD->error("You must check the box at the bottom of the page to agree to the rules before submitting.  You will not be required to do this again after you complete your first submission.");
-		
-		// Generate the necessary HTML before tagging
-	//	$STD->sajax->sajax_export("component_submit__show_form_page");
-	//	$STD->sajax->sajax_handle_client_request();
 		
 		$def_disp['module'] = '';
 		$def_disp['style']  = 'display:none';

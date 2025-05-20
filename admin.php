@@ -30,15 +30,10 @@ require ROOT_PATH.'lib/std.php';
 require ROOT_PATH.'lib/userlib.php';
 require ROOT_PATH.'lib/resource.php';
 require ROOT_PATH.'lib/parser.php';
-require ROOT_PATH.'lib/Sajax.php';
 require ROOT_PATH.'lib/module.php';
 require ROOT_PATH.'component/admin/adm_template_ui.php';
 
 $STD = new std;
-
-$STD->sajax = new Sajax;
-$STD->sajax->sajax_init();
-$STD->sajax->sajax_set_request_type('GET');
 
 $STD->template = new template;
 $STD->template->init();
