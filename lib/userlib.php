@@ -400,6 +400,7 @@ class session {
 		'Majestic'				=> 'MJ12bot',
 		//'MSN'				=> 'msnbot',
 		//'MSRBOT'			=> 'MSRBOT',
+		'Owler'		=> 'Owler',
 		'SemrushBot'		=> 'Semrush',
 		'Sogou'		=> 'Sogou',
 		'TikTokSpider'		=> 'TikTok',
