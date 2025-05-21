@@ -166,12 +166,12 @@ return <<<HTML
         <div class="sform">
         <table class="sformtable" style="border-spacing:1px;">
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.gif" alt="[O]" /></td>
+            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
             <td width="90">Created:</td>
             <td>{$res['created']}</td>
           </tr>
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.gif" alt="[O]" /></td>
+            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
             <td>Updated:</td>
             <td>{$res['updated']}</td>
           </tr>
