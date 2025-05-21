@@ -162,12 +162,12 @@ return <<<HTML
         <div class="sform">
         <table class="sformtable" style="border-spacing:0;">
           <tr>
-            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.gif" alt="[O]"></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]"></td>
             <td style="width:90px;">Created:</td>
             <td>{$res['created']}</td>
           </tr>
           <tr>
-            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.gif" alt="[O]"></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]"></td>
             <td>Updated:</td>
             <td>{$res['updated']}</td>
           </tr>
