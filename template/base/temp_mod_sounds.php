@@ -293,9 +293,9 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <form method="post" action="{$STD->tags['root_url']}act=user&amp;param=07" enctype="multipart/form-data">
-<input type="hidden" name="security_token" value="{$token}" />
-<input type="hidden" name="c" value="{$res['type']}" />
-<input type="hidden" name="rid" value="{$res['rid']}" />
+<input type="hidden" name="security_token" value="{$token}">
+<input type="hidden" name="c" value="{$res['type']}">
+<input type="hidden" name="rid" value="{$res['rid']}">
 <div class="sformstrip">Information about your submission.  These values cannot be changed.</div>
 <table class="sformtable" cellspacing="1">
 <tr>
@@ -323,11 +323,11 @@ return <<<HTML
 <table class="sformtable" cellspacing="1">
 <tr>
   <td class="sformleft">Title</td>
-  <td class="sformright"><input type="text" name="title" size="40" value="{$res['title']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" name="title" size="40" value="{$res['title']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft">Additional Authors<br><span style="font-size:8pt">(Separate names with commas)</span></td>
-  <td class="sformright"><input type="text" name="author_override" size="40" value="{$res['author_override']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" name="author_override" size="40" value="{$res['author_override']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft">Description</td>
@@ -369,7 +369,7 @@ return <<<HTML
 </tr>
 <tr id="m_4" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']}</span></td>
 </tr>
 </table>
@@ -423,7 +423,7 @@ return <<<HTML
 <table class="sformtable" cellspacing="1">
 <tr>
   <td class="sformleft"><label for="file">File</label></td>
-  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']} - Formats accepted: ZIP</span></td>
 </tr>
 </table>
@@ -431,7 +431,7 @@ return <<<HTML
 <table class="sformtable" cellspacing="1">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
