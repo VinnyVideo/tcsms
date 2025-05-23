@@ -201,7 +201,8 @@ class mod_reviews extends module {
 		
 		$module = $STD->modules->get_module($data['type']);
 		
-		$data['type_name'] = $module['full_name'];
+		if (!empty($module['full_name'])) // 5/23/2025 test fix
+			$data['type_name'] = $module['full_name'];
 		
 		$GAME = new resource;
 		$GAME->query_use('r_user');
