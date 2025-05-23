@@ -94,18 +94,18 @@ return <<<HTML
     <td rowspan="2" style="width:320px; height:240px;" align="center">
       {$res['preview']}
     </td>
-    <td align="left" height="212">
+    <td align="left" style="height:212px;">
       <table cellpadding="2" style="border-spacing:0px;width:100%;">
         <tr>
-          <td height="25" class="sformstrip" style="background-position:right top;">
+          <td class="sformstrip" style="height:25px;background-position:right top;">
   	      By: <b>{$res['author']}</b>
           </td>
-          <td height="25" width="15%" class="sformstrip" style="text-align:right;padding:2px">
+          <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px">
             {$res['email_icon']} {$res['website_icon']}
           </td>
         </tr>
         <tr>
-          <td width="100%" colspan="3">
+          <td style="width:100%;" colspan="3">
             {$res['description']}
           </td>
         </tr>
@@ -113,7 +113,7 @@ return <<<HTML
     </td>
   </tr>
   <tr>
-    <td height="28" class="sformstrip">
+    <td style="height:28px;" class="sformstrip">
       <table cellpadding="2" style="border-spacing:0px;width:100%;">
         <tr>
           <td style="width:50%;">Completion: <b>{$res['completion']}</b></td>
@@ -132,7 +132,7 @@ return <<<HTML
   
   <table class="sformtable" style="border-spacing:1px;">
     <tr>
-      <td width="50%">
+      <td style="width:50%;">
         <div class="sform">
         <div class="sformstrip">Update History</div>
         <table class="sformtable" style="border-spacing:1px;">
@@ -159,39 +159,39 @@ return <<<HTML
           <a href="{$res['report_url']}" style="vertical-align: middle" class="outlink">Report This Submission</a>
         </div>
       </td>
-      <td width="3%">
+      <td style="width:3%;">
         &nbsp;
       </td>
-      <td width="47%">
+      <td style="width:47%;">
         <div class="sform">
         <table class="sformtable" style="border-spacing:1px;">
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
-            <td width="90">Created:</td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
+            <td style="width:90px;">Created:</td>
             <td>{$res['created']}</td>
           </tr>
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
             <td>Updated:</td>
             <td>{$res['updated']}</td>
           </tr>
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/disk.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/disk.gif" alt="[O]" /></td>
             <td>File Size:</td>
             <td>{$res['filesize']}</td>
           </tr>
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/gray_arrow.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/gray_arrow.gif" alt="[O]" /></td>
             <td>Views:</td>
             <td>{$res['views']}</td>
           </tr>
           <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/green_arrow.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/green_arrow.gif" alt="[O]" /></td>
             <td>Downloads:</td>
             <td>{$res['downloads']}</td>
           </tr>
 		  <tr>
-            <td width="25" height="25" align="center"><img src="{$STD->tags['global_image_path']}/favs.png" alt="[O]" /></td>
+            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/favs.png" alt="[O]" /></td>
             <td>Favorites:</td>
             <td>{$res['total_fav']}</td>
           </tr>
@@ -212,9 +212,9 @@ return <<<HTML
   <div class="sform">
   <table class="sformtable" style="border-spacing:1px;">
   <tr>
-    <td width="20%" class="sformstrip" style="background-position:right top;">Author</td>
-    <td width="70%" class="sformstrip">Summary</td>
-    <td width="10%" class="sformstrip" style="text-align:center">Score</td>
+    <td class="sformstrip" style="width:20%;background-position:right top;">Author</td>
+    <td style="width:70%;" class="sformstrip">Summary</td>
+    <td style="width:10%;" class="sformstrip" style="text-align:center">Score</td>
   </tr>
     {$res['reviews']}
   <tr>
@@ -235,7 +235,7 @@ function public_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray" width="100" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
     <a id="res_{$res['rid']}"></a>
     <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
     {$res['thumbnail']}</a>
@@ -243,44 +243,44 @@ return <<<HTML
   <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
     <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td height="25" width="60%" class="sformsubstrip">
+        <td style="height:25px;width:60%;" class="sformsubstrip">
           {$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td height="25" width="25%" class="sformstrip" style="background-position:right top;">
+        <td class="sformstrip" style="height:25px;width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td height="25" width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="50" colspan="3">
+        <td style="width:100%;height:50px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
         <td style="vertical-align:bottom;height:25px;">
-          <table cellspacing="0" style="width:100%;">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%">
+              <td style="width:50%;">
                 Downloads: <b>{$res['downloads']}</b>
               </td>
-              <td width="50%">
+              <td style="width:50%;">
                 Score: <b>{$res['average_score']}</b>
               </td>
             </tr>
           </table>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table cellspacing="0" width="100%">
+        <td valign="bottom" style="width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;style="font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -297,52 +297,52 @@ function manage_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray" width="100" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
     <a id="res_{$res['rid']}"></a>
     <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
     {$res['thumbnail']}</a>
   </td>
-  <td class="sformlowline" style="padding:0px;text-align:left" height="100">
-    <table cellpadding="2" cellspacing="0" width="100%" style="height: 100%">
+  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
+    <table cellpadding="2" style="border-spacing:0px;width:100%;height: 100%">
       <tr>
-        <td height="25" width="60%" class="sformsubstrip">
+        <td style="height:25px;width:60%;" class="sformsubstrip">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td height="25" width="25%" class="sformstrip" style="background-position:right top;">
+        <td class="sformstrip" style="height:25px;width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td height="25" width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="50" colspan="3">
+        <td style="width:100%; height:50px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom" height="25">
-          <table cellspacing="0" width="100%">
+        <td valign="bottom" style="height:25px;">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%">
+              <td style="width:50%;">
                 Downloads: <b>{$res['downloads']}</b>
               </td>
-              <td width="50%">
+              <td style="width:50%;">
                 Score: <b>{$res['average_score']}</b>
               </td>
             </tr>
           </table>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table cellspacing="0" width="100%">
+        <td valign="bottom" style="width:100%; colspan="2">
+          <table style="border-spacing:0px;width:100%;>
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -360,11 +360,11 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <form method="post" action="{$STD->tags['root_url']}act=user&amp;param=02" enctype="multipart/form-data">
-<input type="hidden" name="security_token" value="{$token}" />
-<input type="hidden" name="c" value="{$res['type']}" />
-<input type="hidden" name="rid" value="{$res['rid']}" />
+<input type="hidden" name="security_token" value="{$token}">
+<input type="hidden" name="c" value="{$res['type']}">
+<input type="hidden" name="rid" value="{$res['rid']}">
 <div class="sformstrip">Information about your submission.  These values cannot be changed.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Type</td>
   <td class="sformright">{$res['type_name']}</td>
@@ -387,14 +387,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Submission Parameters.  These values define your submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="author_override">Additional Authors</label><br><span style="font-size:8pt">(Separate names with commas)</span></td>
-  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
@@ -402,7 +402,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Categorization.  Expand the lists to associate categories with this submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Format</td>
   <td class="sformright">{$res['cat1']}</td>
@@ -413,14 +413,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Manage Files</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">File <a href="javascript:show_hide('m_4');">(Replace)</a></td>
   <td class="sformright"><a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$STD->tags['c']}&amp;id={$res['rid']}">[View / Download]</a></td>
 </tr>
 <tr id="m_4" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']}</span></td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ return <<<HTML
 </tr>
 <tr id="m_5" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="preview" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="preview" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['preview']}</span></td>
 </tr>
 <tr>
@@ -438,12 +438,12 @@ return <<<HTML
 </tr>
 <tr id="m_6" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="thumbnail" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="thumbnail" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['thumbnail']}</span></td>
 </tr>
 </table>
 <div class="sformstrip">Short description of this update</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="reason">Reason</label></td>
   <td class="sformright"><textarea id="reason" name="reason" rows="4" cols="40" class="textbox"></textarea>
@@ -462,7 +462,7 @@ function submit_form ($res, $max_size) {
 global $STD;
 return <<<HTML
 <div class="sformstrip">Fill in information about your submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Completion</td>
   <td class="sformright">{$res['cat1']}</td>
@@ -481,28 +481,28 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Select Files to upload</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="file">File</label></td>
-  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']} - Formats accepted: ZIP</span></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="preview">Preview Screenshot</label></td>
-  <td class="sformright"><input type="file" id="preview" name="preview" size="40" class="textbox" />
+  <td class="sformright"><input type="file" id="preview" name="preview" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['preview']} - Max Dimensions: 1920x1080 pixels</span></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="thumbnail">Thumbnail (Optional)</label></td>
-  <td class="sformright"><input type="file" id="thumbnail" name="thumbnail" size="40" class="textbox" />
+  <td class="sformright"><input type="file" id="thumbnail" name="thumbnail" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['thumbnail']} - Max Dimensions: 100x100 pixels</span></td>
 </tr>
 </table>
 <div class="sformstrip">Add a title and description</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
@@ -535,7 +535,7 @@ function news_update_block_header ($name) {
 global $STD;
 return <<<HTML
 <div class='newsstrip'>hacks</div>
-<table class='sformtable' cellspacing='1'>
+<table class='sformtable' style='border-spacing:1px;'>
 HTML;
 }
 
@@ -551,7 +551,7 @@ global $STD;
 return <<<HTML
 <div class="newssubstrip" style="text-align: center">
   <a href="javascript:show_hide('$id');" style="text-decoration:underline">Click to see updated $name</a></div>
-<table id="$id" class='sformtable' style='display:none' cellspacing='1'>
+<table id="$id" class='sformtable' style='display:none;border-spacing:1px;">
 HTML;
 }
 
@@ -566,12 +566,12 @@ function news_update_block_row ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td width='100' height='100' rowspan='3' align='center'>{$res['thumbnail']}</td>
-  <td class='newsleftw' colspan='2' height='20'><a href='{$res['url']}'><b>{$res['title']}</b></a></td>
+  <td style='width:100px;height:100px;' rowspan='3' align='center'>{$res['thumbnail']}</td>
+  <td class='newsleftw' colspan='2' style='height:20px;'><a href='{$res['url']}'><b>{$res['title']}</b></a></td>
 </tr>
 <tr>
-  <td class='newsleftw' height='20'>[{$res['type']}]</td>
-  <td class='newsleftw' width='30%'>By {$res['username']}</td>
+  <td class='newsleftw' style='height:20px;'>[{$res['type']}]</td>
+  <td class='newsleftw' style='width:30%;'>By {$res['username']}</td>
 </tr>
 <tr>
   <td class='newsleftw' colspan='2' valign='top'>{$res['description']}</td>
