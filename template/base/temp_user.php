@@ -383,7 +383,7 @@ HTML;
 		//build all of the comments
 		if ($nn == 0)
 		{
-			$output .= '<td height="25" class="sformstrip" style="text-align:center">No comments have been made by this user.</td>';
+			$output .= '<td class="sformstrip" style="height:25px;text-align:center;">No comments have been made by this user.</td>';
 		}
 		for ($i = 0; $i < $nn; $i ++)
 			{
@@ -407,7 +407,7 @@ HTML;
 								<td class="sformblock" style="width:100%;" colspan="2">'.$user[$i]['message'].'</td>
 							</tr>
 							<tr>
-								<td height="6" colspan="2" class="sformdark"></td>
+								<td style="height:6px;" colspan="2" class="sformdark"></td>
 							</tr>
 							';
 			}
