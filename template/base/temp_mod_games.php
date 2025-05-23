@@ -432,7 +432,7 @@ return <<<HTML
 </tr>
 <tr>
   <td class="sformleft">File <a href="javascript:show_hide('m_4');">(Replace)</a></td>
-  <td class="sformright"><a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp">[Play in Browser]</a></td>
+  <td class="sformright"><a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;">[Play in Browser]</a></td>
 </tr>
 <tr id="m_4" style="display:none">
   <td class="sformleft">&nbsp;</td>
