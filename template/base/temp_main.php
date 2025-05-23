@@ -343,7 +343,7 @@ return <<<HTML
 <form method="post" action="{$comment_url}">
 <div class="sform">
 <div class="sformstrip">Edit the comment below</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Comment</td>
   <td class="sformright"><textarea name="message" title="Enter your edited comment here" cols="50" rows="10" class="textbox">{$comment}</textarea></td>
@@ -362,7 +362,7 @@ return <<<HTML
 <input type='hidden' name='id' value='{$id}'>
 <div class="sform">
 <div class="sformstrip">Report a submission</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;>
   <tr>
     <td class="sformleft"><b>Submission</b></td>
     <td class="sformright"><b>{$title}</b></td>
@@ -372,7 +372,7 @@ return <<<HTML
     <td class="sformright"><textarea rows='10' cols='50' id='report' name='report' class="textbox"></textarea></td>
   </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button' /></div>
+<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button'></div>
 </div>
 </form>
 HTML;
@@ -385,7 +385,7 @@ return <<<HTML
 <input type='hidden' name='id' value='{$id}'>
 <div class="sform">
 <div class="sformstrip">Report a comment</div>
-<table class="sformtable" cellspacing='1'>
+<table class="sformtable" style='border-spacing:1px;'>
   <tr>
     <td class="sformleft"><b>Submission</b></td>
     <td class="sformright"><b>{$title}</b></td>
@@ -399,7 +399,7 @@ return <<<HTML
     <td class="sformright"><textarea rows='10' cols='50' id='report' name='report' class="textbox"></textarea></td>
   </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button' /></div>
+<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button'></div>
 </div>
 </form>
 HTML;
@@ -412,7 +412,7 @@ return <<<HTML
 <input type='hidden' name='id' value='{$id}'>
 <div class="sform">
 <div class="sformstrip">Report a comment</div>
-<table class="sformtable" cellspacing='1'>
+<table class="sformtable" style="border-spacing:1px;">
   <tr>
     <td class="sformleft"><b>News Entry</b></td>
     <td class="sformright"><b>{$title}</b></td>
@@ -426,7 +426,7 @@ return <<<HTML
     <td class="sformright"><textarea rows='10' cols='50' name='report' class="textbox"></textarea></td>
   </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button' /></div>
+<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button'></div>
 </div>
 </form>
 HTML;
@@ -439,7 +439,7 @@ return <<<HTML
 <input type='hidden' name='id' value='{$id}'>
 <div class="sform">
 <div class="sformstrip">Report a message</div>
-<table class="sformtable" cellspacing='1'>
+<table class="sformtable" style="border-spacing:1px;">
   <tr>
     <td class="sformleft"><b>Sender</b></td>
     <td class="sformright">{$m_author}</td>
@@ -453,7 +453,7 @@ return <<<HTML
     <td class="sformright"><textarea rows='10' cols='50' name='report' class="textbox"></textarea></td>
   </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button' /></div>
+<div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button'></div>
 </div>
 </form>
 HTML;
@@ -470,7 +470,7 @@ return <<<HTML
 <form method="post" action="{$comment_url}">
 <div class="sform">
 <div class="sformstrip">Add your comment below</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Comment</td>
   <td class="sformright"><textarea name="message" title="Enter your comment here" cols="50" rows="10" class="textbox">{$comment}</textarea></td>
@@ -573,7 +573,7 @@ return <<<HTML
 <form method='post' action='{$url}'>
 <div class="sform">
 <!-- <div class="sformstrip">Request Username Change</div> -->
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
   <tr>
     <td class="sformleft"><b>Username</b><br>Enter your username request in this box. Please understand that in some cases, your request username may be taken.</td>
     <td class="sformright"><input type="text" size="40" name="new_username" value="{$username}" class="textbox" /></td>
@@ -627,7 +627,7 @@ return <<<HTML
 		<td class="sformblock" style="width:100%;" colspan="2">{$data['message']}</td>
 	</tr>
 	<tr>
-		<td height="6" colspan="2" class="sformdark"></td>
+		<td style="height:6px;" colspan="2" class="sformdark"></td>
 	</tr>
 HTML;
 }
