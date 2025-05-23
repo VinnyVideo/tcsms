@@ -401,6 +401,8 @@ class session {
 		//'MSN'				=> 'msnbot',
 		//'MSRBOT'			=> 'MSRBOT',
 		'Owler'		=> 'Owler',
+		'PetalBot'		=> 'PetalBot',
+		'Qwantbot'		=> 'Qwant',
 		'SemrushBot'		=> 'Semrush',
 		'Sogou'		=> 'Sogou',
 		'TikTokSpider'		=> 'TikTok',
