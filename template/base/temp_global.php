@@ -136,7 +136,7 @@ class template_global
               <div class="menuitemsidebar"><a href="https://forums.mfgg.net/">Forums<img alt="Forums" src="{$STD->tags['global_image_path']}/mainCommForums.png"></a></div>
               <div class="menuitemsidebar"><a href="https://discord.gg/jchgfw5" target="_blank">Discord<img alt="Discord" src="{$STD->tags['global_image_path']}/mainCommDiscord.png"></a></div>
               <div class="menuitemsidebar"><a href="https://wiki.mfgg.net/">Wiki<img alt="Wiki" src="template/images/mainCommWiki.png"></a></div>
-              <div class="menuitemsidebar"><a href="https://twitter.com/OfficialMFGG">Twitter<img alt="Twitter" src="template/images/mainCommTwitter.png"></a></div>
+              <!--<div class="menuitemsidebar"><a href="https://twitter.com/OfficialMFGG">Twitter<img alt="Twitter" src="template/images/mainCommTwitter.png"></a></div>-->
             </div>
           </div>
           <div class="menu">
