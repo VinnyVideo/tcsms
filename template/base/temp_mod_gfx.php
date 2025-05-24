@@ -240,7 +240,7 @@ return <<<HTML
           Downloads: <b>{$res['downloads']}</b>
         </td>
         <td style="vertical-align:bottom;width:100%;" colspan="2">
-          <table cellspacing="0" width="100%">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
@@ -262,29 +262,29 @@ function manage_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray" width="100" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
     <a id="res_{$res['rid']}" />
     <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
     {$res['thumbnail']}</a>
   </td>
-  <td class="sformlowline" style="padding:0px;text-align:left" height="100">
+  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
     <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td height="25" width="60%" class="sformsubstrip">
+        <td height="25" style="width:60%;" class="sformsubstrip">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}" title="Edit Submission">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td height="25" width="25%" class="sformstrip" style="background-position:right top;">
+        <td height="25" class="sformstrip" style="width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td height="25" width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td height="25" class="sformstrip" style="width:15%;text-align:right;padding:2px;">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="50" colspan="3">
+        <td style="width:100%;" height="50" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -292,13 +292,13 @@ return <<<HTML
         <td valign="bottom" height="25">
           Downloads: <b>{$res['downloads']}</b>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table cellspacing="0" width="100%">
+        <td valign="bottom" style="width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -316,11 +316,11 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <form method="post" action="{$STD->tags['root_url']}act=user&amp;param=07" enctype="multipart/form-data">
-<input type="hidden" name="security_token" value="{$token}" />
-<input type="hidden" name="c" value="{$res['type']}" />
-<input type="hidden" name="rid" value="{$res['rid']}" />
+<input type="hidden" name="security_token" value="{$token}">
+<input type="hidden" name="c" value="{$res['type']}">
+<input type="hidden" name="rid" value="{$res['rid']}">
 <div class="sformstrip">Information about your submission.  These values cannot be changed.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Type</td>
   <td class="sformright">{$res['type_name']}</td>
@@ -343,14 +343,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Submission Parameters.  These values define your submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="author_override">Additional Authors</label><br><span style="font-size:8pt">(Separate names with commas)</span></td>
-  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
@@ -358,7 +358,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Categorization.  Expand the lists to associate categories with this submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Format</td>
   <td class="sformright">{$res['cat1']}</td>
@@ -397,14 +397,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Manage Files</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">File <a href="javascript:show_hide('m_4');">(Replace)</a></td>
   <td class="sformright"><a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$STD->tags['c']}&amp;id={$res['rid']}">[View / Download]</a></td>
 </tr>
 <tr id="m_4" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']}</span></td>
 </tr>
 <tr>
@@ -413,12 +413,12 @@ return <<<HTML
 </tr>
 <tr id="m_5" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="thumbnail" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="thumbnail" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['thumbnail']}</span></td>
 </tr>
 </table>
 <div class="sformstrip">Short description of this update</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="reason">Reason</label></td>
   <td class="sformright"><textarea id="reason" name="reason" rows="4" cols="40" class="textbox"></textarea>
@@ -437,7 +437,7 @@ function submit_form ($res, $max_size) {
 global $STD;
 return <<<HTML
 <div class="sformstrip">Fill in information about your submission.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Format</td>
   <td class="sformright">{$res['cat1']}</td>
@@ -476,23 +476,23 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Select Files to upload</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="file">File</label></td>
-  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" id="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']} - Formats accepted: ZIP, PNG, GIF</span></td>
 </tr>
 <tr>
-  <td class="sformleft"><label for="thumbnail">Thumbnail</td>
-  <td class="sformright"><input type="file" id="thumbnail" name="thumbnail" size="40" class="textbox" />
+  <td class="sformleft"><label for="thumbnail">Thumbnail</label></td>
+  <td class="sformright"><input type="file" id="thumbnail" name="thumbnail" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['thumbnail']} - Max Dimensions: 100x100 pixels</span></td>
 </tr>
 </table>
 <div class="sformstrip">Add a title and description</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" value="{$res['title']}" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
