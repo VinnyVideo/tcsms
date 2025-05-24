@@ -198,21 +198,21 @@ return <<<HTML
   <td class="sformlowline" style="padding:0px;text-align:left">
     <table style="border-spacing:0px;width:100%;height: 100%">
       <tr>
-        <td width="60%" class="sformsubstrip">
+        <td style="width:60%;" class="sformsubstrip">
           {$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td width="25%" class="sformstrip" style="background-position:right top;">
+        <td class="sformstrip" style="width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="25" colspan="3">
+        <td style="width:100%;" height="25" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -223,10 +223,10 @@ return <<<HTML
         <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -246,21 +246,21 @@ return <<<HTML
   <td class="sformlowline" style="padding:0px;text-align:left">
     <table style="border-spacing:0px;width:100%;height: 100%">
       <tr>
-        <td width="60%" class="sformsubstrip">
+        <td style="width:60%;" class="sformsubstrip">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td width="25%" class="sformstrip" style="background-position:right top;">
+        <td class="sformstrip" style="width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="25" colspan="3">
+        <td style="width:100%;" height="25" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -268,13 +268,13 @@ return <<<HTML
         <td style="vertical-align:bottom;">
           Downloads: <b>{$res['downloads']}</b>
         </td>
-        <td style="vertical-align:bottom;" width="100%" colspan="2">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -292,9 +292,9 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <form method="post" action="{$STD->tags['root_url']}act=user&amp;param=07" enctype="multipart/form-data">
-<input type="hidden" name="security_token" value="{$token}" />
-<input type="hidden" name="c" value="{$res['type']}" />
-<input type="hidden" name="rid" value="{$res['rid']}" />
+<input type="hidden" name="security_token" value="{$token}">
+<input type="hidden" name="c" value="{$res['type']}">
+<input type="hidden" name="rid" value="{$res['rid']}">
 <div class="sformstrip">Information about your submission.  These values cannot be changed.</div>
 <table class="sformtable" style="border-spacing:1px">
 <tr>
@@ -322,11 +322,11 @@ return <<<HTML
 <table class="sformtable" style="border-spacing:1px">
 <tr>
   <td class="sformleft"><label for="title">Title</label></td>
-  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="title" name="title" size="40" value="{$res['title']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="author_override">Additional Authors</label><br><span style="font-size:8pt">(Separate names with commas)</span></td>
-  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox" /></td>
+  <td class="sformright"><input type="text" id="author_override" name="author_override" size="40" value="{$res['author_override']}" class="textbox"></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="description">Description</label></td>
@@ -352,7 +352,7 @@ return <<<HTML
 </tr>
 <tr id="m_4" style="display:none">
   <td class="sformleft">&nbsp;</td>
-  <td class="sformright"><input type="file" name="file" size="40" class="textbox" />
+  <td class="sformright"><input type="file" name="file" size="40" class="textbox">
     <span class="subtext">Max Size: {$max_size['file']}</span></td>
 </tr>
 </table>
