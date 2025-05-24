@@ -6,7 +6,7 @@ function simple_results_header () {
 global $STD;
 return <<<HTML
 <div class="sform">
-<table class="sformtable" cellspacing="0" cellpadding="0">
+<table class="sformtable" style="border-spacing:0px;" cellpadding="0">
 HTML;
 }
 
@@ -44,7 +44,7 @@ return <<<HTML
     <div class="sformstrip"><span class="highlight">{$res['full_name']}</span> <b>-></b> 
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['type']}&id={$res['rid']}">
           <b>{$res['title']}</b></a></div>
-    <table cellpadding="2" cellspacing="0" width="100%" style="height: 100%">
+    <table cellpadding="2" style="border-spacing:0px;" width="100%" style="height: 100%">
       <tr>
         <td class="sformsubstrip" width="70%">
           Relevance: <b>{$res['relevance']}</b>
@@ -71,7 +71,7 @@ return <<<HTML
 <form method="post" action="{$STD->tags['root_url']}act=search&amp;param=03">
 <div class="sform">
 <div class="sformstrip">Search Terms</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="search">Search By Phrase</label></td>
   <td class="sformright"><input type="text" id="search" name="search" size="40" class="textbox">
@@ -83,11 +83,11 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Search Constraints</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Search By Module</td>
   <td class="sformright">{$form_fields['type_list']}<br>
-    <input type="checkbox" name="sh" title="Show hidden modules" class="checkbox" value="1" /> Show results for hidden (*) modules</td>
+    <input type="checkbox" name="sh" title="Show hidden modules" class="checkbox" value="1"> Show results for hidden (*) modules</td>
 </tr>
 <tr>
   <td class="sformleft">Search By Submit Date</td>
@@ -95,7 +95,7 @@ return <<<HTML
 </tr>
 </table>
 <div id="page" class="sformblock" style="display:none"></div>
-<div class="sformstrip" style="text-align:center"><input type="submit" value="Do Search" class="button" /></div>
+<div class="sformstrip" style="text-align:center"><input type="submit" value="Do Search" class="button"></div>
 </div>
 </form>
 HTML;
@@ -104,7 +104,7 @@ HTML;
 function constraint_block ($rows) {
 global $STD;
 return <<<HTML
-<table cellspacing="0" cellpadding="2" width="100%">
+<table style="border-spacing:0px;" cellpadding="2" width="100%">
 {$rows}
 </table>
 HTML;
