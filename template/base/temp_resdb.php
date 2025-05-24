@@ -5,15 +5,17 @@ class template_resdb {
 function filter_row ($boxes, $f_url) {
 global $STD;
 return <<<HTML
-<div class="sform">
-<form method="post" action="{$f_url}">
-<div class="sformstrip">Narrow Selection</div>
-<div class="sformblock">
-  {$boxes}
-</div>
-<div class="sformstrip"><input type="submit" value="Refine Selection" class="button"></div>
-</div>
-</form>
+  <form method="post" action="{$f_url}">
+    <div class="sform">
+      <div class="sformstrip">Narrow Selection</div>
+      <div class="sformblock">
+        {$boxes}
+      </div>
+      <div class="sformstrip">
+        <input type="submit" value="Refine Selection" class="button">
+      </div>
+    </div>
+  </form>
 <br>
 HTML;
 }
