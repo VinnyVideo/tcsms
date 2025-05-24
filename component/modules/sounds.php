@@ -353,7 +353,7 @@ class mod_sounds extends module {
 			$row['comment_date'] > $rr)
 		{
 			$c_url = $STD->encode_url($_SERVER['PHP_SELF'], "act=resdb&param=02&c={$IN['c']}&id={$data['rid']}&st=new");
-			$data['new_comments'] = "<a href=\"$c_url\"><img src=\"{$STD->tags['global_image_path']}/newcomment.gif\" alt=\"[NEW]\" style=\"display:inline; vertical-align:middle\" title=\"Goto last unread comment\"></a>";
+			$data['new_comments'] = "<a href=\"$c_url\"><img src=\"{$STD->tags['global_image_path']}/newcomment.gif\" alt=\"[NEW]\" style=\"display:inline; vertical-align:middle\" title=\"Go to last unread comment\"></a>";
 		} else {
 			$data['new_comments'] = '';
 		}
