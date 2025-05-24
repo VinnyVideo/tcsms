@@ -375,6 +375,7 @@ class session {
 	
 	var $bots		= array (
 		'7Siters'				=> '7Siters',
+		'AhrefsBot'				=> 'Ahrefs',
 		'Alexa'				=> 'ia_archiver',
 		'Amazon'				=> 'Amazon',
 		'Applebot'				=> 'Applebot',
