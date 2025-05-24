@@ -59,7 +59,7 @@ function year_entry ($list_year, $current_year) {
     $weight = "bold";
   }
   else {
-    $weight = "mormal";
+    $weight = "normal";
   }
   $text = '<a href="'.$STD->tags['root_url'].'act=resdb&param=05&c=2&year='.$list_year.'" style="text-decoration:underline; font-weight:'.$weight.'">'.$list_year.'</a>';
   return $text;
@@ -81,7 +81,7 @@ if ($pages == "") {
     $weight = "bold";
   }
   else {
-    $weight = "mormal";
+    $weight = "normal";
   }
   $pages_part = '
   <tr>
