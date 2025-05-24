@@ -135,8 +135,8 @@ function manage_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;style="height:100%">
+  <td class="sformlowline" style="padding:0px;text-align:left;">
+    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
       <tr>
         <td style="width:60%;" class="sformsubstrip">
           {$res['page_icon']}
