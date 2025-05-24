@@ -383,6 +383,7 @@ class session {
 		'Baiduspider'			=> 'Baidu',
 		'Barkrowler'		=> 'Barkrowler',
 		'Bingbot'			=> 'Bingbot',
+		'BLEXBot'			=> 'BLEXBot',
 		'Bytespider'		=> 'Bytespider',
 		'ChatGPT'			=> 'ChatGPT',
 		'ClaudeBot'			=> 'ClaudeBot',
