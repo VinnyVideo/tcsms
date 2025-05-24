@@ -563,7 +563,7 @@ global $STD;
 return <<<HTML
 <div class="newssubstrip" style="text-align: center">
   <a href="javascript:show_hide('$id');" style="text-decoration:underline">Click to see updated $name</a></div>
-<table id="$id" class='sformtable' style='display:none' style='border-spacing:1px;'>
+<table id="$id" class='sformtable' style='display:none;border-spacing:1px;'>
 HTML;
 }
 
