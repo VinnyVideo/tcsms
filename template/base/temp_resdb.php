@@ -69,10 +69,6 @@ function year_entry ($list_year, $current_year) {
 
 $pages_part = '<tr>
 <td class="sformtitle" colspan="2">
-<form method="post" action="'.$order_url.'">
-<input type="submit" name="reorder" value="Re-Order" class="button">
-'.$order.'
-</form>
 </td></tr>
 </table>
 <div class="sformstrip">
