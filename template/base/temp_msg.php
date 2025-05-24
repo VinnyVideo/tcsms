@@ -117,7 +117,7 @@ return <<<HTML
 </tr>
 <tr>
   <td class="sformtitle">&nbsp;</td>
-  <td class="sformtitle"><table cellspacing="0" style="float:right;width:100%;"><tr>
+  <td class="sformtitle"><table style="border-spacing:0px;float:right;width:100%;"><tr>
   	<td style="font-weight:normal;">{$msg['date']}</td>
     <td style="float:right;"><a href="{$STD->tags['root_url']}act=msg&amp;param=07&amp;mid={$msg['mid']}">[Reply]</a> &nbsp; 
     <a href="{$STD->tags['root_url']}act=msg&amp;param=04&amp;mid={$msg['mid']}" onclick="return check_delete();">[Delete]</a></td>
