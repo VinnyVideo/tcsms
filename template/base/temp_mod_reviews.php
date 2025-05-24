@@ -89,22 +89,22 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" cellspacing="0" style="width:100%;height:100%;">
+    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td width="60%" class="sformsubstrip">
+        <td style="width:60%;" class="sformsubstrip">
           <span style="display:inline; vertical-align:middle;">
           <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td width="25%" class="sformstrip">
+        <td style="width:25%;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td width="100%" height="50" colspan="3">
+        <td style="width:100%;" height="50" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -112,13 +112,13 @@ return <<<HTML
         <td valign="bottom">
           Score: <b>{$res['score']} / 10</b>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table cellspacing="0" cellpadding="0" width="100%">
+        <td valign="bottom" style="width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -136,23 +136,23 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table border="0" cellpadding="2" cellspacing="0" width="100%" style="height: 100%">
+    <table cellpadding="2" style="border-spacing:0px;width:100%;style="height:100%">
       <tr>
-        <td width="60%" class="sformsubstrip">
+        <td style="width:60%;" class="sformsubstrip">
           {$res['page_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td width="25%" class="sformstrip">
+        <td style="width:25%;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td valign="top" width="100%" height="50" colspan="3">
+        <td valign="top" style="width:100%;height:50px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -160,13 +160,13 @@ return <<<HTML
         <td valign="bottom">
           Score: <b>{$res['score']} / 10</b>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <td valign="bottom" style="width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -184,12 +184,12 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <form method="post" action="{$STD->tags['root_url']}act=user&amp;param=07" enctype="multipart/form-data">
-<input type="hidden" name="security_token" value="{$token}" />
-<input type="hidden" name="c" value="{$res['type']}" />
-<input type="hidden" name="rid" value="{$res['rid']}" />
-<input type="hidden" name="gid" value="{$res['gid']}" />
+<input type="hidden" name="security_token" value="{$token}">
+<input type="hidden" name="c" value="{$res['type']}">
+<input type="hidden" name="rid" value="{$res['rid']}">
+<input type="hidden" name="gid" value="{$res['gid']}">
 <div class="sformstrip">Information about your submission.  These values cannot be changed.</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Type</td>
   <td class="sformright">{$res['type_name']}</td>
@@ -208,7 +208,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Game under review</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Title</td>
   <td class="sformright">{$res['game_title']} (ID #{$res['gid']})</td>
@@ -219,14 +219,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">General Commentary and Game Overview</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="commentary">Commentary and Overview</label></td>
   <td class="sformright"><textarea id="commentary" name="commentary" cols="42" rows="12" class="textbox">{$res['commentary']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Pros and Cons</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="pros">Pros</label></td>
   <td class="sformright"><textarea id="pros" name="pros" cols="42" rows="5" class="textbox">{$res['pros']}</textarea></td>
@@ -237,7 +237,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Final Impressions and Scoring</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="gameplay">Gameplay</label></td>
   <td class="sformright"><textarea id="gameplay" name="gameplay" rows="5" cols="42" class="textbox">{$res['gameplay']}</textarea><br>
@@ -255,7 +255,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip"><label for="description">Final Words and Overall Score</label></div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Final Words (be concise)</td>
   <td class="sformright"><textarea id="description" name="description" rows="3" cols="42" class="textbox">{$res['description']}</textarea><br>
@@ -263,7 +263,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Short description of this update</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="reason">Reason</label></td>
   <td class="sformright"><textarea id="reason" name="reason" rows="4" cols="40" class="textbox"></textarea>
@@ -282,7 +282,7 @@ function submit_form ($res, $max_size) {
 global $STD;
 return <<<HTML
 <div class="sformstrip">Game under review</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Title</td>
   <td class="sformright">{$res['game_title']} (ID #{$res['gid']})
@@ -294,14 +294,14 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">General Commentary and Game Overview</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="commentary">Commentary and Overview</label></td>
   <td class="sformright"><textarea id="commentary" name="commentary" cols="42" rows="12" class="textbox">{$res['commentary']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Pros and Cons</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="pros">Pros</label></td>
   <td class="sformright"><textarea id="pros" name="pros" cols="42" rows="5" class="textbox">{$res['pros']}</textarea></td>
@@ -312,7 +312,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Final Impressions and Scoring</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="gameplay">Gameplay</label></td>
   <td class="sformright"><textarea id="gameplay" name="gameplay" rows="5" cols="42" class="textbox">{$res['gameplay']}</textarea><br>
@@ -330,7 +330,7 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Final Words and Overall Score</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="description">Final Words (be concise)</label></td>
   <td class="sformright"><textarea id="description" name="description" rows="3" cols="42" class="textbox">{$res['description']}</textarea><br>
