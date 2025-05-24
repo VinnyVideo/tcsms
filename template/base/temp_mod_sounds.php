@@ -193,7 +193,7 @@ return <<<HTML
   <td class="sformlowline" style="padding:0px;text-align:left">
     <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td width="60%" class="sformsubstrip" colspan="2">
+        <td style="width:60%;" class="sformsubstrip" colspan="2">
           {$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=resdb&amp;param=06&amp;c={$cat}&amp;id={$res['rid']}">
@@ -221,10 +221,10 @@ return <<<HTML
         <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
@@ -244,24 +244,24 @@ return <<<HTML
   <td class="sformlowline" style="padding:0px;text-align:left">
     <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td width="60%" class="sformsubstrip" colspan="2">
+        <td style="width:60%;" class="sformsubstrip" colspan="2">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td width="25%" class="sformstrip" style="background-position:right top;">
+        <td class="sformstrip" style="width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td width="15%" class="sformstrip" style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;style="text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td rowspan="2" width="3%" style="padding:5px">
+        <td rowspan="2" style="width:3%;padding:5px;">
           {$res['type1']}
         </td>
-        <td width="97%" height="25" colspan="3">
+        <td style="width:97%;" height="25" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -269,13 +269,13 @@ return <<<HTML
         <td style="vertical-align:bottom;">
           Downloads: <b>{$res['downloads']}</b>
         </td>
-        <td style="vertical-align:bottom;" width="100%" colspan="2">
-          <table cellspacing="0" width="100%">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
+          <table cellspacing="0" style="width:100%;">
             <tr>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 Added: {$res['created']}
               </td>
-              <td width="50%" style="font-size:8pt">
+              <td style="width:50%;font-size:8pt;">
                 {$res['updated']}
               </td>
             </tr>
