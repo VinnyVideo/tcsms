@@ -7,7 +7,7 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="padding:2px;border-spacing:0px;width:100%;height:100%;">
       <tr>
         <td style="width:60%;" class="sformsubstrip" colspan="2">
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$STD->tags['c']}&id={$res['rid']}">
@@ -86,7 +86,7 @@ return <<<HTML
   <table class="sformtable" style="border-spacing:0px;">
   <tr>
     <td align="left" style="height:100px;">
-      <table cellpadding="2" style="border-spacing:0px;width:100%;">
+      <table style="padding:2px;border-spacing:0px;width:100%;">
         <tr>
           <td style="height:25px;width:60%;" class="sformsubstrip">
             <b class="highlight">{$res['title']}</b>
@@ -143,7 +143,7 @@ return <<<HTML
       </td>
       <td style="width:47%;">
         <div class="sform" style="width:100%">
-        <table class="sformtable" style="border-spacing:0px;" cellpadding="2">
+        <table class="sformtable" style="border-spacing:0px;padding:2px;">
           <tr>
             <td style="width:25px;height:25px;margin:auto;"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]"></td>
             <td style="width:90px;">Created:</td>
@@ -193,7 +193,7 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="padding:2px;border-spacing:0px;width:100%;height:100%;">
       <tr>
         <td style="width:60%;" class="sformsubstrip" colspan="2">
           {$res['dl_icon']}
@@ -244,7 +244,7 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="padding:2px;border-spacing:0px;width:100%;height:100%;">
       <tr>
         <td class="sformsubstrip" style="width:60%;" colspan="2">
           {$res['page_icon']}{$res['dl_icon']}
