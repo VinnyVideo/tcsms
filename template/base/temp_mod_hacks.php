@@ -12,7 +12,7 @@ return <<<HTML
     {$res['thumbnail']}</a>
   </td>
   <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100px;">
+    <table style="padding:2px;border-spacing:0px;width:100%;height:100px;">
       <tr>
         <td style="height:25%;width:60%;" class="sformsubstrip">
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$STD->tags['c']}&id={$res['rid']}">
@@ -68,11 +68,11 @@ HTML;
 function resdb_page ($res) {
 global $STD;
 if ($res['my_fav'] == false) {
-	$fav_element = '<img src="'.$STD->tags['image_path'].'/fav_add.png" alt="[+]" style="display:inline; vertical-align:middle" />
+	$fav_element = '<img src="'.$STD->tags['image_path'].'/fav_add.png" alt="[+]" style="display:inline; vertical-align:middle">
           <a href="'.$res['fav_url'].'" style="vertical-align: middle" class="outlink">Add submission to your favorites</a>';
 }
 else {
-	$fav_element = '<img src="'.$STD->tags['image_path'].'/fav_del.png" alt="[-]" style="display:inline; vertical-align:middle" />
+	$fav_element = '<img src="'.$STD->tags['image_path'].'/fav_del.png" alt="[-]" style="display:inline; vertical-align:middle">
           <a href="'.$res['unfav_url'].'" style="vertical-align: middle" class="outlink">Remove submission from your favorites</a>';
 }
 return <<<HTML
@@ -155,7 +155,7 @@ return <<<HTML
         </div>
 		
         <div style="padding-top:4px">
-          <img src="{$STD->tags['image_path']}/report.gif" alt="[!]" style="display:inline; vertical-align:middle" />
+          <img src="{$STD->tags['image_path']}/report.gif" alt="[!]" style="display:inline; vertical-align:middle">
           <a href="{$res['report_url']}" style="vertical-align: middle" class="outlink">Report This Submission</a>
         </div>
       </td>
@@ -166,32 +166,32 @@ return <<<HTML
         <div class="sform">
         <table class="sformtable" style="border-spacing:1px;">
           <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]"></td>
             <td style="width:90px;">Created:</td>
             <td>{$res['created']}</td>
           </tr>
           <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/time.png" alt="[O]"></td>
             <td>Updated:</td>
             <td>{$res['updated']}</td>
           </tr>
           <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/disk.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/disk.gif" alt="[O]"></td>
             <td>File Size:</td>
             <td>{$res['filesize']}</td>
           </tr>
           <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/gray_arrow.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/gray_arrow.gif" alt="[O]"></td>
             <td>Views:</td>
             <td>{$res['views']}</td>
           </tr>
           <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/green_arrow.gif" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/green_arrow.gif" alt="[O]"></td>
             <td>Downloads:</td>
             <td>{$res['downloads']}</td>
           </tr>
 		  <tr>
-            <td style="width:25px;height:25px;" align="center"><img src="{$STD->tags['global_image_path']}/favs.png" alt="[O]" /></td>
+            <td style="width:25px;height:25px;text-align:center;"><img src="{$STD->tags['global_image_path']}/favs.png" alt="[O]"></td>
             <td>Favorites:</td>
             <td>{$res['total_fav']}</td>
           </tr>
@@ -214,7 +214,7 @@ return <<<HTML
   <tr>
     <td class="sformstrip" style="width:20%;background-position:right top;">Author</td>
     <td style="width:70%;" class="sformstrip">Summary</td>
-    <td style="width:10%;" class="sformstrip" style="text-align:center">Score</td>
+    <td style="width:10%;text-align:center;" class="sformstrip">Score</td>
   </tr>
     {$res['reviews']}
   <tr>
