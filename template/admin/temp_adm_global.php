@@ -84,6 +84,7 @@ return <<<HTML
         .quotetitle { width: 95%; padding: 4px; padding-left: 0px; margin-left: auto; margin-right: auto; margin-top: 2px; font-size: 8pt; font-weight: bold; }
 		.quote { width: 95%; padding: 4px; margin-left: auto; margin-right: auto; margin-bottom: 2px; border: 1px solid #004F00; background-color: #E1E4F9; }
 		.canquote { cursor: pointer; }
+	.field_fixed img { max-width: 640px;}
         -->
     </style>
 	<script>
@@ -124,17 +125,17 @@ return <<<HTML
 </tr>
 <tr>
 <td class="body">
-<table cellpadding="1" cellspacing="0" width="100%">
+<table style="padding:1px;border-spacing:0px;width:100%;">
 <tr>
-  <td width="50%" class="options">
+  <td style="width:50%;" class="options">
     <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
   </td>
-  <td width="50%" align="right" class="options">
+  <td style="width:50%;" align="right" class="options">
     Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
   </td>
 </tr>
 <tr>
-  <td width="100%" colspan="2" class="options">
+  <td style="width:100%;" colspan="2" class="options">
     <span>Nothing to see here.</span>
 	<!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
   </td>
@@ -146,7 +147,7 @@ return <<<HTML
 </div>
 <br>
 <div align="center">
-<table cellpadding="0" cellspacing="0" width="98%">
+<table cellpadding="0" style="border-spacing:0px;width:98%;">
 <tr>
 HTML;
 }
@@ -155,8 +156,8 @@ function site_menu ($modq_menu) {
 global $STD;
 // 4/17/2025 note - this valign also matters
 return <<<HTML
-<td width="15%" valign="top">
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<td style="width:15%;" valign="top">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 <tr>
   <td class="header">
   Submissions
@@ -170,7 +171,7 @@ return <<<HTML
 </table>
 <br>
 <div {{ucp_style}}>
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 <tr>
   <td class="header">
   Users
@@ -188,7 +189,7 @@ return <<<HTML
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 <tr>
   <td class="header">
   News
@@ -204,7 +205,7 @@ return <<<HTML
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 <tr>
   <td class="header">
   Manage
@@ -224,7 +225,7 @@ return <<<HTML
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 <tr>
   <td class="header">
   Staff Graph
@@ -243,7 +244,7 @@ return <<<HTML
 </table>
 </div>
 </td>
-<td width="2%">
+<td style="width:2%;">
 &nbsp;
 </td>
 HTML;
@@ -253,8 +254,8 @@ function content_header () {
 global $STD;
 // 4/17/2025 Note - this is a rare "valign" that matters
 return <<<HTML
-<td width="83%" valign="top">
-<table cellspacing="0" cellpadding="4" width="100%" style="border:2px solid #000000">
+<td style="width:83%;" valign="top">
+<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
 HTML;
 }
 
