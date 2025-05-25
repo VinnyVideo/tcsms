@@ -21,12 +21,12 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 <table cellspacing="0" cellpadding="2" width="90%" style="border:2px solid #FF6169">
     <tr>
  		  <td colspan="2" class="header" style="background-color: #FF6169; color:white;">
- 		    <table cellspacing="0" cellpadding="0" width="100%">
+ 		    <table style="border-spacing:0px;padding:0px;width:100%;">
  		      <tr>
- 		        <td width="50%">
+ 		        <td style="width:50%;">
  		          Remove Item
  		        </td>
- 		        <td width="50%" align="right">
+ 		        <td style="width:50%;" align="right">
  		          <a href="javascript:show_hide(1);show_hide(2);">
  		            <img src="{$STD->tags['image_path']}/red_close.gif" alt="[X]" title="Close Window"></a>
  		        </td>
@@ -61,15 +61,15 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 
 <div id="menu_3" align="center" style="display:none">
 <form method="post" action="{$STD->tags['root_url']}act=modq&amp;param=04&amp;c={$type}">
-<table cellspacing="0" cellpadding="2" width="90%" style="border:2px solid #5D669A;">
+<table cellspacing="0" cellpadding="2" style="width:90%;border:2px solid #5D669A;">
     <tr>
  		  <td colspan="2" class="header">
- 		    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+ 		    <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
  		      <tr>
- 		        <td width="50%">
+ 		        <td style="width:50%;">
  		          Accept Item
  		        </td>
- 		        <td width="50%" align="right">
+ 		        <td style="width:50%;" align="right">
  		          <a href="javascript:show_hide(3);show_hide(2);">
  		            <img src="{$STD->tags['image_path']}/blue_close.gif" alt="[X]" title="Close Window"></a>
  		        </td>
@@ -82,7 +82,7 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
  		    <label for="admincomment">Admin Comment</label>
  		  </td>
  		  <td class="field_fixed">
-  		  <textarea id="admincomment" name="admincomment" rows="4" cols="30" class="textbox" onclick="uc_box("oc1");"></textarea>
+  		  <textarea id="admincomment" name="admincomment" rows="4" cols="30" class="textbox" onclick="uc_box('oc1');"></textarea>
   		  <br><input type="checkbox" name="omit_comment" id="oc1" title="Do not include comment" value="1" class="checkbox" checked="checked"> Do not include comment
   		  {$boxes['vc']}
   		  {$boxes['dq']}
@@ -104,15 +104,15 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 
 <div id="menu_4" align="center" style="display:none">
 <form method="post" action="{$STD->tags['root_url']}act=modq&amp;param=06&amp;c={$type}">
-<table cellspacing="0" cellpadding="2" width="90%" style="border:2px solid #5D669A;">
+<table cellspacing="0" cellpadding="2" style="width:90%;border:2px solid #5D669A;">
     <tr>
  		  <td colspan="2" class="header">
- 		    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+ 		    <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
  		      <tr>
- 		        <td width="50%">
+ 		        <td style="width:50%;">
  		          Re-queue Item
  		        </td>
- 		        <td width="50%" align="right">
+ 		        <td style="width:50%;" align="right">
  		          <a href="javascript:show_hide(4);show_hide(2);">
  		            <img src="{$STD->tags['image_path']}/blue_close.gif" alt="[X]" title="Close Window"></a>
  		        </td>
@@ -148,10 +148,10 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 
 <div id="menu_2" align="center">
 <div style="width: 90%">
-<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 <tr>
-  <td width="20%" valign="bottom"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">Unmoderated</a></div></td>
-  <td width="20%" valign="bottom"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">Moderated</a></div></td>
+  <td style="width:20%;vertical-align:bottom;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">Unmoderated</a></div></td>
+  <td style="width:20%;vertical-align:bottom;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">Moderated</a></div></td>
   <td>&nbsp;</td>
 </tr>
 </table>
@@ -159,11 +159,11 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 <div class="rowfield">
 <table class="rowtable" cellspacing="1">
 <tr>
-  <td class="rowtitle" width="4%">&nbsp;</td>
-  <td class="rowtitle" width="58%"><a href="{$olinks['t']['url']}">Title</a> {$olinks['t']['img']}</td>
-  <td class="rowtitle" width="18%"><a href="{$olinks['u']['url']}">Author</a> {$olinks['u']['img']}</td>
-  <td class="rowtitle" width="12%"><a href="{$olinks['d']['url']}">Created</a> {$olinks['d']['img']}</td>
-  <td class="rowtitle" width="8%">&nbsp;</td>
+  <td class="rowtitle" style="width:4%;">&nbsp;</td>
+  <td class="rowtitle" style="width:58%;"><a href="{$olinks['t']['url']}">Title</a> {$olinks['t']['img']}</td>
+  <td class="rowtitle" style="width:18%;"><a href="{$olinks['u']['url']}">Author</a> {$olinks['u']['img']}</td>
+  <td class="rowtitle" style="width:12%;"><a href="{$olinks['d']['url']}">Created</a> {$olinks['d']['img']}</td>
+  <td class="rowtitle" style="width:8%;">&nbsp;</td>
 </tr>
 HTML;
 }
@@ -262,13 +262,13 @@ return <<<HTML
 	<div align='center'>
 	  <div id='ghost' style="{$form['ghost_style']}">
 	  &nbsp;
-	  <table border='0' cellspacing='0' cellpadding='1' width='90%' style='border:2px solid #ff6169; background-color:#ffd1cf;'>
+	  <table border='0' cellspacing='0' cellpadding='1' style='width:90%;border:2px solid #ff6169; background-color:#ffd1cf;'>
 	  <tr>
-	    <td width='100%' style='font-weight: bold'>This modified submission is a ghost copy of the original.  You can restore the original submission at the bottom of the page.</td>
+	    <td style='width:100%;font-weight: bold;'>This modified submission is a ghost copy of the original.  You can restore the original submission at the bottom of the page.</td>
 	  </tr>
 	  </table>
 	  </div>
-		<table border='0' cellspacing='0' cellpadding='1' width='90%'>
+		<table border='0' cellspacing='0' cellpadding='1' style='width:90%;'>
 		
   		<tr id='menu_10' style='display:none'>
   		  <td class='title_fixed'>
@@ -381,7 +381,7 @@ Select a root type for the new submission
 <div align='center'>
   <form method='post' action='{$url}'>
   <input type='hidden' name='security_token' value='{$token}'>
-  <table cellspacing='0' cellpadding='1' width='90%'>
+  <table cellspacing='0' cellpadding='1' style='width:90%;'>
     <tr>
       <td class='title_fixed'>
         Root Type
