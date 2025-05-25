@@ -16,46 +16,46 @@ return <<<HTML
 <div align="center">
 <br>
 <div style="width: 90%">
-<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 <tr>
-  <td valign="bottom"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">ALL</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">#</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[2]}"><a href="{$tab_url}&amp;tab=2">A</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[3]}"><a href="{$tab_url}&amp;tab=3">B</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[4]}"><a href="{$tab_url}&amp;tab=4">C</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[5]}"><a href="{$tab_url}&amp;tab=5">D</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[6]}"><a href="{$tab_url}&amp;tab=6">E</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[7]}"><a href="{$tab_url}&amp;tab=7">F</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[8]}"><a href="{$tab_url}&amp;tab=8">G</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[9]}"><a href="{$tab_url}&amp;tab=9">H</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[10]}"><a href="{$tab_url}&amp;tab=10">I</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[11]}"><a href="{$tab_url}&amp;tab=11">J</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[12]}"><a href="{$tab_url}&amp;tab=12">K</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[13]}"><a href="{$tab_url}&amp;tab=13">L</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[14]}"><a href="{$tab_url}&amp;tab=14">M</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[15]}"><a href="{$tab_url}&amp;tab=15">N</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[16]}"><a href="{$tab_url}&amp;tab=16">O</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[17]}"><a href="{$tab_url}&amp;tab=17">P</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[18]}"><a href="{$tab_url}&amp;tab=18">Q</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[19]}"><a href="{$tab_url}&amp;tab=19">R</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[20]}"><a href="{$tab_url}&amp;tab=20">S</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[21]}"><a href="{$tab_url}&amp;tab=21">T</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[22]}"><a href="{$tab_url}&amp;tab=22">U</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[23]}"><a href="{$tab_url}&amp;tab=23">V</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[24]}"><a href="{$tab_url}&amp;tab=24">W</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[25]}"><a href="{$tab_url}&amp;tab=25">X</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[26]}"><a href="{$tab_url}&amp;tab=26">Y</a></div></td>
-  <td valign="bottom"><div class="{$tab_index[27]}"><a href="{$tab_url}&amp;tab=27">Z</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">ALL</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">#</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[2]}"><a href="{$tab_url}&amp;tab=2">A</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[3]}"><a href="{$tab_url}&amp;tab=3">B</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[4]}"><a href="{$tab_url}&amp;tab=4">C</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[5]}"><a href="{$tab_url}&amp;tab=5">D</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[6]}"><a href="{$tab_url}&amp;tab=6">E</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[7]}"><a href="{$tab_url}&amp;tab=7">F</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[8]}"><a href="{$tab_url}&amp;tab=8">G</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[9]}"><a href="{$tab_url}&amp;tab=9">H</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[10]}"><a href="{$tab_url}&amp;tab=10">I</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[11]}"><a href="{$tab_url}&amp;tab=11">J</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[12]}"><a href="{$tab_url}&amp;tab=12">K</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[13]}"><a href="{$tab_url}&amp;tab=13">L</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[14]}"><a href="{$tab_url}&amp;tab=14">M</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[15]}"><a href="{$tab_url}&amp;tab=15">N</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[16]}"><a href="{$tab_url}&amp;tab=16">O</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[17]}"><a href="{$tab_url}&amp;tab=17">P</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[18]}"><a href="{$tab_url}&amp;tab=18">Q</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[19]}"><a href="{$tab_url}&amp;tab=19">R</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[20]}"><a href="{$tab_url}&amp;tab=20">S</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[21]}"><a href="{$tab_url}&amp;tab=21">T</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[22]}"><a href="{$tab_url}&amp;tab=22">U</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[23]}"><a href="{$tab_url}&amp;tab=23">V</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[24]}"><a href="{$tab_url}&amp;tab=24">W</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[25]}"><a href="{$tab_url}&amp;tab=25">X</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[26]}"><a href="{$tab_url}&amp;tab=26">Y</a></div></td>
+  <td style="vertical-align:bottom;"><div class="{$tab_index[27]}"><a href="{$tab_url}&amp;tab=27">Z</a></div></td>
   <td>&nbsp;</td>
 </tr>
 </table>
 </div>
 <div class="rowfield">
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td class="rowtitle" width="10%"><a href="{$olinks['i']['url']}">UID</a> {$olinks['i']['img']}</td>
-  <td class="rowtitle" width="60%"><a href="{$olinks['u']['url']}">Username</a> {$olinks['u']['img']}</td>
-  <td class="rowtitle" width="30%"><a href="{$olinks['g']['url']}">Group</a> {$olinks['g']['img']}</td>
+  <td class="rowtitle" style="width:10%;"><a href="{$olinks['i']['url']}">UID</a> {$olinks['i']['img']}</td>
+  <td class="rowtitle" style="width:60%;"><a href="{$olinks['u']['url']}">Username</a> {$olinks['u']['img']}</td>
+  <td class="rowtitle" style="width:30%;"><a href="{$olinks['g']['url']}">Group</a> {$olinks['g']['img']}</td>
 </tr>
 HTML;
 }
@@ -99,10 +99,10 @@ return <<<HTML
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Find by Username</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3"><label for="username">Username contains...</label></td>
-  <td width="60%" class="rowcell2"><input type="text" id="username" name="username" size="40" class="textbox"></td>
+  <td style="width:40%;" class="rowcell3"><label for="username">Username contains...</label></td>
+  <td style="width:60%;" class="rowcell2"><input type="text" id="username" name="username" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td colspan="2" class="rowcell4" style="text-align:center">
@@ -122,10 +122,10 @@ return <<<HTML
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Find by Email</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3"><label for="email">Email contains...</label></td>
-  <td width="60%" class="rowcell2"><input type="text" id="email" name="email" size="40" class="textbox"></td>
+  <td style="width:40%;" class="rowcell3"><label for="email">Email contains...</label></td>
+  <td style="width:60%;" class="rowcell2"><input type="text" id="email" name="email" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td colspan="2" class="rowcell4" style="text-align:center">
@@ -145,10 +145,10 @@ return <<<HTML
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Find by IP</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3"><label for="ip">IP address contains...</label></td>
-  <td width="60%" class="rowcell2"><input type="text" id="ip" name="ip" size="40" class="textbox"></td>
+  <td style="width:40%;" class="rowcell3"><label for="ip">IP address contains...</label></td>
+  <td style="width:60%;" class="rowcell2"><input type="text" id="ip" name="ip" size="40" class="textbox"></td>
 </tr>
 <tr>
   <td colspan="2" class="rowcell4" style="text-align:center">
@@ -167,11 +167,11 @@ return <<<HTML
 <div align="center">
 <br>
 <div class="rowfield">
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td class="rowtitle" width="10%">UID</td>
-  <td class="rowtitle" width="60%">Username</td>
-  <td class="rowtitle" width="30%">Group</td>
+  <td class="rowtitle" style="width:10%;">UID</td>
+  <td class="rowtitle" style="width:60%;">Username</td>
+  <td class="rowtitle" style="width:30%;">Group</td>
 </tr>
 HTML;
 }
@@ -206,100 +206,100 @@ Use this page to modify the selected user.  To change the user's password, fill 
 <input type="hidden" name="security_token" value="{$token}">
 <div align="center">
 <br>
-<table border="0" cellspacing="0" cellpadding="1" width="90%">
+<table border="0" cellspacing="0" cellpadding="1" style="width:90%;">
 <tr>
-  <td width="30%" class="title">User ID</td>
-  <td width="70%" class="field"><b>{$user['uid']}</b></td>
+  <td style="width:30%;" class="title">User ID</td>
+  <td style="width:70%;" class="field"><b>{$user['uid']}</b></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="username">Username</label></td>
-  <td width="70%" class="field"><input type="text" id="username" name="username" class="textbox" size="40" value="{$user['username']}" /></td>
+  <td style="width:30%;" class="title"><label for="username">Username</label></td>
+  <td style="width:70%;" class="field"><input type="text" id="username" name="username" class="textbox" size="40" value="{$user['username']}"></td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="email">Email</label></td>
-  <td width="70%" class="field"><input type="text" id="email" name="email" class="textbox" size="40" value="{$user['email']}" /></td>
+  <td style="width:30%;" class="title"><label for="email">Email</label></td>
+  <td style="width:70%;" class="field"><input type="text" id="email" name="email" class="textbox" size="40" value="{$user['email']}"></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title" valign="top">Group</td>
-  <td width="70%" class="field">{$form_elements['group']}</td>
+  <td style="width:30%;" class="title" valign="top">Group</td>
+  <td style="width:70%;" class="field">{$form_elements['group']}</td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Registered IP</td>
-  <td width="70%" class="field"><b>{$user['registered_ip']}&nbsp;</b></td>
+  <td style="width:30%;" class="title">Registered IP</td>
+  <td style="width:70%;" class="field"><b>{$user['registered_ip']}&nbsp;</b></td>
 </tr>
 <tr>
-  <td width="30%" class="title">Current IP</td>
-  <td width="70%" class="field"><b>{$user['s_ip']}&nbsp;</b></td>
+  <td style="width:30%;" class="title">Current IP</td>
+  <td style="width:70%;" class="field"><b>{$user['s_ip']}&nbsp;</b></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="password">New Password (8 characters, at least 1 letter and 1 number)</label></td>
-  <td width="70%" class="field"><input type="password" id="password" name="password" class="textbox" size="40" value="" /></td>
+  <td style="width:30%;" class="title"><label for="password">New Password (8 characters, at least 1 letter and 1 number)</label></td>
+  <td style="width:70%;" class="field"><input type="password" id="password" name="password" class="textbox" size="40" value=""></td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="password2">Retype Password</label></td>
-  <td width="70%" class="field"><input type="password" id="password2" name="password2" class="textbox" size="40" value="" /></td>
+  <td style="width:30%;" class="title"><label for="password2">Retype Password</label></td>
+  <td style="width:70%;" class="field"><input type="password" id="password2" name="password2" class="textbox" size="40" value=""></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="website">Website</label></td>
-  <td width="70%" class="field"><input type="text" id="website" name="website" class="textbox" size="40" value="{$user['website']}" /></td>
+  <td style="width:30%;" class="title"><label for="website">Website</label></td>
+  <td style="width:70%;" class="field"><input type="text" id="website" name="website" class="textbox" size="40" value="{$user['website']}"></td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="weburl">Website URL</label></td>
-  <td width="70%" class="field"><input type="text" id="weburl" name="weburl" class="textbox" size="40" value="{$user['weburl']}" /></td>
+  <td style="width:30%;" class="title"><label for="weburl">Website URL</label></td>
+  <td style="width:70%;" class="field"><input type="text" id="weburl" name="weburl" class="textbox" size="40" value="{$user['weburl']}"></td>
 </tr>
 <tr>
-  <td width="30%" class="title"><label for="icon">Personal Icon</label></td>
-  <td width="70%" class="field"><input type="text" id="icon" name="icon" class="textbox" size="40" value="{$user['icon']}" /></td>
+  <td style="width:30%;" class="title"><label for="icon">Personal Icon</label></td>
+  <td style="width:70%;" class="field"><input type="text" id="icon" name="icon" class="textbox" size="40" value="{$user['icon']}"></td>
 </tr>
 <tr>
-  <td width="30%" class="title">Show Email</td>
-  <td width="70%" class="field">{$form_elements['show_email']}</td>
+  <td style="width:30%;" class="title">Show Email</td>
+  <td style="width:70%;" class="field">{$form_elements['show_email']}</td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Default Order</td>
-  <td width="70%" class="field">{$form_elements['order']}</td>
+  <td style="width:30%;" class="title">Default Order</td>
+  <td style="width:70%;" class="field">{$form_elements['order']}</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Skin</td>
-  <td width="70%" class="field">{$form_elements['skin']}</td>
+  <td style="width:30%;" class="title">Skin</td>
+  <td style="width:70%;" class="field">{$form_elements['skin']}</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Items per Page</td>
-  <td width="70%" class="field">{$form_elements['items_per_page']}</td>
+  <td style="width:30%;" class="title">Items per Page</td>
+  <td style="width:70%;" class="field">{$form_elements['items_per_page']}</td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Complete Form</td>
-  <td width="70%" class="field"><input type="submit" class="button" value="Update User" /> 
-    <input type="submit" name="drop_item" class="button" value="DROP User" style="background-color: #FF6169; color: white" onclick="return check_drop();" /> 
-    <input type="submit" name="comment_purge" class="button" value="PURGE User Comments" style="background-color: #FF6169; color: white" onclick="return check_comment_purge();" />
+  <td style="width:30%;" class="title">Complete Form</td>
+  <td style="width:70%;" class="field"><input type="submit" class="button" value="Update User">
+    <input type="submit" name="drop_item" class="button" value="DROP User" style="background-color: #FF6169; color: white" onclick="return check_drop();">
+    <input type="submit" name="comment_purge" class="button" value="PURGE User Comments" style="background-color: #FF6169; color: white" onclick="return check_comment_purge();">
   </td>
 </tr>
 </table>
@@ -314,7 +314,7 @@ return <<<HTML
 <div align="center">
 <br>
 <div class="rowfield">
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td class="rowtitle" width="50%"><a href="{$olinks['g']['url']}">Group</a> {$olinks['g']['img']}</td>
   <td class="rowtitle" width="25%">ACP Access</td>
@@ -378,10 +378,10 @@ Use this page to modify the selected group.
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Group Settings</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3">Group ID</td>
-  <td width="60%" class="rowcell2">{$group['gid']}</td>
+  <td style="width:40%;" class="rowcell3">Group ID</td>
+  <td style="width:60%;" class="rowcell2">{$group['gid']}</td>
 </tr>
 <tr>
   <td class="rowcell3"><label for="group_name">Group Name</label></td>
@@ -397,10 +397,10 @@ Use this page to modify the selected group.
 </tr>
 </table>
 <div class="rowtitle">Display Settings</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3"><label for="name_prefix">Name Prefix</label></td>
-  <td width="60%" class="rowcell2"><input type="text" id="name_prefix" name="name_prefix" class="textbox" size="60" value="{$group['name_prefix']}" /></td>
+  <td style="width:40%;" class="rowcell3"><label for="name_prefix">Name Prefix</label></td>
+  <td style="width:60%;" class="rowcell2"><input type="text" id="name_prefix" name="name_prefix" class="textbox" size="60" value="{$group['name_prefix']}" /></td>
 </tr>
 <tr>
   <td class="rowcell3"><label for="name_suffix">Name Suffix</label></td>
@@ -411,7 +411,7 @@ Use this page to modify the selected group.
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">General Permissions</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td width="40%" class="rowcell3" valign="top">Can Submit</td>
   <td width="60%" class="rowcell2">{$form_elements['can_submit']}</td>
@@ -453,7 +453,7 @@ Use this page to modify the selected group.
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Elevated Permissions</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td width="40%" class="rowcell3" valign="top">Moderator</td>
   <td width="60%" class="rowcell2">{$form_elements['moderator']}</td>
@@ -464,7 +464,7 @@ Use this page to modify the selected group.
 </tr>
 </table>
 <div class="rowtitle">Specific ACP Permissions</div>
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td width="40%" class="rowcell3" valign="top">Mod Queue</td>
   <td width="60%" class="rowcell2">{$form_elements['acp_modq']}</td>
