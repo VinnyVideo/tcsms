@@ -15,14 +15,14 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="header">
-  Error
+    Error
   </td>
 </tr>
 <tr>
   <td class="body">
-<br>
-{$error}
-</td>
+    <br>
+    {$error}
+  </td>
 </tr>
 HTML;
 }
@@ -39,9 +39,9 @@ return <<<HTML
         <!--
         body { font-family: Verdana, Arial, Helvetica, Sans-Serif; font-size:10pt }
         a:link, a:visited {text-decoration:none; color: #0000FF }
-        .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100% }
+        .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
         .subheader { background: #7D86BA; color: #FFFFFF; font-size:13pt; width:100% }
-        .body { background: #E1E4F9; color: #000000; font-size:11pt; width:100% }
+        .body { background: #E1E4F9; color: #000000; font-size:11pt; width:100%; padding:4px; }
         .textbox { background: #F6F7FF; color:#000000; font-size:10pt; border:1px solid #000000; padding:1px }
         .selectbox { background: #F6F7FF; color:#000000; font-size:10pt }
         .button { background: #B8BDDF; color:#000000; font-size:10pt; border:1px solid #000000 }
@@ -108,7 +108,7 @@ HTML;
 function site_content_footer () {
 global $STD;
 return <<<HTML
-</body>
+  </body>
 </html>
 HTML;
 }
@@ -119,143 +119,141 @@ return <<<HTML
 <body>
 <script src="{$STD->tags['template_path']}/global.js"></script>
 <div align="center">
-<table cellpadding="4" style="border-spacing:0px;width:98%;border:2px solid #000000">
-<tr>
-  <td class="header">Admin Control Panel</td>
-</tr>
-<tr>
-<td class="body">
-<table style="padding:1px;border-spacing:0px;width:100%;">
-<tr>
-  <td style="width:50%;" class="options">
-    <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
-  </td>
-  <td style="width:50%;" align="right" class="options">
-    Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
-  </td>
-</tr>
-<tr>
-  <td style="width:100%;" colspan="2" class="options">
-    <span>Nothing to see here.</span>
-	<!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
-  </td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
+  <table style="border-spacing:0px;width:98%;border:2px solid #000000">
+    <tr>
+      <td class="header">Admin Control Panel</td>
+    </tr>
+    <tr>
+      <td class="body">
+        <table style="padding:1px;border-spacing:0px;width:100%;">
+        <tr>
+          <td style="width:50%;" class="options">
+            <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
+          </td>
+          <td style="width:50%;text-align:right;" class="options">
+            Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
+          </td>
+        </tr>
+        <tr>
+          <td style="width:100%;" colspan="2" class="options">
+            <span>Nothing to see here.</span>
+    	      <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </div>
 <br>
 <div align="center">
-<table cellpadding="0" style="border-spacing:0px;width:98%;">
-<tr>
+  <table style="border-spacing:0px;width:98%;">
+    <tr>
 HTML;
 }
 
 function site_menu ($modq_menu) {
 global $STD;
-// 4/17/2025 note - this valign also matters
 return <<<HTML
-<td style="width:15%;" valign="top">
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
-<tr>
-  <td class="header">
-  Submissions
-  </td>
-</tr>
-<tr>
-<td class="body" style="font-size:10pt">
-    {$modq_menu}
-	</td>
-</tr>
-</table>
+<td style="width:15%;vertical-align:top;padding:0px;">
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
+    <tr>
+      <td class="header">
+        Submissions
+      </td>
+    </tr>
+    <tr>
+      <td class="body" style="padding:4px;font-size:10pt;">
+        {$modq_menu}
+      </td>
+    </tr>
+  </table>
 <br>
-<div {{ucp_style}}>
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
-<tr>
-  <td class="header">
-  Users
-  </td>
-</tr>
-<tr>
-	  <td class="body" style="font-size:10pt">
-  :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=01">Manage Users</a><br>
-  :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=14">Find Users</a><br>
-  :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=07">Manage Groups</a><br>
-  :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=06">Ban Settings</a>
-  </td>
-</tr>
-</table>
+<div>
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
+    <tr>
+      <td class="header">
+        Users
+      </td>
+    </tr>
+    <tr>
+      <td class="body" style="padding:4px;font-size:10pt;">
+        :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=01">Manage Users</a><br>
+        :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=14">Find Users</a><br>
+        :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=07">Manage Groups</a><br>
+        :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=06">Ban Settings</a>
+     </td>
+    </tr>
+  </table>
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
-<tr>
-  <td class="header">
-  News
-  </td>
-</tr>
-<tr>
-  <td class="body" style="font-size:10pt">
-  :: <a href="{$STD->tags['root_url']}act=news&amp;param=01">New Entry</a><br>
-  :: <a href="{$STD->tags['root_url']}act=news&amp;param=03">Modify Entry</a>
-  </td>
-</tr>
-</table>
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
+    <tr>
+      <td class="header">
+        News
+      </td>
+    </tr>
+    <tr>
+      <td class="body" style="padding:4px;font-size:10pt;">
+        :: <a href="{$STD->tags['root_url']}act=news&amp;param=01">New Entry</a><br>
+        :: <a href="{$STD->tags['root_url']}act=news&amp;param=03">Modify Entry</a>
+      </td>
+    </tr>
+  </table>
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
-<tr>
-  <td class="header">
-  Manage
-  </td>
-</tr>
-<tr>
-  <td class="body" style="font-size:10pt">
-  :: <a href="{$STD->tags['root_url']}act=manage&amp;param=01">Message Ctr</a><br>
-  :: <a href="{$STD->tags['root_url']}act=manage&amp;param=05">Site On/Off</a><br>
-  :: <a href="{$STD->tags['root_url']}act=conf&amp;param=01">Filter Groups</a><br>
-  :: <a href="{$STD->tags['root_url']}act=panel&amp;param=01">Panels</a><br>
-  :: <a href="{$STD->tags['root_url']}act=webhook">Manually Push Update to Discord</a><br>
-  :: <a href="{$STD->tags['root_url']}act=manage&amp;param=08">Manually Recalculate Scores</a>
-  </td>
-</tr>
-</table>
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
+    <tr>
+      <td class="header">
+        Manage
+      </td>
+    </tr>
+    <tr>
+      <td class="body" style="padding:4px;font-size:10pt;">
+        :: <a href="{$STD->tags['root_url']}act=manage&amp;param=01">Message Ctr</a><br>
+        :: <a href="{$STD->tags['root_url']}act=manage&amp;param=05">Site On/Off</a><br>
+        :: <a href="{$STD->tags['root_url']}act=conf&amp;param=01">Filter Groups</a><br>
+        :: <a href="{$STD->tags['root_url']}act=panel&amp;param=01">Panels</a><br>
+        :: <a href="{$STD->tags['root_url']}act=webhook">Manually Push Update to Discord</a><br>
+        :: <a href="{$STD->tags['root_url']}act=manage&amp;param=08">Manually Recalculate Scores</a>
+      </td>
+    </tr>
+  </table>
 </div>
 <br>
 <div>
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
-<tr>
-  <td class="header">
-  Staff Graph
-  </td>
-</tr>
-<tr>
-  <td class="body" style="font-size:10pt">
-  :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=week">Weekly</a><br>
-  :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=month">Monthly</a><br>
-  :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=year">Yearly</a><br>
-  :: <a href="{$STD->tags['root_url']}act=staffgraph">All Time</a><br>
-  :: <a href="{$STD->tags['root_url']}act=staffgraph2&amp;time=year">Global Yearly</a><br>
-  :: <a href="{$STD->tags['root_url']}act=staffgraph2">Global All Time</a>
-  </td>
-</tr>
-</table>
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
+    <tr>
+      <td class="header">
+        Staff Graph
+      </td>
+    </tr>
+    <tr>
+      <td class="body" style="padding:4px;font-size:10pt;">
+        :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=week">Weekly</a><br>
+        :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=month">Monthly</a><br>
+        :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=year">Yearly</a><br>
+        :: <a href="{$STD->tags['root_url']}act=staffgraph">All Time</a><br>
+        :: <a href="{$STD->tags['root_url']}act=staffgraph2&amp;time=year">Global Yearly</a><br>
+        :: <a href="{$STD->tags['root_url']}act=staffgraph2">Global All Time</a>
+      </td>
+    </tr>
+  </table>
 </div>
 </td>
 <td style="width:2%;">
-&nbsp;
+  &nbsp;
 </td>
 HTML;
 }
 
 function content_header () {
 global $STD;
-// 4/17/2025 Note - this is a rare "valign" that matters
 return <<<HTML
-<td style="width:83%;" valign="top">
-<table cellspacing="0" cellpadding="4" style="width:100%;border:2px solid #000000;">
+<td style="width:83%;vertical-align:top;padding:0px;">
+  <table style="border-spacing:0px;width:100%;border:2px solid #000000;">
 HTML;
 }
 
@@ -264,7 +262,7 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="header">
-  {$title}
+    {$title}
   </td>
 </tr>
 <tr>
@@ -291,10 +289,10 @@ HTML;
 function site_footer () {
 global $STD;
 return <<<HTML
-</tr>
-</table>
-</div>
-</body>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
 HTML;
 }
