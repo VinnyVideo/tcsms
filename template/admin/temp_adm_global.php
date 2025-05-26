@@ -96,6 +96,7 @@ class template_adm_global
           .leftmenu { width: 100%; margin: 10px 0; border:2px solid #000000; border-spacing: 0; }
           .leftmenu:first-child { margin-top: 0; }
           .box {border:2px solid #000000;}
+          .flex { display:flex;justify-content:space-between; }
         </style>
       </head>
       HTML;
@@ -109,7 +110,7 @@ class template_adm_global
         <section class="box" style="margin: 10px">
           <header class="header">Admin Control Panel</header>
           <div class="body options">
-            <div style="display:flex;justify-content:space-between">
+            <div class="flex">
               <div>
                 <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
               </div>
@@ -123,12 +124,8 @@ class template_adm_global
             </div>
           </div>
         </section>
-        <div style="margin: 10px">
-          <table>
-          <tr>
-            $contents
-          </tr>
-          </table>
+        <div style="margin: 10px" class="flex">
+          $contents
         </div>
       </body>
       HTML;
@@ -138,7 +135,7 @@ class template_adm_global
   {
     global $STD;
     return <<<HTML
-      <td style="width:15%;vertical-align:top;">
+      <div style="width:15%">
         <section class="leftmenu">
           <tr>
             <td class="header">
@@ -201,21 +198,18 @@ class template_adm_global
             :: <a href="{$STD->tags['root_url']}act=staffgraph2">Global All Time</a>
           </div>
         </section>
-      </td>
-      <td style="width:2%">
-        &nbsp;
-      </td>
+      </div>
       HTML;
   }
 
   function content(string $content)
   {
     return <<<HTML
-      <td style="width:83%;vertical-align:top">
+      <div style="width:83%;">
         <table style="width:100%;border:2px solid #000000;border-spacing:0;">
           $content
         </table>
-      </td>
+      </div>
       HTML;
   }
 
