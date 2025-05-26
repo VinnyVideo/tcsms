@@ -47,7 +47,7 @@ class template_adm_global
           * { box-sizing: border-box; }
           body { font-family: Verdana, Arial, Helvetica, Sans-Serif; font-size:10pt }
           a:link, a:visited {text-decoration:none; color: #0000FF }
-          .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
+          .header { background: #5D669A; color: #FFFFFF; font-size:14pt; font-weight: normal; width:100%; padding:4px; margin: 0; }
           .subheader { background: #7D86BA; color: #FFFFFF; font-size:13pt; width:100% }
           .body { background: #E1E4F9; color: #000000; font-size:10pt; width:100%; padding:4px; }
           .textbox { background: #F6F7FF; color:#000000; font-size:10pt; border:1px solid #000000; padding:1px }
@@ -108,7 +108,7 @@ class template_adm_global
     return <<<HTML
       <body>
         <section class="box" style="margin: 10px">
-          <header class="header">Admin Control Panel</header>
+          <h2 class="header">Admin Control Panel</h2>
           <div class="body options">
             <div class="flex">
               <div>
@@ -137,18 +137,18 @@ class template_adm_global
     return <<<HTML
       <div style="width:15%">
         <section class="leftmenu">
-          <header class="header">
+          <h2 class="header">
               Submissions
-          </header>
+          </h2>
           <div class="body">
             {$modq_menu}
           </div>
         </section>
 
         <section class="leftmenu">
-          <header class="header">
+          <h2 class="header">
             Users
-          </header>
+          </h2>
           <div class="body">
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=01">Manage Users</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=14">Find Users</a><br>
@@ -158,9 +158,9 @@ class template_adm_global
         </section>
 
         <section class="leftmenu">
-          <header class="header">
+          <h2 class="header">
             News
-          </header>
+          </h2>
           <div class="body">
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=01">New Entry</a><br>
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=03">Modify Entry</a>
@@ -168,9 +168,9 @@ class template_adm_global
         </section>
 
         <section class="leftmenu">
-          <header class="header">
+          <h2 class="header">
             Manage
-          </header>
+          </h2>
           <div class="body">
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=01">Message Ctr</a><br>
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=05">Site On/Off</a><br>
@@ -182,9 +182,9 @@ class template_adm_global
         </section>
 
         <section class="leftmenu">
-          <header class="header">
+          <h2 class="header">
               Staff Graph
-          </header>
+          </h2>
           <div class="body">
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=week">Weekly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=month">Monthly</a><br>
