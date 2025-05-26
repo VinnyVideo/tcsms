@@ -92,7 +92,7 @@ class template_adm_global
           .quote { width: 95%; padding: 4px; margin-left: auto; margin-right: auto; margin-bottom: 2px; border: 1px solid #004F00; background-color: #E1E4F9; }
           .canquote { cursor: pointer; }
           .field_fixed img { max-width: 640px;}
-          .leftmenu { margin: 10px 0; }
+          .leftmenu { width: 100%; margin: 10px 0; border:2px solid #000000; border-spacing: 0; }
           .leftmenu:first-child { margin-top: 0; }
         </style>
       </head>
