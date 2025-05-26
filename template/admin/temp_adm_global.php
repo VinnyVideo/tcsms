@@ -92,7 +92,7 @@ class template_adm_global
           .quote { width: 95%; padding: 4px; margin-left: auto; margin-right: auto; margin-bottom: 2px; border: 1px solid #004F00; background-color: #E1E4F9; }
           .canquote { cursor: pointer; }
           .field_fixed img { max-width: 640px;}
-          .leftmenu { margin: 10px 0; }
+          .leftmenu { width: 100%; margin: 10px 0; border:2px solid #000000; border-spacing: 0; }
           .leftmenu:first-child { margin-top: 0; }
         </style>
       </head>
@@ -104,36 +104,40 @@ class template_adm_global
     global $STD;
     return <<<HTML
       <body>
-        <table style="margin:10px;border-spacing:0px;border:2px solid #000000;width:100%;">
-          <tr>
-            <td class="header">Admin Control Panel</td>
-          </tr>
-          <tr>
-            <td class="body">
-            <table style="width:100%">
+        <div style="margin: 10px">
+          <table style="border-spacing:0px;border:2px solid #000000;width:100%;">
             <tr>
-              <td style="width:50%" class="options">
-                <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
-              </td>
-              <td style="width:50%;text-align:right" class="options">
-                Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
-              </td>
+              <td class="header">Admin Control Panel</td>
             </tr>
             <tr>
-              <td style="width:100%" colspan="2" class="options">
-                <span>Nothing to see here.</span>
-              <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
+              <td class="body">
+              <table style="width:100%">
+              <tr>
+                <td style="width:50%" class="options">
+                  <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
+                </td>
+                <td style="width:50%;text-align:right" class="options">
+                  Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
+                </td>
+              </tr>
+              <tr>
+                <td style="width:100%" colspan="2" class="options">
+                  <span>Nothing to see here.</span>
+                <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
+                </td>
+              </tr>
+              </table>
               </td>
             </tr>
-            </table>
-            </td>
+          </table>
+        </div>
+        <div style="margin: 10px">
+          <table>
+          <tr>
+            $contents
           </tr>
-        </table>
-        <table style="margin:10px">
-        <tr>
-          $contents
-        </tr>
-        </table>
+          </table>
+        </div>
       </body>
       HTML;
   }
@@ -232,7 +236,7 @@ class template_adm_global
   {
     return <<<HTML
       <td style="width:83%;vertical-align:top">
-        <table style="width:100%;border:2px solid #000000">
+        <table style="width:100%;border:2px solid #000000;border-spacing:0;">
           $content
         </table>
       </td>
