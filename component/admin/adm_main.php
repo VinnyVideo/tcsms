@@ -80,7 +80,7 @@ class component_adm_main {
 			$dat['name'] = $row['username'];
 			$dat['uid'] = $row['uid'];
 			$dat['uidurl'] = $STD->encode_url($_SERVER['PHP_SELF'], 'act=ucp&param=02&u='.$row['uid']);
-			$dat['message'] = nl2br($parser->convert(stripslashes($row['message'])));
+			$dat['message'] = nl2br($parser->convert(stripslashes($row['message'])), false);
 			$dat['raw'] = str_replace(array("[gonzo]", "[/gonzo]"), array("[img]", "[/img]"), stripslashes($row['message']));
 			$dat['date'] = $STD->make_date_time($row['date']);
 			$data[] = $dat;
