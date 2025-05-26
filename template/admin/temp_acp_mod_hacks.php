@@ -6,7 +6,7 @@ function acp_edit_form ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Completion
   </td>
   <td class='field_fixed'>
@@ -14,7 +14,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Base ROM
   </td>
   <td class='field_fixed'>
@@ -22,7 +22,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     ROM Region
   </td>
   <td class='field_fixed'>
@@ -30,7 +30,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Hack Type
   </td>
   <td class='field_fixed'>
@@ -50,7 +50,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="title">Title</label>
   </td>
   <td class='field_fixed'>
@@ -58,7 +58,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="author">Creator</label> <a href="javascript:show_hide('f1_h2a');show_hide('f1_h2b');show_hide('f1_h2c');">
 				 <img src='./template/admin/images/info.gif' border='0' alt='[Info]' /></a>
   </td>
@@ -79,7 +79,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="author_override">Username Override</label>
   </td>
   <td class='field_fixed'>
@@ -87,7 +87,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="website_override">Website Override</label>
   </td>
   <td class='field_fixed'>
@@ -95,7 +95,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="weburl_override">Website URL Override</label>
   </td>
   <td class='field_fixed'>
@@ -107,7 +107,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="description">Description</label>
   </td>
   <td class='field_fixed'>
@@ -119,7 +119,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Date Submitted
   </td>
   <td class='field_fixed'>
@@ -127,7 +127,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Last Updated
   </td>
   <td class='field_fixed'>
@@ -135,7 +135,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Total Views
   </td>
   <td class='field_fixed'>
@@ -143,7 +143,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Total Downloads
   </td>
   <td class='field_fixed'>
@@ -155,7 +155,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     File <a href="javascript:show_hide('f1_3a');show_hide('f1_3b');show_hide('f1_3c');">(Replace)</a>
   </td>
   <td class='field_fixed'>
@@ -167,7 +167,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr id='f1_3b' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
     Upload File
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
@@ -175,7 +175,7 @@ return <<<HTML
   </td>
 </tr>
 <tr id='f1_3c' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
     Specify Filename
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
@@ -187,7 +187,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Preview <a href="javascript:show_hide('f1_4a');show_hide('f1_4b');show_hide('f1_4c');">(Replace)</a>
   </td>
   <td class='field_fixed'>
@@ -199,7 +199,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr id='f1_4b' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
     Upload File
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
@@ -207,7 +207,7 @@ return <<<HTML
   </td>
 </tr>
 <tr id='f1_4c' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
     Specify Filename
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
@@ -219,7 +219,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Thumbnail <a href="javascript:show_hide('f1_5a');show_hide('f1_5b');show_hide('f1_5c');show_hide('f1_5d');">(Replace)</a>
   </td>
   <td class='field_fixed'>
@@ -231,7 +231,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr id='f1_5b' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
     Upload File
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
@@ -239,7 +239,7 @@ return <<<HTML
   </td>
 </tr>
 <tr id='f1_5c' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB;'>
+  <td class='title_fixed' style='background-color: #BDC5EB;'>
     Specify Filename
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB;'>
@@ -247,7 +247,7 @@ return <<<HTML
   </td>
 </tr>
 <tr id='f1_5d' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
     Generate From Preview
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>

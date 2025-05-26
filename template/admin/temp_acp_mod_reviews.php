@@ -6,28 +6,28 @@ function acp_edit_form ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td style='border-bottom:1px solid #666666; font-size:14pt'>&#8212;&#8212; Part 2</td>
-  <td style='border-bottom:1px solid #666666' valign='bottom'><b>Base Data and Information</b></td>
+  <td style='border-bottom:1px solid #666666; font-size:14pt;'>&#8212;&#8212; Part 2</td>
+  <td style='border-bottom:1px solid #666666;vertical-align:bottom;'><b>Base Data and Information</b></td>
 </tr>
 <tr>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="title">Title</label>
   </td>
   <td class='field_fixed'>
-    <input type='text' id='title' name='title' value="{$res['title']}" size='40' class='textbox' />
+    <input type='text' id='title' name='title' value="{$res['title']}" size='40' class='textbox'>
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="author">Creator</label> <a href="javascript:show_hide('f1_h2a');show_hide('f1_h2b');show_hide('f1_h2c');">
-				 <img src='./template/admin/images/info.gif' border='0' alt='[Info]' /></a>
+				 <img src='./template/admin/images/info.gif' alt='[Info]'></a>
   </td>
   <td class='field_fixed'>
-    <input type='text' id='author' name='author' value="{$res['username']}" size='40' class='textbox' /> {$res['usericon']}
+    <input type='text' id='author' name='author' value="{$res['username']}" size='40' class='textbox'> {$res['usericon']}
   </td>
 </tr>
 <tr id='f1_h2a' style='display:none'>
@@ -43,27 +43,27 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="author_override">Username Override</label>
   </td>
   <td class='field_fixed'>
-    <input type='text' id='author_override' name='author_override' value="{$res['author_override']}" size='40' class='textbox' />
+    <input type='text' id='author_override' name='author_override' value="{$res['author_override']}" size='40' class='textbox'>
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="website_override">Website Override</label>
   </td>
   <td class='field_fixed'>
-    <input type='text' id="website_override" name='website_override' value="{$res['website_override']}" size='40' class='textbox' /> {$res['website']}
+    <input type='text' id="website_override" name='website_override' value="{$res['website_override']}" size='40' class='textbox'> {$res['website']}
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for='weburl_override'>Website URL Override</label>
   </td>
   <td class='field_fixed'>
-    <input type='text' id='weburl_override' name='weburl_override' value="{$res['weburl_override']}" size='40' class='textbox' /> {$res['weburl']}
+    <input type='text' id='weburl_override' name='weburl_override' value="{$res['weburl_override']}" size='40' class='textbox'> {$res['weburl']}
   </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Game Associated
   </td>
   <td class='field_fixed'>
@@ -84,7 +84,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="commentary">Commentary</label>
   </td>
   <td class='field_fixed'>
@@ -96,7 +96,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="pros">Pros</label>
   </td>
   <td class='field_fixed'>
@@ -104,7 +104,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="cons">Cons</label>
   </td>
   <td class='field_fixed'>
@@ -116,7 +116,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="gameplay">Gameplay</label>
   </td>
   <td class='field_fixed'>
@@ -125,7 +125,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
    <label for="graphics">Graphics</label>
   </td>
   <td class='field_fixed'>
@@ -134,7 +134,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="sound">Sound</label>
   </td>
   <td class='field_fixed'>
@@ -143,7 +143,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="replay">Replay</label>
   </td>
   <td class='field_fixed'>
@@ -156,7 +156,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     <label for="description">Final Words</label>
   </td>
   <td class='field_fixed'>
@@ -169,7 +169,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Date Submitted
   </td>
   <td class='field_fixed'>
@@ -177,7 +177,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Last Updated
   </td>
   <td class='field_fixed'>
@@ -185,7 +185,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Total Views
   </td>
   <td class='field_fixed'>
@@ -198,7 +198,7 @@ return <<<HTML
 </tr>
 <tr>
   <td style='border-bottom:1px solid #666666; font-size:14pt'>&#8212;&#8212; Part 3</td>
-  <td style='border-bottom:1px solid #666666' valign='bottom'><b>Commit Changes</b></td>
+  <td style='border-bottom:1px solid #666666;vertical-align:bottom;'><b>Commit Changes</b></td>
 </tr>
 <tr>
   <td>&nbsp;</td>

@@ -6,7 +6,7 @@ function acp_edit_form ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Sound Format
   </td>
   <td class='field_fixed'>
@@ -14,7 +14,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Franchise
   </td>
   <td class='field_fixed'>
@@ -34,7 +34,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Title
   </td>
   <td class='field_fixed'>
@@ -42,7 +42,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Creator <a href="javascript:show_hide('f1_h2a');show_hide('f1_h2b');show_hide('f1_h2c');">
 				 <img src='./template/admin/images/info.gif' border='0' alt='[Info]' /></a>
   </td>
@@ -63,7 +63,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Username Override
   </td>
   <td class='field_fixed'>
@@ -71,7 +71,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Website Override
   </td>
   <td class='field_fixed'>
@@ -79,7 +79,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Website URL Override
   </td>
   <td class='field_fixed'>
@@ -91,7 +91,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Description
   </td>
   <td class='field_fixed'>
@@ -103,7 +103,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Date Submitted
   </td>
   <td class='field_fixed'>
@@ -111,7 +111,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Last Updated
   </td>
   <td class='field_fixed'>
@@ -119,7 +119,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Total Views
   </td>
   <td class='field_fixed'>
@@ -127,7 +127,7 @@ return <<<HTML
   </td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     Total Downloads
   </td>
   <td class='field_fixed'>
@@ -139,7 +139,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td class='title_fixed' valign='top'>
+  <td class='title_fixed'>
     File <a href="javascript:show_hide('f1_3a');show_hide('f1_3b');show_hide('f1_3c');">(Replace)</a>
   </td>
   <td class='field_fixed'>
@@ -151,7 +151,7 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr id='f1_3b' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
     Upload File
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-top: 1px solid gray;'>
@@ -159,7 +159,7 @@ return <<<HTML
   </td>
 </tr>
 <tr id='f1_3c' style='display:none'>
-  <td valign='top' class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
+  <td class='title_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
     Specify Filename
   </td>
   <td class='field_fixed' style='background-color: #BDC5EB; border-bottom: 1px solid gray;'>
