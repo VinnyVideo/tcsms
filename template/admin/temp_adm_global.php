@@ -49,7 +49,7 @@ class template_adm_global
           a:link, a:visited {text-decoration:none; color: #0000FF }
           .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
           .subheader { background: #7D86BA; color: #FFFFFF; font-size:13pt; width:100% }
-          .body { background: #E1E4F9; color: #000000; font-size:11pt; width:100%; padding:4px; }
+          .body { background: #E1E4F9; color: #000000; font-size:10pt; width:100%; padding:4px; }
           .textbox { background: #F6F7FF; color:#000000; font-size:10pt; border:1px solid #000000; padding:1px }
           .selectbox { background: #F6F7FF; color:#000000; font-size:10pt }
           .button { background: #B8BDDF; color:#000000; font-size:10pt; border:1px solid #000000 }
@@ -137,23 +137,19 @@ class template_adm_global
     return <<<HTML
       <div style="width:15%">
         <section class="leftmenu">
-          <tr>
-            <td class="header">
+          <header class="header">
               Submissions
-            </td>
-          </tr>
-          <tr>
-            <td class="body" style="font-size:10pt">
-              {$modq_menu}
-            </td>
-          </tr>
+          </header>
+          <div class="body">
+            {$modq_menu}
+          </div>
         </section>
 
         <section class="leftmenu">
           <header class="header">
             Users
           </header>
-          <div class="body" style="font-size:10pt">
+          <div class="body">
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=01">Manage Users</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=14">Find Users</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=07">Manage Groups</a><br>
@@ -165,7 +161,7 @@ class template_adm_global
           <header class="header">
             News
           </header>
-          <div class="body" style="font-size:10pt">
+          <div class="body">
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=01">New Entry</a><br>
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=03">Modify Entry</a>
           </div>
@@ -175,7 +171,7 @@ class template_adm_global
           <header class="header">
             Manage
           </header>
-          <div class="body" style="font-size:10pt">
+          <div class="body">
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=01">Message Ctr</a><br>
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=05">Site On/Off</a><br>
             :: <a href="{$STD->tags['root_url']}act=conf&amp;param=01">Filter Groups</a><br>
@@ -189,7 +185,7 @@ class template_adm_global
           <header class="header">
               Staff Graph
           </header>
-          <div class="body" style="font-size:10pt">
+          <div class="body">
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=week">Weekly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=month">Monthly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=year">Yearly</a><br>
