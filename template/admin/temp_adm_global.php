@@ -44,54 +44,54 @@ class template_adm_global
         </script>
         <script src="{$STD->tags['template_path']}/global.js"></script>
         <style>
-            body { font-family: Verdana, Arial, Helvetica, Sans-Serif; font-size:10pt }
-            a:link, a:visited {text-decoration:none; color: #0000FF }
-            .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
-            .subheader { background: #7D86BA; color: #FFFFFF; font-size:13pt; width:100% }
-            .body { background: #E1E4F9; color: #000000; font-size:11pt; width:100%; padding:4px; }
-            .textbox { background: #F6F7FF; color:#000000; font-size:10pt; border:1px solid #000000; padding:1px }
-            .selectbox { background: #F6F7FF; color:#000000; font-size:10pt }
-            .button { background: #B8BDDF; color:#000000; font-size:10pt; border:1px solid #000000 }
-            .category { color: #CB3723; font-size:12pt; font-weight:bold }
-            .title_fixed { font-weight: bold; font-size:11pt; color: #4B4D5F; width: 30% }
-            .title { font-weight: bold; font-size:11pt; color: #4B4D5F }
-            .highlight { color: #2749DC }
-            .highlight2 { color: #CB3723 }
-            .options { font-size:12pt; color: #4B4D5F }
-            .options2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
-            .field_fixed { font-size:12pt; color: #4B4D5F; width: 70% }
-            .field { font-size:12pt; color:#4B4D5F }
-            .field2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
-            .options_small { font-size:10pt; color: #4B4D5F }
-            .options_small2 { font-size:10pt; color: #4B4D5F; background-color: #C8CDEF }
-            
-            .errheader { background: #F56C65; color: #FFFFFF; font-size:14pt; width:100% }
-            .errbody { background: #FFCDCB; color: #000000; font-size:11pt; width:100% }
-            
-            .dis_button { border: 1px solid #C8CDEF; }
-            .click_button { border: 1px solid #C8CDEF; }
-            .click_button:hover { border: 1px solid #7D86BA; background-color: #B8BDDF; }
-            .rep_box { border: 1px dashed #000000; width:90%; margin-left: auto; margin-right: auto; }
-            .rep_box .quotetitle { width: 90%; margin-left: auto; margin-right: auto; border-bottom: 1px solid black; }
-            .rep_box .quote { width: 90%; margin-left: auto; margin-right: auto; }
-            
-            .rowfield { width: 90%; border: 1px solid #000000; text-align: left; }
-            .rowtable { width: 100%; border: 0px; font-size: 10pt; text-align: left; }
-            .rowstrip { background-color: #9CA4D4; padding: 3px; font-weight: bold; }
-            .rowcell1 { background-color: #E1E4F9; padding: 3px; }
-            .rowcell2 { background-color: #C8CDEF; padding: 3px; }
-            .rowcell3 { background-color: #B8BDDF; padding: 3px; }
-            .rowcell4 { background-color: #99A1C9; padding: 3px; }
-            .rowtitle { background-color: #7D86BA; padding: 5px; color: #FFFFFF; font-weight: bold; font-size: 10pt; }
-            .rowtitle a:link, .rowtitle a:visited { color: #FFFFFF; text-decoration: underline; }
-            .tabactive { background-color: #7D86BA; padding: 5px; color: #FFFFFF; font-weight: bold; border:1px solid #000000; padding:5px; border-bottom:0px; }
-            .tabactive a:link, .tabactive a:visited { color: #FFFFFF; }
-            .tabinactive { background-color: #B8BDDF; padding: 3px; border:1px solid #000000; border-bottom:0px; padding:3px; }
-            .tabinactive a:link, .tabinactive a:visited { color: #000000; }
-            .quotetitle { width: 95%; padding: 4px; padding-left: 0px; margin-left: auto; margin-right: auto; margin-top: 2px; font-size: 8pt; font-weight: bold; }
-            .quote { width: 95%; padding: 4px; margin-left: auto; margin-right: auto; margin-bottom: 2px; border: 1px solid #004F00; background-color: #E1E4F9; }
-            .canquote { cursor: pointer; }
-            .field_fixed img { max-width: 640px;}
+          body { font-family: Verdana, Arial, Helvetica, Sans-Serif; font-size:10pt }
+          a:link, a:visited {text-decoration:none; color: #0000FF }
+          .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
+          .subheader { background: #7D86BA; color: #FFFFFF; font-size:13pt; width:100% }
+          .body { background: #E1E4F9; color: #000000; font-size:11pt; width:100%; padding:4px; }
+          .textbox { background: #F6F7FF; color:#000000; font-size:10pt; border:1px solid #000000; padding:1px }
+          .selectbox { background: #F6F7FF; color:#000000; font-size:10pt }
+          .button { background: #B8BDDF; color:#000000; font-size:10pt; border:1px solid #000000 }
+          .category { color: #CB3723; font-size:12pt; font-weight:bold }
+          .title_fixed { font-weight: bold; font-size:11pt; color: #4B4D5F; width: 30% }
+          .title { font-weight: bold; font-size:11pt; color: #4B4D5F }
+          .highlight { color: #2749DC }
+          .highlight2 { color: #CB3723 }
+          .options { font-size:12pt; color: #4B4D5F }
+          .options2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
+          .field_fixed { font-size:12pt; color: #4B4D5F; width: 70% }
+          .field { font-size:12pt; color:#4B4D5F }
+          .field2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
+          .options_small { font-size:10pt; color: #4B4D5F }
+          .options_small2 { font-size:10pt; color: #4B4D5F; background-color: #C8CDEF }
+          
+          .errheader { background: #F56C65; color: #FFFFFF; font-size:14pt; width:100% }
+          .errbody { background: #FFCDCB; color: #000000; font-size:11pt; width:100% }
+          
+          .dis_button { border: 1px solid #C8CDEF; }
+          .click_button { border: 1px solid #C8CDEF; }
+          .click_button:hover { border: 1px solid #7D86BA; background-color: #B8BDDF; }
+          .rep_box { border: 1px dashed #000000; width:90%; margin-left: auto; margin-right: auto; }
+          .rep_box .quotetitle { width: 90%; margin-left: auto; margin-right: auto; border-bottom: 1px solid black; }
+          .rep_box .quote { width: 90%; margin-left: auto; margin-right: auto; }
+          
+          .rowfield { width: 90%; border: 1px solid #000000; text-align: left; }
+          .rowtable { width: 100%; border: 0px; font-size: 10pt; text-align: left; }
+          .rowstrip { background-color: #9CA4D4; padding: 3px; font-weight: bold; }
+          .rowcell1 { background-color: #E1E4F9; padding: 3px; }
+          .rowcell2 { background-color: #C8CDEF; padding: 3px; }
+          .rowcell3 { background-color: #B8BDDF; padding: 3px; }
+          .rowcell4 { background-color: #99A1C9; padding: 3px; }
+          .rowtitle { background-color: #7D86BA; padding: 5px; color: #FFFFFF; font-weight: bold; font-size: 10pt; }
+          .rowtitle a:link, .rowtitle a:visited { color: #FFFFFF; text-decoration: underline; }
+          .tabactive { background-color: #7D86BA; padding: 5px; color: #FFFFFF; font-weight: bold; border:1px solid #000000; padding:5px; border-bottom:0px; }
+          .tabactive a:link, .tabactive a:visited { color: #FFFFFF; }
+          .tabinactive { background-color: #B8BDDF; padding: 3px; border:1px solid #000000; border-bottom:0px; padding:3px; }
+          .tabinactive a:link, .tabinactive a:visited { color: #000000; }
+          .quotetitle { width: 95%; padding: 4px; padding-left: 0px; margin-left: auto; margin-right: auto; margin-top: 2px; font-size: 8pt; font-weight: bold; }
+          .quote { width: 95%; padding: 4px; margin-left: auto; margin-right: auto; margin-bottom: 2px; border: 1px solid #004F00; background-color: #E1E4F9; }
+          .canquote { cursor: pointer; }
+          .field_fixed img { max-width: 640px;}
           .leftmenu { margin: 10px 0; }
           .leftmenu:first-child { margin-top: 0; }
         </style>
