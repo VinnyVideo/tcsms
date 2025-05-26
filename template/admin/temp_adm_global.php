@@ -270,7 +270,7 @@ class template_adm_global
     global $CFG, $STD;
 
     $htmlHead = $template->html_head();
-    $htmlBody = $template->body(
+    $htmlBody = $template->html_body(
       $CFG['root_url'] . '/index.php',
       implode('', [
         $template->site_menu($STD->global_template_ui->modq_menu()),
