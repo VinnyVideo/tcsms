@@ -589,7 +589,7 @@ function recent_comment_head ($html_select = '') {
 global $STD;
 return <<<HTML
 	<div class="sform">
-		<form method="post" name="changetype" action="">
+		<form method="post" name="changetype">
 			<div class="sformstrip">
 				Number of comments:
 				<select name="c" id="c" size="1" class="selectbox" onchange="if(this.options[this.selectedIndex].value != -1){ document.changetype.submit() }">
