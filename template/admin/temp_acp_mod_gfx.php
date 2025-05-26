@@ -88,8 +88,8 @@ return <<<HTML
   <td>&nbsp;</td>
 </tr>
 <tr>
-  <td style='border-bottom:1px solid #666666; font-size:14pt'>&#8212;&#8212; Part 2</td>
-  <td style='border-bottom:1px solid #666666' valign='bottom'><b>Base Data and Information</b></td>
+  <td style='border-bottom:1px solid #666666; font-size:14pt;'>&#8212;&#8212; Part 2</td>
+  <td style='border-bottom:1px solid #666666; vertical-align:bottom;'><b>Base Data and Information</b></td>
 </tr>
 <tr>
   <td>&nbsp;</td>
@@ -106,7 +106,7 @@ return <<<HTML
 <tr>
   <td class='title_fixed'>
     <label for="author">Creator</label> <a href="javascript:show_hide('f1_h2a');show_hide('f1_h2b');show_hide('f1_h2c');">
-				 <img src='./template/admin/images/info.gif' border='0' alt='[Info]'></a>
+				 <img src='./template/admin/images/info.gif' alt='[Info]'></a>
   </td>
   <td class='field_fixed'>
     <input type='text' id='author' name='author' value="{$res['username']}" size='40' class='textbox'> {$res['usericon']}
@@ -266,7 +266,7 @@ return <<<HTML
 </tr>
 <tr>
   <td style='border-bottom:1px solid #666666; font-size:14pt'>&#8212;&#8212; Part 3</td>
-  <td style='border-bottom:1px solid #666666' valign='bottom'><b>Commit Changes</b></td>
+  <td style='border-bottom:1px solid #666666; vertical-align:bottom;'><b>Commit Changes</b></td>
 </tr>
 <tr>
   <td>&nbsp;</td>
