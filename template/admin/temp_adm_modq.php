@@ -195,7 +195,7 @@ HTML;
 function edit_form_header ($res, $form) {
 global $STD;
 return <<<HTML
-<script type='text/javascript'>
+<script>
   function check_move() {
       id = get_by_id('change_to');
       
@@ -321,7 +321,7 @@ return <<<HTML
 	      <td class='title_fixed'>
 	        <label for='reason'>User-Supplied Update Reason</label> <a href='javascript:show_hide(20);'><img src='{$STD->tags['image_path']}/info.gif' alt='?'></a>
 	      </td>
-	      <td class='field_fixed' valign='top'>
+	      <td class='field_fixed'>
 	        <textarea id='reason' name='reason' class='textbox' rows='4' cols='40' disabled='disabled' style='background-color:#EEEEEE'>{$res['update_reason']}</textarea>
 	      </td>
 	    </tr>
@@ -334,7 +334,7 @@ return <<<HTML
   		  </td>
   		</tr>
   		<tr style="{$form['ghost_style']}">
-	      <td class='title_fixed' valign='top'>
+	      <td class='title_fixed'>
 	        Restore Submission <a href='javascript:show_hide(19);'><img src='{$STD->tags['image_path']}/info.gif' alt='?'></a>
 	      </td>
 	      <td class='field_fixed'>
@@ -358,13 +358,13 @@ return <<<HTML
   		  </td>
   		</tr>
   		<tr>
-  		  <td class='title_fixed' valign='top'>
+  		  <td class='title_fixed'>
   		    Complete Form
   		  </td>
   		  <td class='field_fixed'>
           <input type='submit' class='button' value='Update Record' onclick='return check_move();'>
 		  <input name="dq_override" value="1" type="hidden">
-          <input type='submit' class='button' value='DROP Record' style='background-color: #FF6169; color: white' onclick='return check_drop();' />
+          <input type='submit' class='button' value='DROP Record' style='background-color: #FF6169; color: white' onclick='return check_drop();'>
   		  </td>
   		</tr>
 		</table>
