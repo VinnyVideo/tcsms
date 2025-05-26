@@ -139,7 +139,7 @@ class template_adm_global
     global $STD;
     return <<<HTML
       <td style="width:15%;vertical-align:top;">
-        <table class="leftmenu">
+        <section class="leftmenu">
           <tr>
             <td class="header">
               Submissions
@@ -150,73 +150,57 @@ class template_adm_global
               {$modq_menu}
             </td>
           </tr>
-        </table>
+        </section>
 
-        <table class="leftmenu">
-          <tr>
-            <td class="header">
+        <section class="leftmenu">
+          <header class="header">
             Users
-            </td>
-          </tr>
-          <tr>
-            <td class="body" style="font-size:10pt">
+          </header>
+          <div class="body" style="font-size:10pt">
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=01">Manage Users</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=14">Find Users</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=07">Manage Groups</a><br>
             :: <a href="{$STD->tags['root_url']}act=ucp&amp;param=06">Ban Settings</a>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </section>
 
-        <table class="leftmenu">
-          <tr>
-            <td class="header">
+        <section class="leftmenu">
+          <header class="header">
             News
-            </td>
-          </tr>
-          <tr>
-            <td class="body" style="font-size:10pt">
+          </header>
+          <div class="body" style="font-size:10pt">
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=01">New Entry</a><br>
             :: <a href="{$STD->tags['root_url']}act=news&amp;param=03">Modify Entry</a>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </section>
 
-        <table class="leftmenu">
-          <tr>
-            <td class="header">
+        <section class="leftmenu">
+          <header class="header">
             Manage
-            </td>
-          </tr>
-          <tr>
-            <td class="body" style="font-size:10pt">
+          </header>
+          <div class="body" style="font-size:10pt">
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=01">Message Ctr</a><br>
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=05">Site On/Off</a><br>
             :: <a href="{$STD->tags['root_url']}act=conf&amp;param=01">Filter Groups</a><br>
             :: <a href="{$STD->tags['root_url']}act=panel&amp;param=01">Panels</a><br>
             :: <a href="{$STD->tags['root_url']}act=webhook">Manually Push Update to Discord</a><br>
             :: <a href="{$STD->tags['root_url']}act=manage&amp;param=08">Manually Recalculate Scores</a>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </section>
 
-        <table class="leftmenu">
-          <tr>
-            <td class="header">
+        <section class="leftmenu">
+          <header class="header">
               Staff Graph
-            </td>
-          </tr>
-          <tr>
-            <td class="body" style="font-size:10pt">
+          </header>
+          <div class="body" style="font-size:10pt">
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=week">Weekly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=month">Monthly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph&amp;time=year">Yearly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph">All Time</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph2&amp;time=year">Global Yearly</a><br>
             :: <a href="{$STD->tags['root_url']}act=staffgraph2">Global All Time</a>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </section>
       </td>
       <td style="width:2%">
         &nbsp;
