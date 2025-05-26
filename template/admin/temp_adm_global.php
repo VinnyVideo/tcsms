@@ -236,7 +236,7 @@ class template_adm_global
   {
     return <<<HTML
       <td style="width:83%;vertical-align:top">
-        <table style="width:100%;border:2px solid #000000">
+        <table style="width:100%;border:2px solid #000000;border-spacing:0;">
           $content
         </table>
       </td>
