@@ -183,9 +183,9 @@ function tryPatch()
 <p><label for="file2">Patch file:</label><br><br>
 <input id="file2" onchange="tryPatch()" type="file"></p>
 <p id="error" style="color: red;"></p>
-</dd><br><br><br>
+</dd>
 
-<dd><b>NOTICE: </b>ROM files are not stored on the server. <br>
+<dd><br><br><b>NOTICE:</b> ROM files are not stored on the server. <br>
     Floating IPS webtool made by <a href="https://www.smwcentral.net/?p=profile&id=1686">Alcaro</a>
     <br></dd>
 </dl>
