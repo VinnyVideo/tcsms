@@ -111,9 +111,9 @@ class template_adm_global
             </tr>
             <tr>
               <td class="body">
-              <table width="100%">
+              <table style="width:100%">
               <tr>
-                <td width="50%" class="options">
+                <td style="width:50%" class="options">
                   <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
                 </td>
                 <td style="width:50%;text-align:right" class="options">
@@ -121,7 +121,7 @@ class template_adm_global
                 </td>
               </tr>
               <tr>
-                <td width="100%" colspan="2" class="options">
+                <td style="width:100%" colspan="2" class="options">
                   <span>Nothing to see here.</span>
                 <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
                 </td>
@@ -226,7 +226,7 @@ class template_adm_global
           </tr>
         </table>
       </td>
-      <td width="2%">
+      <td style="width:2%">
         &nbsp;
       </td>
       HTML;
@@ -236,7 +236,7 @@ class template_adm_global
   {
     return <<<HTML
       <td style="width:83%;vertical-align:top">
-        <table width="100%" style="border:2px solid #000000">
+        <table style="width:100%;border:2px solid #000000">
           $content
         </table>
       </td>
