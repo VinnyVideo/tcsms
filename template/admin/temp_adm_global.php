@@ -44,6 +44,7 @@ class template_adm_global
         </script>
         <script src="{$STD->tags['template_path']}/global.js"></script>
         <style>
+          * { box-sizing: border-box; }
           body { font-family: Verdana, Arial, Helvetica, Sans-Serif; font-size:10pt }
           a:link, a:visited {text-decoration:none; color: #0000FF }
           .header { background: #5D669A; color: #FFFFFF; font-size:14pt; width:100%; padding:4px; }
@@ -94,6 +95,7 @@ class template_adm_global
           .field_fixed img { max-width: 640px;}
           .leftmenu { width: 100%; margin: 10px 0; border:2px solid #000000; border-spacing: 0; }
           .leftmenu:first-child { margin-top: 0; }
+          .box {border:2px solid #000000;}
         </style>
       </head>
       HTML;
@@ -104,33 +106,23 @@ class template_adm_global
     global $STD;
     return <<<HTML
       <body>
-        <div style="margin: 10px">
-          <table style="border-spacing:0px;border:2px solid #000000;width:100%;">
-            <tr>
-              <td class="header">Admin Control Panel</td>
-            </tr>
-            <tr>
-              <td class="body">
-              <table style="width:100%">
-              <tr>
-                <td style="width:50%" class="options">
-                  <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
-                </td>
-                <td style="width:50%;text-align:right" class="options">
+        <section class="box" style="margin: 10px">
+          <header class="header">Admin Control Panel</header>
+          <div class="body options">
+            <div style="display:flex;justify-content:space-between">
+              <div>
+                <a href="{$STD->tags['root_url']}act=main">ACP Home</a> | <a href="{$site_url}">Site Home</a>
+              </div>
+              <div style="text-align:right">
                   Logged in as: <b>{$STD->user['username']}</b> (<a href="{$STD->tags['root_url']}act=login&amp;param=03">Log out</a>)
-                </td>
-              </tr>
-              <tr>
-                <td style="width:100%" colspan="2" class="options">
-                  <span>Nothing to see here.</span>
-                <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
-                </td>
-              </tr>
-              </table>
-              </td>
-            </tr>
-          </table>
-        </div>
+              </div>
+            </div>
+            <div>
+              <span>Nothing to see here.</span>
+              <!--<a href="{$STD->tags['root_url']}act=webhook">Push the latest update to the MFGG Discord and recalculate the scores.</a>-->
+            </div>
+          </div>
+        </section>
         <div style="margin: 10px">
           <table>
           <tr>
