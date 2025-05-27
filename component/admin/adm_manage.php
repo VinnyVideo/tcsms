@@ -433,7 +433,7 @@ class component_adm_manage {
 			case 6: $code = 'move.gif'; $alt = 'Username Request'; break;
 		}
 		
-		return "<img src='{$STD->tags['image_path']}/$code' border='0' alt='mc' title='$alt' />";
+		return "<img src='{$STD->tags['image_path']}/$code' alt='mc' title='$alt'>";
 	}
 	
 	//Change username - Hypernova (Unfinished and not in use until I got more free time)
