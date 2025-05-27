@@ -14,9 +14,9 @@ class component_adm_staffgraph {
 		
 		$this->output .= $STD->global_template->page_header("Staff Graph");
 		if (empty($_GET['time']))
-			$this->output .= $STD->global_template->message("<img src=\"/admin.php?act=staffgraphimage2\" />");
+			$this->output .= $STD->global_template->message("<img src=\"/admin.php?act=staffgraphimage2\" alt='Staff Graph'>");
 		else
-			$this->output .= $STD->global_template->message("<img src=\"/admin.php?act=staffgraphimage2&time=".$_GET['time']."\" />");
+			$this->output .= $STD->global_template->message("<img src=\"/admin.php?act=staffgraphimage2&time=".$_GET['time']."\" alt='Staff Graph'>");
 
 		$STD->template->display( $this->output );
 	}
