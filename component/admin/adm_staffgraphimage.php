@@ -5,8 +5,6 @@ require "graph.php";
 $file = file("https://mfgg.net/staff_log.txt");
 
 $segdat = array();
-$segdat[2] = 0;			// Retriever II
-$segdat[53] = 0;		// Techokami
 $segdat[6330] = 0;		// Gatete
 $segdat[7546] = 0;		// VinnyVideo
 $segdat[9691] = 0;		// Mors
@@ -15,6 +13,8 @@ $segdat[12896] = 0;		// Langton
 $segdat[14786] = 0;		// Fun With Despair
 $segdat[16161] = 0;		// ReynLynxPSI
 $segdat[17063] = 0;		// Luigibonus
+$segdat[19113] = 0;		// Matrix
+$segdat[20531] = 0;		// MewMewPsychic
 
 //retired
 
@@ -50,8 +50,10 @@ $segdat[17063] = 0;		// Luigibonus
 //$segdat[14509] = 0;	// SilverVortex
 //$segdat[6896] = 0;	// Hypernova
 //$segdat[11667] = 0;	// EvilYoshiToes
+//$segdat[2] = 0;			// Retriever II
+//$segdat[53] = 0;		// Techokami
 
-$key_list = array(2,53,6330,7546,9691,10567,12896,14786,16161,17063);
+$key_list = array(6330,7546,9691,10567,12896,14786,16161,17063,19113,20531);
 
 $cutoff = 0;
 if (!empty($_GET['time']) && $_GET['time'] == 'week') {
@@ -89,10 +91,6 @@ $x = 0;
 
 foreach( $segdat as $k=>$v ) {
 	switch ($k) {
-	case 2:
-		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Retriever II');
-		$color_data[] = array('name' => 'c'.$x, 'color' => '1F3F7F');
-		break;
 	case 6:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Thunder Dragon');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '0A6A13');
@@ -116,10 +114,6 @@ foreach( $segdat as $k=>$v ) {
 	case 41:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'DJ Yoshiman');
 		$color_data[] = array('name' => 'c'.$x, 'color' => 'A864A8');
-		break;
-	case 53:
-		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Techokami');
-		$color_data[] = array('name' => 'c'.$x, 'color' => '00BF59');
 		break;
 	case 68:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Press Start');
@@ -205,7 +199,7 @@ foreach( $segdat as $k=>$v ) {
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Yoshin');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '803A5E');
 		break;
-    case 9691:
+	case 9691:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Mors');
 		$color_data[] = array('name' => 'c'.$x, 'color' => 'FC1E24');
 		break;
@@ -240,6 +234,14 @@ foreach( $segdat as $k=>$v ) {
 	case 17063:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Luigibonus');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '32CD32');
+		break;
+	case 19113:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Matrix');
+		$color_data[] = array('name' => 'c'.$x, 'color' => '3A376E');
+		break;
+	case 20531:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'MewMewPsychic');
+		$color_data[] = array('name' => 'c'.$x, 'color' => 'FF9EEE');
 		break;
 	}
 	
