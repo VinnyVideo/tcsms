@@ -25,7 +25,7 @@ $segdat[2687] = 0;		// MegaTailzChao
 $segdat[2867] = 0;		// Bacteriophage
 $segdat[3575] = 0;		// Ylle
 $segdat[3586] = 0;		// Char
-$segdat[3751] = 0;      // Chaoxys
+$segdat[3751] = 0;      	// Chaoxys
 $segdat[4237] = 0;		// Zero Kirby
 $segdat[4335] = 0;		// Vitiman
 $segdat[4748] = 0;		// Elyk
@@ -46,8 +46,10 @@ $segdat[14509] = 0;		// SilverVortex
 $segdat[14786] = 0;		// Fun With Despair
 $segdat[16161] = 0;		// ReynLynxPSI
 $segdat[17063] = 0;		// Luigibonus
+$segdat[19113] = 0;		// Matrix
+$segdat[20531] = 0;		// MewMewPsychic
 
-$key_list = array(2,5,6,7,8,13,17,41,53,68,562,579,785,1847,2369,2567,2687,2867,3575,3586,3751,4237,4335,4748,5993,6330,6896,7029,7253,7546,9318,9691,10567,11138,11667,12896,13124,14509,14786,16161,17063);
+$key_list = array(2,5,6,7,8,13,17,41,53,68,562,579,785,1847,2369,2567,2687,2867,3575,3586,3751,4237,4335,4748,5993,6330,6896,7029,7253,7546,9318,9691,10567,11138,11667,12896,13124,14509,14786,16161,17063,19113,20531);
 
 // Others: 1828, 1844, 2627, 10277, 11878, 12949
 
@@ -213,11 +215,11 @@ foreach( $segdat as $k=>$v ) {
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Yoshin');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '803A5E');
 		break;
-    case 9691:
+	case 9691:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Mors');
 		$color_data[] = array('name' => 'c'.$x, 'color' => 'FC1E24');
 		break;
-    case 10567:
+	case 10567:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Shikaternia');
 		$color_data[] = array('name' => 'c'.$x, 'color' => 'FFDD00');
 		break;
@@ -252,6 +254,14 @@ foreach( $segdat as $k=>$v ) {
 	case 17063:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Luigibonus');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '32CD32');
+		break;
+	case 19113:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Matrix');
+		$color_data[] = array('name' => 'c'.$x, 'color' => '3A376E');
+		break;
+	case 20531:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'MewMewPsychic');
+		$color_data[] = array('name' => 'c'.$x, 'color' => 'FF9EEE');
 		break;
 	}
 	
