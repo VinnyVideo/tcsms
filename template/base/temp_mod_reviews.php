@@ -222,35 +222,35 @@ return <<<HTML
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="commentary">Commentary and Overview</label></td>
-  <td class="sformright"><textarea id="commentary" name="commentary" cols="42" rows="12" class="textbox">{$res['commentary']}</textarea></td>
+  <td class="sformright"><textarea id="commentary" name="commentary" cols="50" rows="12" class="textbox">{$res['commentary']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Pros and Cons</div>
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="pros">Pros</label></td>
-  <td class="sformright"><textarea id="pros" name="pros" cols="42" rows="5" class="textbox">{$res['pros']}</textarea></td>
+  <td class="sformright"><textarea id="pros" name="pros" rows="8" cols="50" class="textbox">{$res['pros']}</textarea></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="cons">Cons</label></td>
-  <td class="sformright"><textarea id="cons" name="cons" rows="5" cols="42" class="textbox">{$res['cons']}</textarea></td>
+  <td class="sformright"><textarea id="cons" name="cons" rows="8" cols="50" class="textbox">{$res['cons']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Final Impressions and Scoring</div>
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="gameplay">Gameplay</label></td>
-  <td class="sformright"><textarea id="gameplay" name="gameplay" rows="5" cols="42" class="textbox">{$res['gameplay']}</textarea><br>
+  <td class="sformright"><textarea id="gameplay" name="gameplay" rows="8" cols="50" class="textbox">{$res['gameplay']}</textarea><br>
   	Score: {$res['gameplay_score']}</td>
 </tr>
 <tr>
   <td class="sformleft"><label for="graphics">Graphics</label></td>
-  <td class="sformright"><textarea id="graphics" name="graphics" rows="5" cols="42" class="textbox">{$res['graphics']}</textarea><br>
+  <td class="sformright"><textarea id="graphics" name="graphics" rows="8" cols="50" class="textbox">{$res['graphics']}</textarea><br>
     Score: {$res['graphics_score']}</td>
 </tr>
 <tr>
   <td class="sformleft"><label for="sound">Sound</label></td>
-  <td class="sformright"><textarea id="sound" name="sound" rows="5" cols="42" class="textbox">{$res['sound']}</textarea><br>
+  <td class="sformright"><textarea id="sound" name="sound" rows="6" cols="50" class="textbox">{$res['sound']}</textarea><br>
     Score: {$res['sound_score']}</td>
 </tr>
 </table>
@@ -258,7 +258,7 @@ return <<<HTML
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Final Words (be concise)</td>
-  <td class="sformright"><textarea id="description" name="description" rows="3" cols="42" class="textbox">{$res['description']}</textarea><br>
+  <td class="sformright"><textarea id="description" name="description" rows="4" cols="50" class="textbox">{$res['description']}</textarea><br>
     Score: {$res['score']}</td>
 </tr>
 </table>
@@ -297,35 +297,35 @@ return <<<HTML
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="commentary">Commentary and Overview</label></td>
-  <td class="sformright"><textarea id="commentary" name="commentary" cols="42" rows="12" class="textbox">{$res['commentary']}</textarea></td>
+  <td class="sformright"><textarea id="commentary" name="commentary" cols="50" rows="12" class="textbox">{$res['commentary']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Pros and Cons</div>
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="pros">Pros</label></td>
-  <td class="sformright"><textarea id="pros" name="pros" cols="42" rows="5" class="textbox">{$res['pros']}</textarea></td>
+  <td class="sformright"><textarea id="pros" name="pros" rows="8" cols="50" class="textbox">{$res['pros']}</textarea></td>
 </tr>
 <tr>
   <td class="sformleft"><label for="cons">Cons</label></td>
-  <td class="sformright"><textarea id="cons" name="cons" rows="5" cols="42" class="textbox">{$res['cons']}</textarea></td>
+  <td class="sformright"><textarea id="cons" name="cons" rows="8" cols="50" class="textbox">{$res['cons']}</textarea></td>
 </tr>
 </table>
 <div class="sformstrip">Final Impressions and Scoring</div>
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="gameplay">Gameplay</label></td>
-  <td class="sformright"><textarea id="gameplay" name="gameplay" rows="5" cols="42" class="textbox">{$res['gameplay']}</textarea><br>
+  <td class="sformright"><textarea id="gameplay" name="gameplay" rows="8" cols="50" class="textbox">{$res['gameplay']}</textarea><br>
   	Score: {$res['gameplay_score']}</td>
 </tr>
 <tr>
   <td class="sformleft"><label for="graphics">Graphics</label></td>
-  <td class="sformright"><textarea id="graphics" name="graphics" rows="5" cols="42" class="textbox">{$res['graphics']}</textarea><br>
+  <td class="sformright"><textarea id="graphics" name="graphics" rows="8" cols="50" class="textbox">{$res['graphics']}</textarea><br>
     Score: {$res['graphics_score']}</td>
 </tr>
 <tr>
   <td class="sformleft"><label for="sound">Sound</label></td>
-  <td class="sformright"><textarea id="sound" name="sound" rows="5" cols="42" class="textbox">{$res['sound']}</textarea><br>
+  <td class="sformright"><textarea id="sound" name="sound" rows="6" cols="50" class="textbox">{$res['sound']}</textarea><br>
     Score: {$res['sound_score']}</td>
 </tr>
 </table>
@@ -333,7 +333,7 @@ return <<<HTML
 <table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="description">Final Words (be concise)</label></td>
-  <td class="sformright"><textarea id="description" name="description" rows="3" cols="42" class="textbox">{$res['description']}</textarea><br>
+  <td class="sformright"><textarea id="description" name="description" rows="4" cols="50" class="textbox">{$res['description']}</textarea><br>
     Score: {$res['score']}</td>
 </tr>
 </table>

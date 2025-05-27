@@ -88,7 +88,7 @@ return <<<HTML
     <label for="commentary">Commentary</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="commentary" name="commentary" cols="42" rows="12">{$res['commentary']}</textarea>
+    <textarea id="commentary" name="commentary" cols="50" rows="12">{$res['commentary']}</textarea>
   </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ return <<<HTML
     <label for="pros">Pros</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="pros" name="pros" cols="42" rows="5">{$res['pros']}</textarea>
+    <textarea id="pros" name="pros" cols="50" rows="8">{$res['pros']}</textarea>
   </td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ return <<<HTML
     <label for="cons">Cons</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="cons" name="cons" rows="5" cols="42">{$res['cons']}</textarea>
+    <textarea id="cons" name="cons" rows="8" cols="50">{$res['cons']}</textarea>
   </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ return <<<HTML
     <label for="gameplay">Gameplay</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="gameplay" name="gameplay" rows="5" cols="42">{$res['gameplay']}</textarea><br>
+    <textarea id="gameplay" name="gameplay" rows="12" cols="50">{$res['gameplay']}</textarea><br>
   	Score: {$res['gameplay_score']}
   </td>
 </tr>
@@ -129,7 +129,7 @@ return <<<HTML
    <label for="graphics">Graphics</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="graphics" name="graphics" rows="5" cols="42">{$res['graphics']}</textarea><br>
+    <textarea id="graphics" name="graphics" rows="10" cols="50">{$res['graphics']}</textarea><br>
     Score: {$res['graphics_score']}
   </td>
 </tr>
@@ -138,7 +138,7 @@ return <<<HTML
     <label for="sound">Sound</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="sound" name="sound" rows="5" cols="42">{$res['sound']}</textarea><br>
+    <textarea id="sound" name="sound" rows="6" cols="50">{$res['sound']}</textarea><br>
     Score: {$res['sound_score']}
   </td>
 </tr>
@@ -147,7 +147,7 @@ return <<<HTML
     <label for="replay">Replay</label>
   </td>
   <td class='field_fixed'>
-    <textarea id="replay" name="replay" rows="5" cols="42">{$res['replay']}</textarea><br>
+    <textarea id="replay" name="replay" rows="6" cols="50">{$res['replay']}</textarea><br>
     Score: {$res['replay_score']}
   </td>
 </tr>
@@ -160,7 +160,7 @@ return <<<HTML
     <label for="description">Final Words</label>
   </td>
   <td class='field_fixed'>
-    <textarea rows='6' cols='38' id='description' name='description' class='textbox'>{$res['description']}</textarea><br>
+    <textarea rows='6' cols='50' id='description' name='description' class='textbox'>{$res['description']}</textarea><br>
     Score: {$res['score']}
   </td>
 </tr>
