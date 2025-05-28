@@ -121,8 +121,8 @@ return <<<HTML
   <td class="rowtitle" colspan="2">Options</td>
 </tr>
 <tr>
-  <td class="rowcell2" width="50%">Expand center column to unsed columns?</td>
-  <td class="rowcell2" width="50%">{$options['expand']}</td>
+  <td class="rowcell2" style="width:50%;">Expand center column to unsed columns?</td>
+  <td class="rowcell2" style="width:50%;">{$options['expand']}</td>
 </tr>
 <tr>
   <td class="rowcell2">Allow content to be maximized?</td>
