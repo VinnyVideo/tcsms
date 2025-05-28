@@ -16,7 +16,7 @@ return <<<HTML
 <div align="center">
 <br>
 <div style="width: 90%">
-<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+<table cellpadding="0" style="border-spacing:0px;width:100%;">
 <tr>
   <td style="vertical-align:bottom;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">ALL</a></div></td>
   <td style="vertical-align:bottom;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">#</a></div></td>
@@ -179,7 +179,7 @@ HTML;
 function ucp_edit_user ($user, $form_elements, $token) {
 global $STD;
 return <<<HTML
-<script type="text/javascript">
+<script>
   function check_drop() {
       form_check = confirm('Warning: Dropping this user will permanently delete them from the database.\n\nDo you still wish to continue?');
     
@@ -228,7 +228,7 @@ Use this page to modify the selected user.  To change the user's password, fill 
   <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td style="width:30%;" class="title" valign="top">Group</td>
+  <td style="width:30%;" class="title">Group</td>
   <td style="width:70%;" class="field">{$form_elements['group']}</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ return <<<HTML
 <table border="0" cellspacing="0" cellpadding="2" width="90%">
 <tr>
   <td width="100%" colspan="3" align="center">
-    <input type="submit" value="Create Group Based On" class="button" /> {$menu}
+    <input type="submit" value="Create Group Based On" class="button"> {$menu}
   </td>
 </tr>
 </table>
@@ -359,7 +359,7 @@ HTML;
 function group_edit ($group, $form_elements, $token) {
 global $STD;
 return <<<HTML
-<script type="text/javascript">
+<script>
   function check_drop() {
       form_check = confirm('Warning: Dropping this group will permanently delete them from the database.\n\nDo you still wish to continue?');
     
@@ -373,8 +373,8 @@ return <<<HTML
 
 Use this page to modify the selected group.
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=09">
-<input type="hidden" name="gid" value="{$group['gid']}" />
-<input type="hidden" name="security_token" value="{$token}" />
+<input type="hidden" name="gid" value="{$group['gid']}">
+<input type="hidden" name="security_token" value="{$token}">
 <br>
 <div class="rowfield" style="margin-left:auto; margin-right:auto">
 <div class="rowtitle">Group Settings</div>
@@ -385,26 +385,26 @@ Use this page to modify the selected group.
 </tr>
 <tr>
   <td class="rowcell3"><label for="group_name">Group Name</label></td>
-  <td class="rowcell2"><input type="text" id="group_name" name="group_name" class="textbox" size="40" value="{$group['group_name']}" /></td>
+  <td class="rowcell2"><input type="text" id="group_name" name="group_name" class="textbox" size="40" value="{$group['group_name']}"></td>
 </tr>
 <tr>
   <td class="rowcell3"><label for="group_title">Group Title</label></td>
-  <td class="rowcell2"><input type="text" id="group_title" name="group_title" class="textbox" size="40" value="{$group['group_title']}" /></td>
+  <td class="rowcell2"><input type="text" id="group_title" name="group_title" class="textbox" size="40" value="{$group['group_title']}"></td>
 </tr>
 <tr>
   <td class="rowcell3"><label for="msg_capacity">Inbox Capacity</label></td>
-  <td class="rowcell2"><input type="text" id="msg_capacity" name="msg_capacity" class="textbox" size="6" value="{$group['msg_capacity']}" /></td>
+  <td class="rowcell2"><input type="text" id="msg_capacity" name="msg_capacity" class="textbox" size="6" value="{$group['msg_capacity']}"></td>
 </tr>
 </table>
 <div class="rowtitle">Display Settings</div>
 <table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td style="width:40%;" class="rowcell3"><label for="name_prefix">Name Prefix</label></td>
-  <td style="width:60%;" class="rowcell2"><input type="text" id="name_prefix" name="name_prefix" class="textbox" size="60" value="{$group['name_prefix']}" /></td>
+  <td style="width:60%;" class="rowcell2"><input type="text" id="name_prefix" name="name_prefix" class="textbox" size="60" value="{$group['name_prefix']}"></td>
 </tr>
 <tr>
   <td class="rowcell3"><label for="name_suffix">Name Suffix</label></td>
-  <td class="rowcell2"><input type="text" id="name_suffix" name="name_suffix" class="textbox" size="60" value="{$group['name_suffix']}" /></td>
+  <td class="rowcell2"><input type="text" id="name_suffix" name="name_suffix" class="textbox" size="60" value="{$group['name_suffix']}"></td>
 </tr>
 </table>
 </div>
@@ -489,8 +489,8 @@ Use this page to modify the selected group.
 </div>
 <br>
 <div style="text-align:center">
-  <input type="submit" class="button" value="Update Group" /> 
-  <input type="submit" name="drop_item" class="button" value="DROP Group" style="background-color: #FF6169; color: white" />
+  <input type="submit" class="button" value="Update Group"> 
+  <input type="submit" name="drop_item" class="button" value="DROP Group" style="background-color: #FF6169; color: white">
 </div>
 <br>
 </form>
@@ -502,8 +502,8 @@ global $STD;
 return <<<HTML
 Select a new group to merge existing users into
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=12">
-<input type="hidden" name="gid" value="{$group['gid']}" />
-<input type="hidden" name="security_token" value="{$token}" />
+<input type="hidden" name="gid" value="{$group['gid']}">
+<input type="hidden" name="security_token" value="{$token}">
 <div align="center">
 <br>
 <table border="0" cellspacing="0" cellpadding="1" width="90%">
@@ -521,7 +521,7 @@ Select a new group to merge existing users into
 </tr>
 <tr>
   <td width="30%" class="title">Complete Form</td>
-  <td width="70%" class="field"><input type="submit" class="button" value="Drop Group" /></td>
+  <td width="70%" class="field"><input type="submit" class="button" value="Drop Group"></td>
 </tr>
 </table>
 </div>
@@ -532,51 +532,51 @@ HTML;
 function ban_settings ($blacklist, $whitelist, $emaillist, $token) {
 global $STD;
 return <<<HTML
-You can setup IP banning (blacklisting) and user exceptions (whitelisting) on this page.  Blacklisting should only be used as a last resort.
+You can set up IP banning (blacklisting) and user exceptions (whitelisting) on this page.  Blacklisting should only be used as a last resort.
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=13">
-<input type="hidden" name="security_token" value="{$token}" />
+<input type="hidden" name="security_token" value="{$token}">
 <br>
-<div align="center">
-<table border="0" cellspacing="0" cellpadding="1" width="90%">
+<div style="margin-left:50px;">
+<table style="border-spacing:1px;width:90%;">
 <tr>
-  <td width="30%" class="title" valign="top">Blacklist</td>
-  <td width="70%" class="field">Enter one IP per line.  Use an asterisk (*) as a wildcard.</td>
+  <td style="width:30%;" class="title"><label for="blacklist">Blacklist</label></td>
+  <td style="width:70%;" class="field">Enter one IP per line.  Use an asterisk (*) as a wildcard.</td>
 </tr>
 <tr>
-  <td width="30%" class="title" valign="top">&nbsp;</td>
-  <td width="70%" class="field"><textarea name="blacklist" class="textbox" rows="8" cols="40">{$blacklist}</textarea></td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field"><textarea name="blacklist" id="blacklist" class="textbox" rows="8" cols="40">{$blacklist}</textarea></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title" valign="top">Whitelist</td>
-  <td width="70%" class="field">Enter one user ID per line.</td>
+  <td style="width:30%;" class="title"><label for="whitelist">Whitelist</label></td>
+  <td style="width:70%;" class="field">Enter one user ID per line.</td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field"><textarea name="whitelist" class="textbox" rows="8" cols="40">{$whitelist}</textarea></td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field"><textarea name="whitelist" id="whitelist" class="textbox" rows="8" cols="40">{$whitelist}</textarea></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title" valign="top">Email Banlist</td>
-  <td width="70%" class="field">Enter one email address per line. <b>Note that this only applies to new registrations, you should still ban user accounts normally.</b></td>
+  <td style="width:30%;" class="title"><label for="emaillist">Email Banlist</label></td>
+  <td style="width:70%;" class="field">Enter one email address per line. <b>Note that this only applies to new registrations, you should still ban user accounts normally.</b></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field"><textarea name="emaillist" class="textbox" rows="8" cols="40">{$emaillist}</textarea></td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field"><textarea name="emaillist" id="emaillist" class="textbox" rows="8" cols="40">{$emaillist}</textarea></td>
 </tr>
 <tr>
-  <td width="30%" class="title">&nbsp;</td>
-  <td width="70%" class="field">&nbsp;</td>
+  <td style="width:30%;" class="title">&nbsp;</td>
+  <td style="width:70%;" class="field">&nbsp;</td>
 </tr>
 <tr>
-  <td width="30%" class="title">Complete Form</td>
-  <td width="70%" class="field"><input type="submit" class="button" value="Update Ban Settings" /></td>
+  <td style="width:30%;" class="title">Complete Form</td>
+  <td style="width:70%;" class="field"><input type="submit" class="button" value="Update Ban Settings"></td>
 </tr>
 </table>
 </div>
