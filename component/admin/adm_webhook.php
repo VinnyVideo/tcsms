@@ -31,7 +31,7 @@ if ($result = mysqli_store_result($mainsite_connection))
         $user = str_replace("&amp;", "&", htmlspecialchars("https://mfgg.net/index.php?act=user&param=01&uid=")).$row[1];
         $username = $row[2];
         $title = $row[4];
-        $message = str_replace("&#39;", "'", strip_tags( str_replace("<br />", "\n", substr($row[5], 0, strpos($row[5], "<b>Recent Additions</b>") ) ) ) );
+        $message = str_replace("&#39;", "'", strip_tags( str_replace("<br>", "\n", substr($row[5], 0, strpos($row[5], "<b>Recent Additions</b>") ) ) ) );
         $img_start = strpos($row[5], "https://www.mfgg.net/thumbnail/");
         $thumbnail = substr($row[5], $img_start, strpos($row[5], "' border='0' alt='Thumbnail'>")-$img_start );
         $icon = $row[6];
