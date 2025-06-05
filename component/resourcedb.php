@@ -389,8 +389,10 @@ class component_resourcedb {
 		
 		$session->touch_data ('rr');
 		//var_dump($STD->user['last_visit']);
+		//var_dump($RES->data['comment_date']);
 		if (($STD->user['last_visit'] != 0) && ($RES->data['comment_date'] > $STD->user['last_visit'])) {
-			$session->data['rr'][$RES->data['rid']] = time();
+			//$session->data['rr'][$RES->data['rid']] = time();
+			$session->data['rr'][$RES->data['rid']] = 1; // 5/31/2025 change - I think this is safer than using the time function
 			//$session->add_read_resource($RES->data['rid']);
 			//$session->save_read_resources();
 		}
