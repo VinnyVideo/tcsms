@@ -55,13 +55,13 @@ class template_adm_global
           .button { background: #B8BDDF; color:#000000; font-size:10pt; border:1px solid #000000 }
           .category { color: #CB3723; font-size:12pt; font-weight:bold }
           .title_fixed { font-weight: bold; font-size:11pt; color: #4B4D5F; width: 30% }
-          .title { font-weight: bold; font-size:11pt; color: #4B4D5F }
+          .title { font-weight: bold; font-size:11pt; color: #4B4D5F; padding:1px; }
           .highlight { color: #2749DC }
           .highlight2 { color: #CB3723 }
           .options { font-size:12pt; color: #4B4D5F }
           .options2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
           .field_fixed { font-size:12pt; color: #4B4D5F; width: 70% }
-          .field { font-size:12pt; color:#4B4D5F }
+          .field { font-size:12pt; color:#4B4D5F; padding:1px; }
           .field2 { font-size:12pt; color: #4B4D5F; background-color: #C8CDEF }
           .options_small { font-size:10pt; color: #4B4D5F }
           .options_small2 { font-size:10pt; color: #4B4D5F; background-color: #C8CDEF }
