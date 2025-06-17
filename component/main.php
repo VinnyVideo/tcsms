@@ -70,7 +70,6 @@ class component_main {
 			$this->output .= $this->html->news_row($data);
 		}
 		
-		
 		$this->output .= $this->html->news_footer();
 		$this->output .= $STD->global_template->page_footer();
 	}
@@ -407,7 +406,7 @@ class component_main {
 			//Obtain like/unlike URLs
 			$small_salt = "enterSaltHere";
 			$hashbrown = md5($COM2->data['cid'].$small_salt);
-			$COM2->data['like_url'] = $STD->encode_url($_SERVER['PHP_SELF'], "act=main&param=13&cid={$COM2->data['cid']}&type={$type}&c={$IN['c']}&rid={$IN['id']}&hash={$hashbrown}");
+			$COM2->data['like_url'] = $STD->encode_url($_SERVER['PHP_SELF'], "act=main&param=13&cid={$COM2->data['cid']}&type={$type}&c={$IN['c']}&rid={$IN['id']}&hash={$hashbrown}"); //old cid: str_rot13($COM2->data['cid'].$small_salt)
 			$COM2->data['unlike_url'] = $STD->encode_url($_SERVER['PHP_SELF'], "act=main&param=14&cid={$COM2->data['cid']}&type={$type}&c={$IN['c']}&rid={$IN['id']}&hash={$hashbrown}");
 			$COM2->data['lcount'] = $lcount;
 			
@@ -737,7 +736,6 @@ class component_main {
 		}
 		
 		// Build date arrays
-		
 		$curr_day = gmdate("j", $STD->translate_date( time() ));
 		$curr_mon = gmdate("n", $STD->translate_date( time() ));
 		
@@ -953,9 +951,6 @@ class component_main {
 			$STD->error("Invalid comment selected.");
 		}
 		
-		//decrypt and remove salt (OBSOLETE)
-		//$cidin = str_replace($small_salt, "", str_rot13($IN['cid']));
-		
 		//security token check
 		$hashbrown2 = md5($IN['cid'].$small_salt);
 		if ($IN['hash'] == $hashbrown2) {
@@ -965,12 +960,11 @@ class component_main {
 			$STD->error("Invalid security token!");
 		}
 		
-		
 		//FAILSAFE SYSTEM
 		$like_failsafe = 0;
 		//$fs_query = "SELECT * FROM tsms_likes WHERE uid={$STD->user['uid']} AND cid={$cidin}";
 		
-		//I have to manually write a query because I have absolutely no idea how $DB->query() works even after going over all of the source codes. TSMS is a fuckn confusing mess. ~Hypernova
+		//I have to manually write a query because I have absolutely no idea how $DB->query() works even after going over all of the source codes. ~Hypernova
 		$where = $DB->format_db_where_string(array('username' => $IN['new_username'])); 
 		$DB->query("SELECT * FROM {$CFG['db_pfx']}_likes WHERE cid={$IN['cid']} AND uid={$STD->user['uid']}"); //{$cidin} is OBSOLETE
 		$num_rows = $DB->get_num_rows();
@@ -978,7 +972,6 @@ class component_main {
 		{
 			$like_failsafe = 1;
 		}
-		
 		
 		//insert the like data into database
 		if ($like_failsafe == 0)
@@ -1022,9 +1015,6 @@ class component_main {
 		{
 			$STD->error("Invalid comment selected.");
 		}
-		
-		//decrypt and remove salt (OBSOLETE)
-		//$cidin = str_replace($small_salt, "", str_rot13($IN['cid']));
 		
 		//security token check
 		$hashbrown2 = md5($IN['cid'].$small_salt);
@@ -1162,14 +1152,14 @@ class component_main {
 			$STD->error("Invalid submission selected.");
 		}
 		
-		//regenrate and check hash
+		//Regenerate and check hash
 		$small_salt = "enterSaltHere";
 		$hashbrown2 = md5($IN['rid'].$small_salt);
 		if ($IN['hash'] == $hashbrown2) {
 			//$STD->error("CORRECT security token! DEBUG PURPOSE: IN['rid'] = {$IN['rid']}; in['hash'] = {$IN['hash']}; hashbrown2 = {$hashbrown2}; uid = {$STD->user['uid']}");
 		}
 		else {
-			$STD->error("Invalid security token!");
+			//$STD->error("Invalid security token!"); // Commented out because it's probably not really needed - this needs a rewrite
 		}
 		
 		//Manually check for duplicate first
@@ -1182,7 +1172,6 @@ class component_main {
 			$like_failsafe = 1;
 			//$STD->error("You tried to favorite the submission for more than once! (Result: {$num_rows} row(s))");
 		}
-		
 		
 		//insert the like data into database
 		if ($like_failsafe == 0)
@@ -1220,7 +1209,7 @@ class component_main {
 		}
 		
 		//regenrate and check hash
-		$small_salt = "";
+		$small_salt = "enterSaltHere";
 		$hashbrown2 = md5($IN['rid'].$small_salt);
 		if ($IN['hash'] == $hashbrown2) {
 			//$STD->error("CORRECT security token! DEBUG PURPOSE: IN['rid'] = {$IN['rid']}; in['hash'] = {$IN['hash']}; hashbrown2 = {$hashbrown2}; uid = {$STD->user['uid']}");
@@ -1267,32 +1256,32 @@ class component_main {
 		//COMMENT OBJ
 		$comment = new comment;
 		
-		//QUERY
+		//QUERY	
 		$rc_query = <<<"SQL"
-				(
-					SELECT c.*, u.username, r.title, g.name_prefix, g.name_suffix, r.type AS rt, r.rid 
-					FROM {$CFG['db_pfx']}_comments AS c 
-						LEFT JOIN {$CFG['db_pfx']}_users AS u ON (u.uid = c.uid) 
-						LEFT JOIN {$CFG['db_pfx']}_groups g ON (g.gid = u.gid) 
-						LEFT JOIN {$CFG['db_pfx']}_resources r ON (c.rid = r.rid) 
-					WHERE c.type = 1
-					ORDER BY date DESC 
-					LIMIT {$limit}
-				) 
-				UNION ALL 
-				( 
-					SELECT c.*, u.username, r.title, g.name_prefix, g.name_suffix, '' AS rt, r.nid AS rid 
-					FROM {$CFG['db_pfx']}_comments AS c 
-						LEFT JOIN {$CFG['db_pfx']}_users AS u ON (u.uid = c.uid) 
-						LEFT JOIN {$CFG['db_pfx']}_groups g ON (g.gid = u.gid) 
-						LEFT JOIN {$CFG['db_pfx']}_news r ON (r.nid = c.rid) 
-					WHERE c.type = 2
-					ORDER BY date DESC 
-					LIMIT {$limit}
-				) 
+			(
+				SELECT c.*, u.username, r.title, g.name_prefix, g.name_suffix, r.type AS rt, r.rid 
+				FROM {$CFG['db_pfx']}_comments AS c 
+					LEFT JOIN {$CFG['db_pfx']}_users AS u ON (u.uid = c.uid) 
+					LEFT JOIN {$CFG['db_pfx']}_groups g ON (g.gid = u.gid) 
+					LEFT JOIN {$CFG['db_pfx']}_resources r ON (c.rid = r.rid) 
+				WHERE c.type = 1
 				ORDER BY date DESC 
 				LIMIT {$limit}
-			SQL;
+			) 
+			UNION ALL 
+			( 
+				SELECT c.*, u.username, r.title, g.name_prefix, g.name_suffix, '' AS rt, r.nid AS rid 
+				FROM {$CFG['db_pfx']}_comments AS c 
+					LEFT JOIN {$CFG['db_pfx']}_users AS u ON (u.uid = c.uid) 
+					LEFT JOIN {$CFG['db_pfx']}_groups g ON (g.gid = u.gid) 
+					LEFT JOIN {$CFG['db_pfx']}_news r ON (r.nid = c.rid) 
+				WHERE c.type = 2
+				ORDER BY date DESC 
+				LIMIT {$limit}
+			) 
+			ORDER BY date DESC 
+			LIMIT {$limit}
+		SQL;
 		$DB->query($rc_query);
 		$count = $DB->get_num_rows();
 		$comment = $DB;
