@@ -1,4 +1,4 @@
-<script type='text/javascript'>
+<script>
   function check_move() {
       id = get_by_id('change_to');
       
@@ -26,11 +26,11 @@
   }
 </script>
 <form method='post' action='{{url}}' enctype='multipart/form-data'>
-  <input type='hidden' name='id' value='{{idx}}' />
-  <input type='hidden' name='c' value='{{c}}' />
-  <input type='hidden' name='security_token' value='{{security_token}}' />
+  <input type='hidden' name='id' value='{{idx}}'>
+  <input type='hidden' name='c' value='{{c}}'>
+  <input type='hidden' name='security_token' value='{{security_token}}'>
 	<div align='center'>
-		<table border='0' cellspacing='0' cellpadding='1' width='90%'>
+		<table cellspacing='0' cellpadding='1' width='90%'>
 		
 		  <tr>
 	      <td>&nbsp;</td>
@@ -47,7 +47,7 @@
 	    
   		<tr>
   		  <td class='title_fixed'>
-  		    <a href='javascript:show_hide(10);'><img src='{{image_path}}/info.gif' border='0' alt='?' /></a> Parent Category
+  		    <a href='javascript:show_hide(10);'><img src='{{image_path}}/info.gif' alt='?'></a> Parent Category
   		  </td>
   		  <td class='field_fixed'>
   		    <b>{{parent_class}}</b> <a href='javascript:show_hide(25);show_hide(26);'>(Change)</a>
@@ -103,7 +103,7 @@
 	    
   		<tr>
   		  <td class='title_fixed' valign='top'>
-  		    <a href='javascript:show_hide(18);'><img src='{{image_path}}/info.gif' border='0' alt='?' /></a> <label for="admincomment">Admin Comment</label>
+  		    <a href='javascript:show_hide(18);'><img src='{{image_path}}/info.gif' alt='?'></a> <label for="admincomment">Admin Comment</label>
   		  </td>
   		  <td class='field_fixed'>
   		    <textarea id='admincomment' name='admincomment' rows='4' cols='30' class='textbox'></textarea>
