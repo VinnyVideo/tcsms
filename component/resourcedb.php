@@ -43,6 +43,7 @@ class component_resourcedb {
 			case 3: $this->do_download(); break;
 			case 4: $this->version_history(); break;
 			case 5: $this->show_top_games(); break;
+			case 6: $this->do_play(); break;
 		}
 		
 		//$TPL->template = $this->output;
@@ -504,6 +505,18 @@ class component_resourcedb {
 		fclose($fp);
 
 		exit;
+	}
+	
+	function do_play () {
+		global $DB, $IN, $CFG, $STD;
+		
+		$module = $STD->modules->new_module($IN['c']);
+		$module->init();
+		$module_record = $STD->modules->get_module($IN['c']);
+		$RES = new resource;
+		
+		$RES->data['plays']++;
+		$RES->update();
 	}
 	
 	function version_history () {

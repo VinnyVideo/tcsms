@@ -505,7 +505,7 @@ class mod_games extends module {
 
 		$data['file_url'] = $STD->encode_url($_SERVER['PHP_SELF'], "act=resdb&param=02&c={$IN['c']}&id={$data['rid']}");
 		$data['dl_url'] = $STD->encode_url($_SERVER['PHP_SELF'], "act=resdb&param=03&c={$IN['c']}&id={$data['rid']}");
-		$data['play_url'] = $STD->encode_url("html5/", "{$data['file_html5']}");
+		$data['play_url'] = $STD->encode_url("html5/", "act=resdb&param=06&c={$IN['c']}&id={$data['file_html5']}");
 		
 		$page_icon = "<img src=\"{$STD->tags['global_image_path']}/viewpagevw.gif\" alt=\"[Page]\" style=\"display:inline; vertical-align:middle\" title=\"View Submission's Page\">";
 		$dl_icon = "<img src=\"{$STD->tags['global_image_path']}/viewpagedn.gif\" alt=\"[DL]\" style=\"display:inline; vertical-align:middle\" title=\"Download Submission\">";
@@ -555,8 +555,10 @@ class mod_games extends module {
 			? $data['download_text'] = 'Download Unavailable'
 			: $data['download_text'] = "<a href='$dl_url'>Download!</a>";
 		
-		// 2/29/2024 Additions
-		$play_url = "html5/" . "{$data['file_html5']}";
+		// 2/29/2024 Addition
+		//$play_url = "html5/" . "{$data['file_html5']}"; // 2024 version
+		$play_url = $STD->encode_url("html5/{$data['file_html5']}", "&act=resdb&param=06&c={$IN['c']}&id={$IN['id']}",); // 2025 test - doesn't count plays though
+		//$play_url = $STD->encode_url("&act=resdb&param=06&c={$IN['c']}&id={$IN['id']}&", "html5/{$data['file_html5']}");
 		if (strlen($data['file_html5']) < 7)
 			$data['play_text'] = '';
 		else
