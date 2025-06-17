@@ -7,7 +7,7 @@ global $STD;
 return <<<HTML
 <form method="post" action="{$login_url}">
 <div style="width:70%; margin-left:auto; margin-right:auto;">
-<input type="hidden" name="security_token" value="{$token}" />
+<input type="hidden" name="security_token" value="{$token}">
 <br>
 <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border:2px solid #000000;">
 <tr>
