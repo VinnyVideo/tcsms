@@ -145,10 +145,10 @@ HTML;
 function msg_history_row ($msg) {
 global $STD;
 return <<<HTML
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformtitle" style="width: 20%">{$msg['sender']}</td>
-  <td class="sformtitle" style="width: 80%"><table cellspacing="0"><tr>
+  <td class="sformtitle" style="width: 80%;"><table style="border-spacing:0px;"><tr>
     <td>{$msg['title']}</td>
     <td style="float:right;font-weight:normal;">{$msg['date']}</td>
   </tr></table></td>
@@ -191,7 +191,7 @@ return <<<HTML
 <input type="hidden" name="security_token" value="{$token}">
 <input type="hidden" name="reply" value="{$reply}">
 <div class="sformstrip">Compose a new message</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft">Send To</td>
   <td class="sformright"><input type="radio" name="to" value="staff" onclick="set_staff();" title="Send to Staff" class="radiobutton"> Site Staff<br>
@@ -207,11 +207,11 @@ return <<<HTML
 </tr>
 </table>
 <div class="sformstrip">Write your message</div>
-<table class="sformtable" cellspacing="1">
+<table class="sformtable" style="border-spacing:1px;">
 <tr>
   <td class="sformleft"><label for="body">Message</label></td>
   <td class="sformright"><textarea name="body" id="body" rows="6" cols="40" class="textbox">{$msg['body']}</textarea><br>
-    <input type="checkbox" name="copy" title="Keep copy in Sent Messages" checked="checked" value="1" style="checkbox"> Keep copy in Sent Messages folder</td>
+    <input type="checkbox" name="copy" title="Keep copy in Sent Messages" checked="checked" value="1"> Keep copy in Sent Messages folder</td>
 </tr>
 </table>
 <div class="sformstrip" style="text-align: center"><input type="submit" value="Send Message" class="button"></div>
