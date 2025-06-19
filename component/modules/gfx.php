@@ -519,8 +519,8 @@ class mod_gfx extends module {
 		for ($x=0; $x<min(2,$rows_returned); $x++) {
 			$row = $DB->fetch_row($dblist);
 			$vdate = $STD->make_date_short($row['date']);
-			$data['version_history'] .= "<tr><td width='25%' valign='top'><b>$vdate&nbsp;</b></td>
-										   <td width='75%' valign='top'>{$row['change']}</td></tr>";
+			$data['version_history'] .= "<tr><td style='width:25%; vertical-align:top'><b>$vdate&nbsp;</b></td>
+										   <td style='width:75%; vertical-align:top'>{$row['change']}</td></tr>";
 		}
 		
 		if ($rows_returned > 2)	
