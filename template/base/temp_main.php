@@ -422,8 +422,8 @@ return <<<HTML
     <td class="sformright">{$c_author}</td>
   </tr>
   <tr>
-    <td class="sformleft"><b>Report</b><br>Enter your report in this box to alert site staff to objectionable content in this comment.</td>
-    <td class="sformright"><textarea rows='10' cols='50' name='report' class="textbox"></textarea></td>
+    <td class="sformleft"><label for="report"><b>Report</b></label><br>Enter your report in this box to alert site staff to objectionable content in this comment.</td>
+    <td class="sformright"><textarea rows='10' cols='50' id='report' name='report' class="textbox"></textarea></td>
   </tr>
 </table>
 <div class="sformstrip" style="text-align:center"><input type='submit' value='Send Report' class='button'></div>
