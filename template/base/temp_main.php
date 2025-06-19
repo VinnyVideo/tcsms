@@ -362,7 +362,7 @@ return <<<HTML
 <input type='hidden' name='id' value='{$id}'>
 <div class="sform">
 <div class="sformstrip">Report a submission</div>
-<table class="sformtable" style="border-spacing:1px;>
+<table class="sformtable" style="border-spacing:1px;">
   <tr>
     <td class="sformleft"><b>Submission</b></td>
     <td class="sformright"><b>{$title}</b></td>
