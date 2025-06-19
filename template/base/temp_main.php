@@ -349,7 +349,7 @@ return <<<HTML
   <td class="sformright"><textarea name="message" title="Enter your edited comment here" cols="50" rows="10" class="textbox">{$comment}</textarea></td>
 </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type="submit" value="Save Edit" class="button" /></div>
+<div class="sformstrip" style="text-align:center"><input type="submit" value="Save Edit" class="button"></div>
 </div>
 </form>
 HTML;
@@ -476,7 +476,7 @@ return <<<HTML
   <td class="sformright"><textarea name="message" title="Enter your comment here" cols="50" rows="10" class="textbox">{$comment}</textarea></td>
 </tr>
 </table>
-<div class="sformstrip" style="text-align:center"><input type="submit" value="Add comment" class="button" /></div>
+<div class="sformstrip" style="text-align:center"><input type="submit" value="Add comment" class="button"></div>
 </div>
 </form>
 HTML;
