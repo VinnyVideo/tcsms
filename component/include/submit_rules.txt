@@ -4,11 +4,11 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 <br><br>
 
 <dl>
-<dt><h2>1. General Rules of Thumb</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">1. General Rules of Thumb</dt>
 
 <dd>1.1 - <u><b>Do not steal content from others</b></u>, as that would be highly unethical.
     <p style="margin-left: 40px;">1.1.1 - We, as the staff of MFGG, have our own ways of determining whether if a piece of work is stolen from others or not, and will punish those who submit stolen work if proven. <i>Anyone submitting stolen content will be banned from the site immediately.</i></p>
-    <p style="margin-left: 40px;">1.1.2 - Please keep in mind that while rips from commericial games aren't technically being done with permission, they are permitted given the (rather obvious) circumstances.</p>
+    <p style="margin-left: 40px;">1.1.2 - Please keep in mind that while rips from commercial games aren't technically being done with permission, they are permitted given the (rather obvious) circumstances.</p>
     <p style="margin-left: 40px;">1.1.3 - If your submission is based on someone else's work like edits/revamps, please make sure to include proper credits.</p>
     <p style="margin-left: 40px;">1.1.4 - You are NOT allowed to upload submissions made by other user unless with the author's explicit permission.</p>
 	<p style="margin-left: 40px;">1.1.5 - Regardless of if credit was given or not, reuploads or slight modifications of others' work are not allowed, unless you're explicitly given permission by the original author.</p>
@@ -35,7 +35,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>1.9 - Users who repeatedly submit low quality submissions while completely disregarding the rules and warnings, depending on the severity of the situation, may end up getting banned.<br><br><br></dd>
 
-<dt><h2>2. Guidelines for Games</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">2. Guidelines for Games</dt>
 
 <dd>2.1 - Any external files required to run the game must be included in its download, with the exception of commonly-used external libraries (such as DirectX or XNA Framework). That being said, certain older submissions might require files and converters that are listed under the Miscellaneous category of the site. Games that require the installation of game creation software such as Clickteam Fusion, RPG Maker, etc will be declined. As a general rule of thumb, <i>the more effort we have to go through to play your game, the less likely it is to be accepted.</i><br><br><br></dd>
 
@@ -56,7 +56,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>2.7 - MFGG now accepts game submissions that are as large as 100 megabytes in size. However, <i>please do not abuse this privilege.</i> Take care to keep game sizes manageable by removing unused resources and by encoding audio to minimize file sizes. For instance, if you submit a simple minigame that uses a 40-megabyte WAV file for background music, we will likely decline the submission for being needlessly large.<br><br><br></dd>
 
-<dt><h2>3. Guidelines for Hacks and Mods</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">3. Guidelines for Hacks and Mods</dt>
 
 <dd>3.1 - All ROM hacks must be submitted in a patch format, such as BPS, IPS, or Xdelta. We recommend using BPS patches if possible since we have an online BPS patcher that can be accessed from <a href="https://www.mfgg.net/index.php?act=page&name=patcher">here</a>. <b>If your upload contains a ROM file, it will be declined, no exceptions.</b> If your mod is intended to be run using a real-time file patching method, such as Riivolution, include all necessary files required to run in a ZIP archive - including, if applicable, the configuration file.<br><br><br></dd>
 
@@ -75,7 +75,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>3.5 - To play most hacks, find a ROM file of the base game (<b>this will not be provided for you - consider yourself on your own, there; We advocate dumping your own ROMs</b>) and patch it using either our online patcher or a patching program of your choice.<br><br><br></dd>
 
-<dt><h2>4. Guidelines for Graphics</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">4. Guidelines for Graphics</dt>
 
 <dd>4.1 - All graphics submissions must be in a proper format.
     <p style="margin-left: 40px;">4.1.1 - We only accept submissions in lossless file formats (such as PNG and GIF) for sprites and backgrounds. <i>We will not accept JPEG files, unless they are high resolution textures intended to be used within 3D games.</i></p>
@@ -85,7 +85,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
     <p style="margin-left: 40px;">4.1.5 - Sprites must be kept in a 1x pixel format. Any resized sprites will be declined.</p>
     <p style="margin-left: 40px;">4.1.6 - Make sure that your tilesets tile properly before you submit them. Any practical size is permitted for the tiles; 16x16 is a common one.</p>
     <p style="margin-left: 40px;">4.1.7 - Sprites are recommended to be submitted as a set. Any sprite submission with few frames unless noted would likely be declined. We do allow exceptions for sprites that do not fit in larger groups, but would still be considered useful (i.e. visual FX frames, unusual extra graphics, unused sprites, etc.)</p>
-    <p style="margin-left: 40px;">4.1.8 - All sprite and tileset submissions must have a clean background, like single colored or transparent background. If your submission is difficult for people to use like a sprite sheet with gradient/textured background, they will be declined.</i></p><br></dd>
+    <p style="margin-left: 40px;">4.1.8 - All sprite and tileset submissions must have a clean background, like single colored or transparent background. If your submission is difficult for people to use like a sprite sheet with gradient/textured background, they will be declined.</p><br></dd>
 
 <dd>4.2 - Graphics submissions should be complete enough to be of use to fangame makers.
     <p style="margin-left: 40px;">4.2.1 - A sprite sheet should include enough frames to comprise a complete animation.</p>
@@ -101,7 +101,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>4.6 - In the case of graphics ripped from official games, make sure that the graphics are not already available elsewhere on MFGG before you make a new submission. Redundant graphics rips will be declined unless the new submission provides additional content or substantially improved organization compared with any of existing rips.<br><br><br></dd>
 
-<dt><h2>5. Guidelines for Reviews</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">5. Guidelines for Reviews</dt>
 
 <dd>5.1 - A review is a critical analysis of the game you're reviewing, so it's a little more substantial than a comment on the page saying "This is great!!! 10/10." When writing a review, you're trying to help other people determine whether or not they should play the game. <b>To that end, you need to <u>be descriptive</u>. Simple descriptions like "GREAT!" for gameplay and "Really really bad" for sound don't cut it.</b> You need to explain why you think they deserve the scores you give them. For example, explaining the basics of the gameplay and then stating what works and what doesn't will help the reader not only get the gist of the game but influence their decision on whether or not to play it. The same goes for graphics and sound - although to a lesser amount, as they aren't quite as important.<br><br><br></dd>
 
@@ -113,7 +113,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>5.5 - Don't even try to submit reviews outside of the 1-10 score range, they are only permitted on special occasions. Any of these reviews will be automatically readjusted.<br><br><br></dd>
 
-<dt><h2>6. Guidelines for Tutorials</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">6. Guidelines for Tutorials</dt>
 
 <dd>6.1 - Tutorials should generally demonstrate an element or elements from games. MFGG also accepts general-purpose tutorials that demonstrate general-purpose game design information - for example, how to use external files in Game Maker or how to make an action RPG in Clickteam Fusion 2.5.<br><br><br></dd>
 
@@ -123,7 +123,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>6.4 - Tutorials that are riddled with bugs are not allowed. Double check your work before submitting.<br><br><br></dd>
 
-<dt><h2>7. Guidelines for Sounds</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">7. Guidelines for Sounds</dt>
 
 <dd>7.1 - Sound files must be as high quality as possible. We will not accept poorly recorded or fuzzy sound effects that would not be useful in fangames.<br><br><br></dd>
 
@@ -135,13 +135,13 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
 
 <dd>7.5 - We do not accept rips of licensed songs from video games, all music rips must be music that was originally composed for the said game.<br><br><br></dd>
 
-<dt><h2>8. Guidelines for Miscellaneous Files</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">8. Guidelines for Miscellaneous Files</dt>
 
 <dd>8.1 - The Miscellaneous section is designed specifically for resources that prove helpful in either running or creating games. Feel free to submit resources such as fonts, 3D Models, system files, but not things like screensavers or wallpapers.<br><br><br></dd>
 
 <dd>8.2 - Saved level files are also permitted in this category - when submitting levels, please put which game/level editor is it for in the description. Similar to hack rules, levels must demonstrate effort. For more details, please see Rule 3.4.<br><br><br></dd>
 
-<dt><h2>9. Other Things to Consider</h2></dt>
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">9. Other Things to Consider</dt>
 
 <dd>9.1 - Remember that submissions must be checked by multiple main site moderators before they can appear on the site, and since MFGG staff have lives outside of the site, it may take a few weeks before a submission is accepted or declined.<br><br><br></dd>
 
