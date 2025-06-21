@@ -167,10 +167,10 @@ class component_submit {
 						  'sess'	=> '');
 		
 		if ($session->sess_id)
-			$urlparts['sess'] = "<input type=\"hidden\" name=\"sess\" value=\"" . $session->sess_id . "\" />\n";
+			$urlparts['sess'] = "<input type=\"hidden\" name=\"sess\" value=\"" . $session->sess_id . "\">\n";
 		if (!empty($IN['rules_agree'])) {
-			$urlparts['sess'] .= "<input type=\"hidden\" name=\"rules_agree\" value=\"1\" />\n";
-			$urlparts['sess'] .= "<input type=\"hidden\" name=\"rules_continue\" value=\"1\" />";
+			$urlparts['sess'] .= "<input type=\"hidden\" name=\"rules_agree\" value=\"1\">\n";
+			$urlparts['sess'] .= "<input type=\"hidden\" name=\"rules_continue\" value=\"1\">";
 		}
 		
 		$this->output .= $this->html->submit_page($urlparts, $STD->make_form_token(), $type_list, $def_disp);
