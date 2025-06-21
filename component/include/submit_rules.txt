@@ -21,27 +21,27 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
     <p style="margin-left: 40px;">1.2.4 - Preview screenshots and thumbnails should not contain any NSFW content at all. This also applies to violence, and everything else mentioned as being acceptable within limitation.</p>
 <br></dd>
 
-<dd>1.3 - All content should demonstrate basic care and effort. Rushed or useless sprites, as well as rushed, empty games will be declined. Further explanation below. <i>We will not tolerate lazy tile rips yanked directly from YY-CHR or similar applications.</i><br><br><br></dd>
+<dd>1.3 - All content should demonstrate basic care and effort. Rushed or useless sprites, as well as rushed, empty games will be declined. Further explanation below. <i>We will not tolerate lazy tile rips yanked directly from YY-CHR or similar applications.</i><br><br></dd>
 
-<dd>1.4 - All submissions are required to be filtered by their respective franchise except reviews and hacks. We have the right to modify the submission if any of the tags fail to adhere to the content. However, we will notify the user if such action was taken. Repeated failure to properly tag your submissions may result in a warning and temporary ban from being allowed to submit content to the site, although such cases are very unlikely to occur.<br><br><br></dd>
+<dd>1.4 - All submissions are required to be filtered by their respective franchise except reviews and hacks. We have the right to modify the submission if any of the tags fail to adhere to the content. However, we will notify the user if such action was taken. Repeated failure to properly tag your submissions may result in a warning and temporary ban from being allowed to submit content to the site, although such cases are very unlikely to occur.<br><br></dd>
 
-<dd>1.5 - Animated submission thumbnail and/or screenshots are not accepted anymore, no exceptions.<br><br><br></dd>
+<dd>1.5 - Animated submission thumbnail and/or screenshots are not accepted anymore, no exceptions.<br><br></dd>
 
-<dd>1.6 - If you have a set of related submissions, it might be a better idea to upload them as one submission instead of submitting them one by one. Don't spam us with a dozen of submissions at once if they can fit in a single submission.<br><br><br></dd>
+<dd>1.6 - If you have a set of related submissions, it might be a better idea to upload them as one submission instead of submitting them one by one. Don't spam us with a dozen of submissions at once if they can fit in a single submission.<br><br></dd>
 
-<dd>1.7 - All submissions that contain malware will be removed. If we determine that the malware was submitted maliciously, the submitter will be banned.<br><br><br></dd>
+<dd>1.7 - All submissions that contain malware will be removed. If we determine that the malware was submitted maliciously, the submitter will be banned.<br><br></dd>
 
-<dd>1.8 - The rules will apply to any submissions <u>after the date</u> the rules are updated. Any submissions prior to the update date will be excluded unless it is under special circumstances.<br><br><br></dd>
+<dd>1.8 - The rules will apply to any submissions <u>after the date</u> the rules are updated. Any submissions prior to the update date will be excluded unless it is under special circumstances.<br><br></dd>
 
-<dd>1.9 - Users who repeatedly submit low quality submissions while completely disregarding the rules and warnings, depending on the severity of the situation, may end up getting banned.<br><br><br></dd>
+<dd>1.9 - Users who repeatedly submit low quality submissions while completely disregarding the rules and warnings, depending on the severity of the situation, may end up getting banned.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">2. Guidelines for Games</dt>
 
-<dd>2.1 - Any external files required to run the game must be included in its download, with the exception of commonly-used external libraries (such as DirectX or XNA Framework). That being said, certain older submissions might require files and converters that are listed under the Miscellaneous category of the site. Games that require the installation of game creation software such as Clickteam Fusion, RPG Maker, etc will be declined. As a general rule of thumb, <i>the more effort we have to go through to play your game, the less likely it is to be accepted.</i><br><br><br></dd>
+<dd>2.1 - Any external files required to run the game must be included in its download, with the exception of commonly-used external libraries (such as DirectX or XNA Framework). That being said, certain older submissions might require files and converters that are listed under the Miscellaneous category of the site. Games that require the installation of game creation software such as Clickteam Fusion, RPG Maker, etc will be declined. As a general rule of thumb, <i>the more effort we have to go through to play your game, the less likely it is to be accepted.</i><br><br></dd>
 
-<dd>2.2 - Games that are packaged with installation mediums are not allowed due to security concerns. In some cases, some installers can easily hide malware, which is difficult to detect until it is already installed in the system - which could be too late to properly deal with.<br><br><br></dd>
+<dd>2.2 - Games that are packaged with installation mediums are not allowed due to security concerns. In some cases, some installers can easily hide malware, which is difficult to detect until it is already installed in the system - which could be too late to properly deal with.<br><br></dd>
 
-<dd>2.3 - Levels packs, such as those for "Super Mario Bros. X" or similar games, will be declined automatically if submitted as a game. It is best to submit level files under our Miscellaneous category, just please make sure the category is set to "Levels" when doing so.<br><br><br></dd>
+<dd>2.3 - Levels packs, such as those for "Super Mario Bros. X" or similar games, will be declined automatically if submitted as a game. It is best to submit level files under our Miscellaneous category, just please make sure the category is set to "Levels" when doing so.<br><br></dd>
 
 <dd>2.4 - There must be some tangible form of gameplay in games.
     <p style="margin-left: 40px;">2.4.1 - Please try to ensure that your game is at least attempting to be an entertaining and productive contribution to the website. Games with little gameplay, lack of effort, or games made intentionally bad for the purpose of a joke are not allowed. When a game is bad on purpose, it's usually not fun for anyone, and your attempts at comedy will most likely come off as obnoxious.</p>
@@ -50,17 +50,17 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
     <p style="margin-left: 40px;">2.4.4 - Demos (or yet to be completed games) must contain at least one full-length level for a developed engine and at least two for a more basic one.</p>
 <br></dd>
 
-<dd>2.5 - <b>No engine clones!</b> This is an extension of our "general effort" policy. For example, a game made with Hello Mario Engine with little to no graphical changes and no additional code will most likely be declined. Basically, if your game is an edit of an existing premade fangame engine that you didn't make, and does not do anything substantial to change the engine's features/presentation/etc., we will not accept it. Using a pre-existing engine is totally fine, but lazy engine edits are not worth preserving on the site.<br><br><br></dd>
+<dd>2.5 - <b>No engine clones!</b> This is an extension of our "general effort" policy. For example, a game made with Hello Mario Engine with little to no graphical changes and no additional code will most likely be declined. Basically, if your game is an edit of an existing premade fangame engine that you didn't make, and does not do anything substantial to change the engine's features/presentation/etc., we will not accept it. Using a pre-existing engine is totally fine, but lazy engine edits are not worth preserving on the site.<br><br></dd>
 
-<dd>2.6 - Games should have a defined beginning and end; games that end with an unintentional error message will most likely be declined<br><br><br></dd>
+<dd>2.6 - Games should have a defined beginning and end; games that end with an unintentional error message will most likely be declined<br><br></dd>
 
-<dd>2.7 - MFGG now accepts game submissions that are as large as 100 megabytes in size. However, <i>please do not abuse this privilege.</i> Take care to keep game sizes manageable by removing unused resources and by encoding audio to minimize file sizes. For instance, if you submit a simple minigame that uses a 40-megabyte WAV file for background music, we will likely decline the submission for being needlessly large.<br><br><br></dd>
+<dd>2.7 - MFGG now accepts game submissions that are as large as 100 megabytes in size. However, <i>please do not abuse this privilege.</i> Take care to keep game sizes manageable by removing unused resources and by encoding audio to minimize file sizes. For instance, if you submit a simple minigame that uses a 40-megabyte WAV file for background music, we will likely decline the submission for being needlessly large.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">3. Guidelines for Hacks and Mods</dt>
 
-<dd>3.1 - All ROM hacks must be submitted in a patch format, such as BPS, IPS, or Xdelta. We recommend using BPS patches if possible since we have an online BPS patcher that can be accessed from <a href="https://www.mfgg.net/index.php?act=page&name=patcher">here</a>. <b>If your upload contains a ROM file, it will be declined, no exceptions.</b> If your mod is intended to be run using a real-time file patching method, such as Riivolution, include all necessary files required to run in a ZIP archive - including, if applicable, the configuration file.<br><br><br></dd>
+<dd>3.1 - All ROM hacks must be submitted in a patch format, such as BPS, IPS, or Xdelta. We recommend using BPS patches if possible since we have an online BPS patcher that can be accessed from <a href="https://www.mfgg.net/index.php?act=page&name=patcher">here</a>. <b>If your upload contains a ROM file, it will be declined, no exceptions.</b> If your mod is intended to be run using a real-time file patching method, such as Riivolution, include all necessary files required to run in a ZIP archive - including, if applicable, the configuration file.<br><br></dd>
 
-<dd>3.2 - All hacks are required to specify the base game (the one to apply the patch to), region, and hack types.<br><br><br></dd>
+<dd>3.2 - All hacks are required to specify the base game (the one to apply the patch to), region, and hack types.<br><br></dd>
 
 <dd>3.3 -If you're not too certain what kind of hack types to choose for your submission, this may help you:
 <ul><li>Cosmetic: <i>The game plays the same but looks different.</i></li>
@@ -73,7 +73,7 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
     <p style="margin-left: 40px;">3.4.3 - Levels/maps filled with random globs of tiles and/or glitched graphics are not acceptable.</p>
 <br></dd>
 
-<dd>3.5 - To play most hacks, find a ROM file of the base game (<b>this will not be provided for you - consider yourself on your own, there; We advocate dumping your own ROMs</b>) and patch it using either our online patcher or a patching program of your choice.<br><br><br></dd>
+<dd>3.5 - To play most hacks, find a ROM file of the base game (<b>this will not be provided for you - consider yourself on your own, there; We advocate dumping your own ROMs</b>) and patch it using either our online patcher or a patching program of your choice.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">4. Guidelines for Graphics</dt>
 
@@ -93,57 +93,57 @@ Version 1.0.4 (last updated on: Jul 06, 2020)
     <p style="margin-left: 40px;">4.2.3 - We will not accept submissions that will have no use in fangame development. Even if they are of decent/acceptable quality, sprites can still be entirely useless to others. A perfect example would be a sprite sheet for Super Saiya-jin Luigi holding a shotgun.</p>
     <p style="margin-left: 40px;">4.2.4 - Character sprites have to be of official characters respective to the franchise. <i>Any OC, popular or otherwise will not be accepted</i> (i.e. Bowsette, Hernesto, etc.). Content containing any of such sprites will not be accepted, even if they are high quality enough to be used in fangames.</p><br></dd>
 
-<dd>4.3 - <b><u>All Sprites must demonstrate that effort was put into them. Recolors or other simple edits of existing sprites will be declined.</u></b><br><br><br></dd>
+<dd>4.3 - <b><u>All Sprites must demonstrate that effort was put into them. Recolors or other simple edits of existing sprites will be declined.</u></b><br><br></dd>
 
-<dd>4.4 - Sprites that are not too recognizable of the respective character and/or object will also be declined. For example: Barely recognizable SMW Toad sprites that are based off from SMW Mario.<br><br><br></dd>
+<dd>4.4 - Sprites that are not too recognizable of the respective character and/or object will also be declined. For example: Barely recognizable SMW Toad sprites that are based off from SMW Mario.<br><br></dd>
 
-<dd>4.5 - Sprite sheets and tilesets should be easy to use; sheets with large amounts of wasted space or obtrusive watermarks will be declined.<br><br><br></dd>
+<dd>4.5 - Sprite sheets and tilesets should be easy to use; sheets with large amounts of wasted space or obtrusive watermarks will be declined.<br><br></dd>
 
-<dd>4.6 - In the case of graphics ripped from official games, make sure that the graphics are not already available elsewhere on MFGG before you make a new submission. Redundant graphics rips will be declined unless the new submission provides additional content or substantially improved organization compared with any of existing rips.<br><br><br></dd>
+<dd>4.6 - In the case of graphics ripped from official games, make sure that the graphics are not already available elsewhere on MFGG before you make a new submission. Redundant graphics rips will be declined unless the new submission provides additional content or substantially improved organization compared with any of existing rips.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">5. Guidelines for Reviews</dt>
 
-<dd>5.1 - A review is a critical analysis of the game you're reviewing, so it's a little more substantial than a comment on the page saying "This is great!!! 10/10." When writing a review, you're trying to help other people determine whether or not they should play the game. <b>To that end, you need to <u>be descriptive</u>. Simple descriptions like "GREAT!" for gameplay and "Really really bad" for sound don't cut it.</b> You need to explain why you think they deserve the scores you give them. For example, explaining the basics of the gameplay and then stating what works and what doesn't will help the reader not only get the gist of the game but influence their decision on whether or not to play it. The same goes for graphics and sound - although to a lesser amount, as they aren't quite as important.<br><br><br></dd>
+<dd>5.1 - A review is a critical analysis of the game you're reviewing, so it's a little more substantial than a comment on the page saying "This is great!!! 10/10." When writing a review, you're trying to help other people determine whether or not they should play the game. <b>To that end, you need to <u>be descriptive</u>. Simple descriptions like "GREAT!" for gameplay and "Really really bad" for sound don't cut it.</b> You need to explain why you think they deserve the scores you give them. For example, explaining the basics of the gameplay and then stating what works and what doesn't will help the reader not only get the gist of the game but influence their decision on whether or not to play it. The same goes for graphics and sound - although to a lesser amount, as they aren't quite as important.<br><br></dd>
 
-<dd>5.2 - Ironically, your final words are the first thing the reader will see of your review on the game's page, so it should project your overall opinion of the game. Keep them short and to the point. Your final score should be determined by what you think is best - it does not have to be an average of the other scores or even a weighted average. It could be a score you simply feel the game deserves to have regardless of its individual qualities. Just do not make it too wildly different from the rest of your scores without good reason.<br><br><br></dd>
+<dd>5.2 - Ironically, your final words are the first thing the reader will see of your review on the game's page, so it should project your overall opinion of the game. Keep them short and to the point. Your final score should be determined by what you think is best - it does not have to be an average of the other scores or even a weighted average. It could be a score you simply feel the game deserves to have regardless of its individual qualities. Just do not make it too wildly different from the rest of your scores without good reason.<br><br></dd>
 
-<dd>5.3 - All reviews should follow the basic guidelines of proper English. While occasional misspellings or punctuation errors won't affect whether or not if we will accept it, poorly written reviews will be declined regardless of your actual criticism.<br><br><br></dd>
+<dd>5.3 - All reviews should follow the basic guidelines of proper English. While occasional misspellings or punctuation errors won't affect whether or not if we will accept it, poorly written reviews will be declined regardless of your actual criticism.<br><br></dd>
 
-<dd>5.4 - <a href='https://www.mfgg.net/index.php?act=page&name=rules'>Comment rules</a> still apply in reviews - don't be a jerk, be mature and unbiased in your analysis, and do not make reviews simply to troll the game's creator. Beyond that, feel free to be yourself in your review, injecting it with your humor and personality to make it an entertaining read.<br><br><br></dd>
+<dd>5.4 - <a href='https://www.mfgg.net/index.php?act=page&name=rules'>Comment rules</a> still apply in reviews - don't be a jerk, be mature and unbiased in your analysis, and do not make reviews simply to troll the game's creator. Beyond that, feel free to be yourself in your review, injecting it with your humor and personality to make it an entertaining read.<br><br></dd>
 
-<dd>5.5 - Don't even try to submit reviews outside of the 1-10 score range, they are only permitted on special occasions. Any of these reviews will be automatically readjusted.<br><br><br></dd>
+<dd>5.5 - Don't even try to submit reviews outside of the 1-10 score range, they are only permitted on special occasions. Any of these reviews will be automatically readjusted.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">6. Guidelines for Tutorials</dt>
 
-<dd>6.1 - Tutorials should generally demonstrate an element or elements from games. MFGG also accepts general-purpose tutorials that demonstrate general-purpose game design information - for example, how to use external files in Game Maker or how to make an action RPG in Clickteam Fusion 2.5.<br><br><br></dd>
+<dd>6.1 - Tutorials should generally demonstrate an element or elements from games. MFGG also accepts general-purpose tutorials that demonstrate general-purpose game design information - for example, how to use external files in Game Maker or how to make an action RPG in Clickteam Fusion 2.5.<br><br></dd>
 
-<dd>6.2 - We will allow tutorials for simple concepts if designed in a user-friendly and helpful manner, but tutorials for anything as simple as scrolling, which in most programs is one or two lines of code, will not be accepted. Simple problems like these are best addressed on the forums.<br><br><br></dd>
+<dd>6.2 - We will allow tutorials for simple concepts if designed in a user-friendly and helpful manner, but tutorials for anything as simple as scrolling, which in most programs is one or two lines of code, will not be accepted. Simple problems like these are best addressed on the forums.<br><br></dd>
 
-<dd>6.3 - Tutorials that focus on programming should be user-friendly and reasonably easy to understand. Such tutorials should teach proper coding habits and sufficient commenting that users can understand how the code works.<br><br><br></dd>
+<dd>6.3 - Tutorials that focus on programming should be user-friendly and reasonably easy to understand. Such tutorials should teach proper coding habits and sufficient commenting that users can understand how the code works.<br><br></dd>
 
-<dd>6.4 - Tutorials that are riddled with bugs are not allowed. Double check your work before submitting.<br><br><br></dd>
+<dd>6.4 - Tutorials that are riddled with bugs are not allowed. Double check your work before submitting.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">7. Guidelines for Sounds</dt>
 
-<dd>7.1 - Sound files must be as high quality as possible. We will not accept poorly recorded or fuzzy sound effects that would not be useful in fangames.<br><br><br></dd>
+<dd>7.1 - Sound files must be as high quality as possible. We will not accept poorly recorded or fuzzy sound effects that would not be useful in fangames.<br><br></dd>
 
-<dd>7.2 - Please submit all recorded music in .OGG format. .WAV music can take a huge chunk of storage and they are not allowed. .MP3 format are highly discouraged due to compression loss.<br><br><br></dd>
+<dd>7.2 - Please submit all recorded music in .OGG format. .WAV music can take a huge chunk of storage and they are not allowed. .MP3 format are highly discouraged due to compression loss.<br><br></dd>
 
-<dd>7.3 - All submitted custom music must be your own composition and not taken from another website, even if you cannot find the original composer's name. This obviously does not apply to rips.<br><br><br></dd>
+<dd>7.3 - All submitted custom music must be your own composition and not taken from another website, even if you cannot find the original composer's name. This obviously does not apply to rips.<br><br></dd>
 
-<dd>7.4 - The usefulness rule for graphics (see rule 4.2) also apply to sounds. The staff will determine which sound rips would be useful in fangames or not, but generally, most rips that aren't from very obscure games should be fine.<br><br><br></dd>
+<dd>7.4 - The usefulness rule for graphics (see rule 4.2) also apply to sounds. The staff will determine which sound rips would be useful in fangames or not, but generally, most rips that aren't from very obscure games should be fine.<br><br></dd>
 
-<dd>7.5 - We do not accept rips of licensed songs from video games, all music rips must be music that was originally composed for the said game.<br><br><br></dd>
+<dd>7.5 - We do not accept rips of licensed songs from video games, all music rips must be music that was originally composed for the said game.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">8. Guidelines for Miscellaneous Files</dt>
 
-<dd>8.1 - The Miscellaneous section is designed specifically for resources that prove helpful in either running or creating games. Feel free to submit resources such as fonts, 3D Models, system files, but not things like screensavers or wallpapers.<br><br><br></dd>
+<dd>8.1 - The Miscellaneous section is designed specifically for resources that prove helpful in either running or creating games. Feel free to submit resources such as fonts, 3D Models, system files, but not things like screensavers or wallpapers.<br><br></dd>
 
-<dd>8.2 - Saved level files are also permitted in this category - when submitting levels, please put which game/level editor is it for in the description. Similar to hack rules, levels must demonstrate effort. For more details, please see Rule 3.4.<br><br><br></dd>
+<dd>8.2 - Saved level files are also permitted in this category - when submitting levels, please put which game/level editor is it for in the description. Similar to hack rules, levels must demonstrate effort. For more details, please see Rule 3.4.<br><br></dd>
 
 <dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">9. Other Things to Consider</dt>
 
-<dd>9.1 - Remember that submissions must be checked by multiple main site moderators before they can appear on the site, and since MFGG staff have lives outside of the site, it may take a few weeks before a submission is accepted or declined.<br><br><br></dd>
+<dd>9.1 - Remember that submissions must be checked by multiple main site moderators before they can appear on the site, and since MFGG staff have lives outside of the site, it may take a few weeks before a submission is accepted or declined.<br><br></dd>
 
 <dd>9.2 - If you have any questions or issues with the guidelines or the interpretation thereof, please send a message to a main site moderator or administrator.</dd>
 </dl>
