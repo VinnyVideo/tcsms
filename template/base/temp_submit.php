@@ -145,7 +145,7 @@ function scroll_page() {
 <input type='hidden' name='act' value='submit'>
 <input type='hidden' name='param' value='{$urlparts['param1']}'>
 <div class='sformstrip'>Choose a submission type.</div>
-<table class='sformtable' cellspacing='1'>
+<table class='sformtable' style='border-spacing:1px;'>
 <tr>
   <td class='sformleft'><label for='submissiontype'>Submission Type</label></td>
   <td class='sformright'>{$type_list}</td>
