@@ -133,7 +133,7 @@ return <<<HTML
         <div class="sformstrip">Update History</div>
         <table class="sformtable" style="border-spacing:0;">
   	    <tr>
-  	      <td colspan="2" style="height: 0.5em;">
+  	      <td colspan="1" style="height: 0.5em;">
   	          
   	      </td>
   	    </tr>
@@ -284,15 +284,15 @@ return <<<HTML
         </td>
       </tr>
       <tr>
-        <td style="width:100%;" height="50" colspan="3">
+        <td style="width:100%; height:50px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom" height="25">
+        <td style="vertical-align:bottom; height:25px;">
           Downloads: <b>{$res['downloads']}</b>
         </td>
-        <td valign="bottom" style="width:100%;" colspan="2">
+        <td style="vertical-align:bottom; width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
