@@ -34,7 +34,6 @@ form {
 }
 
 .sidebarbg {
-	background: url(../images/sidebar.gif);
 	background-repeat: repeat-y;
 }
 
@@ -174,7 +173,6 @@ form {
 
 .container {
 	display: flex;
-	background: url(../images/sidebar.gif) repeat-y;
 }
 
 
