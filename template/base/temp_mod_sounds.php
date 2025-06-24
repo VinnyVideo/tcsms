@@ -196,7 +196,7 @@ return <<<HTML
         <td style="width:60%;" class="sformsubstrip" colspan="2">
           {$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
-          <a href="{$STD->tags['root_url']}act=resdb&amp;param=06&amp;c={$cat}&amp;id={$res['rid']}">
+          <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
         <td class="sformstrip" style="width:25%;background-position:right top;">
