@@ -90,6 +90,7 @@ if ($pages == "") {
   <div class="sformstrip">
   Years:
   <a href="'.$STD->tags['root_url'].'act=resdb&param=05&c=2" style="text-decoration:underline; font-weight:'.$weight.'">All Time</a>, 
+  '.year_entry("2025", $order).', 
   '.year_entry("2024", $order).', 
   '.year_entry("2023", $order).', 
   '.year_entry("2022", $order).', 
