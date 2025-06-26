@@ -793,10 +793,9 @@ class component_user {
 		$that = new comment;
 		$that->query_build();
 		
-		
 		//QUERY
 		$where = $DB->format_db_where_string(array('c.uid' => $user->data['uid'])); 
-		$DB->query("SELECT c.rid, c.date, c.message, c.type, r.type as rt, c.uid, c.cid FROM ".$CFG['db_pfx']."_comments c INNER JOIN ".$CFG['db_pfx']."_resources r ON (c.rid = r.rid)".//SELECT rid, date, message, type FROM ".$CFG['db_pfx']."_comments ". 
+		$DB->query("SELECT c.rid, c.date, c.message, c.type, r.type as rt, c.uid, c.cid FROM ".$CFG['db_pfx']."_comments c LEFT JOIN ".$CFG['db_pfx']."_resources r ON (c.rid = r.rid)".//SELECT rid, date, message, type FROM ".$CFG['db_pfx']."_comments ". 
 								   "WHERE $where ORDER BY date DESC");
 		$count = $DB->get_num_rows();
 		
@@ -1067,7 +1066,6 @@ class component_user {
 		}
 		else { $IN['st'] = 0; }
 		
-		
 		//SECTION 6 -------------------------------- BEFORE pulling data - make sure the essential functions are ready
 		function fav_row_pull ($result) {
 			global $STD, $IN;
@@ -1220,8 +1218,7 @@ class component_user {
 			case (6): $hss_name = "Miscellaneous"; break;
 			case (7): $hss_name = "Hacks &amp; Mods"; break;
 		}
-		
-		
+				
 		//SECTION 9 -------------------------------- OUTPUT
 		$this->output .= $STD->global_template->page_header('My Favorites - '.$hss_name);
 		$this->output .= $list;//$this->mod_html->manage_page($list, $STD->make_form_token(), $module->get_max_sizes());
