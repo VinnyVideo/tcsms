@@ -76,7 +76,7 @@ return <<<HTML
   </td>
   <td class='field_fixed'>
     {$res['game_title']} (ID #{$res['gid']})
-    <input type="hidden" name="gid" value="{$res['gid']}" />
+    <input type="hidden" name="gid" value="{$res['gid']}">
   </td>
 </tr>
 <tr>
