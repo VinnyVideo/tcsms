@@ -105,7 +105,7 @@ return <<<HTML
           </td>
         </tr>
         <tr>
-          <td style="width:100%;padding:2px;" colspan="3">
+          <td style="width:100%;padding:2px;" colspan="2">
             {$res['description']}
           </td>
         </tr>
@@ -119,7 +119,7 @@ return <<<HTML
           <td style="width:50%;padding:2px:">Completion: <b>{$res['completion']}</b></td>
           <td style="width:50%;padding:2px:">Genre: <b>{$res['genre']}</b></td>
         </tr>
-		<tr>
+	<tr>
           <td style="width:50%;">Franchise: <b>{$res['franchise']}</b></td>
         </tr>
       </table>
