@@ -43,7 +43,7 @@ return <<<HTML
             </tr>
           </table>
         </td>
-        <td style="vertical-align:bottom;width:100%;" colspan="3">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
