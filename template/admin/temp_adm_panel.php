@@ -5,7 +5,7 @@ class template_adm_panel {
 function panel_preview_header() {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div class="rowfield" style="padding:1px">
 <div class="rowtitle" style="margin-bottom:1px">Panel Arrangement Preview</div>
@@ -16,7 +16,7 @@ HTML;
 function panel_preview_region($regions) {
 global $STD;
 return <<<HTML
-<table class="rowtable" cellsapcing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td colspan="{$regions['columns']}" style="padding:8px">{$regions['U']}</td>
 </tr>
@@ -72,17 +72,17 @@ HTML;
 function panel_list_header() {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div class="rowfield">
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px">
 <tr>
-  <td class="rowtitle" width="60%">Panel Title</td>
-  <td class="rowtitle" width="5%">&nbsp;</td>
-  <td class="rowtitle" width="5%">&nbsp;</td>
-  <td class="rowtitle" width="5%">&nbsp;</td>
-  <td class="rowtitle" width="15%">&nbsp;</td>
-  <td class="rowtitle" width="10%">&nbsp;</td>
+  <td class="rowtitle" style="width:60%;">Panel Title</td>
+  <td class="rowtitle" style="width:5%;">&nbsp;</td>
+  <td class="rowtitle" style="width:5%;">&nbsp;</td>
+  <td class="rowtitle" style="width:5%;">&nbsp;</td>
+  <td class="rowtitle" style="width:15%;">&nbsp;</td>
+  <td class="rowtitle" style="width:10%;">&nbsp;</td>
 </tr>
 HTML;
 }
@@ -113,10 +113,10 @@ HTML;
 function panel_man($options) {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div class="rowfield">
-<table class="rowtable" cellspacing="1">
+<table class="rowtable" style="border-spacing:1px;">
 <tr>
   <td class="rowtitle" colspan="2">Options</td>
 </tr>
