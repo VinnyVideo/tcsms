@@ -1,31 +1,17 @@
-version 2.1 as of Jun 16, 2019<br><br>
- 
+Mainsite Rules
+
+Last updated June 21, 2025
 
 <dl>
-<dd>A - The commenting/messaging system is designed for purposes of providing feedbacks to the submission/updates.</dd><br><br>
-
-<dd>B - All comments should be on-topic and civil in tone. Consider the main site rules as an extension of the forum rules. If you don't have anything nice to say, don't say it at all.
-	<p style="margin-left: 40px;">B1 - Do not threaten other members by any means!</p>
-	<p style="margin-left: 40px;">B2 - Ensure all critism are respectful, constructive, and civil in tone. Calling a game "sucks" with no proper explaination why you don't like won't fly around here.</p>
-	<p style="margin-left: 40px;">B3 - Be respectful of groups such as their race, gender, sexual orientation, religion, disability, and any other related matters. We don't allow offensive terminology about someone's group. For example, negatively calling out a group that liked a certain TV show won't be tolerated here.</p>
-	<p style="margin-left: 40px;">B4 - Always ask permission before revealing any sensitive personal information about someone else.</p>
-</dd><br><br>
-
-<dd>C - No NSFW and illegal contents allowed!
-	<p style="margin-left: 40px;">C1 - Do not post any comment and URL that are deemed NSFW.</p>
-	<p style="margin-left: 40px;">C2 - Posting any illegal contents are not allowed. Such as steps that instruct the user to obtain an illegal content. URL to any illegal content will be deleted.</p>
-	<p style="margin-left: 40px;">C3 - Do not request/ask on how to obtain ROM or other official game files.</p>
-</dd><br><br>
-	
-<li>1. All posts must be in proper English. Avoid leaving comments in foreign languages unless with staff's approval.</li>
-<li>No NSFW and illegal contents in any form. We will remove that are deemed NSFW/illegal without further notice.</li>
-<li>Avoid creating any forms of unwanted comments/messages. Throwaway requests without any valid reason will not be tolerated. Spambot will be banned on sight immediately.</li></ul>
-<br>
-Other rules to consider:<ul><li>If you already have an account, DO NOT make another account unless with staff's permissions.</li>
-<li>We have the right to take actions against those who constantly skirting the rules.</li></ul><br>
- 
-If you have any questions or issues with the guidelines or the interpretation thereof, please send a private message to the staffs.
-
+<dt style="font-size:14pt; font-weight:bold; padding-bottom:12px;">Comment Rules</dt>
+<dd>Comments should be on topic - they should have something to do with the submission you're commenting on. For example, you might use the commenting system to critique someone's sprite sheet or ask for help on how to advance past a certain point in a fangame.</dd>
+<dd>Be respectful of other users. Keep feedback constructive and civil.</dd>
+<dd>Don't post or ask for commercial ROMs, software cracks, or other illegal content.</dd>
+<dd>Don't post anything sexually provocative or otherwise not safe for work.</dd>
+<dd>Avoid profanity and offensive language.</dd>
+<dd>All comments should be written in English.</dd>
+<dd>Don't constantly make requests for other people to make things for you. Requests should be polite and infrequent.</dd>
+<dd>Spambots will be banned on sight.</dd>
+<dd>Tell a staff member if someone might be breaking the rules or if something isn't working properly.</dd>
+<dd>Consider the mainsite rules as an extension of the <a href="https://forums.mfgg.net/thread-195.html">forum rules</a>.</dd>
 </dl>
-
-https://forums.mfgg.net/contact.php
