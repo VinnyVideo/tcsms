@@ -16,7 +16,7 @@ return <<<HTML
 Here you can accept or decline new submissions, or modify older ones.  Submissions that have been updated or reported will also appear at the top of the queue.
 <br>
 <br>
-<div id="menu_1" align="center" style="display:none">
+<div id="menu_1" style="margin:auto;display:none;">
 <form method="post" action="{$STD->tags['root_url']}act=modq&amp;param=05&amp;c={$type}">
 <table style="width:90%;border-spacing:0px;border:2px solid #FF6169">
     <tr>
@@ -59,7 +59,7 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 </form>
 </div>
 
-<div id="menu_3" align="center" style="display:none">
+<div id="menu_3" style="margin-left:60px;display:none;">
 <form method="post" action="{$STD->tags['root_url']}act=modq&amp;param=04&amp;c={$type}">
 <table style="border-spacing:0px;width:90%;border:2px solid #5D669A;">
     <tr>
@@ -102,7 +102,7 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 </form>
 </div>
 
-<div id="menu_4" align="center" style="display:none">
+<div id="menu_4" style="margin:auto;display:none;">
 <form method="post" action="{$STD->tags['root_url']}act=modq&amp;param=06&amp;c={$type}">
 <table style="border-spacing:0px;width:90%;border:2px solid #5D669A;">
     <tr>
@@ -146,7 +146,7 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
 
 <!-- Normal Page -->
 
-<div id="menu_2" align="center">
+<div id="menu_2" style="margin-left:60px;">
 <div style="width: 90%">
 <table style="border-spacing:0px;width:100%;">
 <tr>
