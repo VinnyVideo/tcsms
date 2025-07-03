@@ -125,8 +125,7 @@ class template_global
             <div class="menusection">
               <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=main">Home<img alt="Home" src="{$STD->tags['global_image_path']}/mainMainHome.png"></a></div>
               <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=staff">Staff<img alt="Staff" src="{$STD->tags['global_image_path']}/mainMainStaff.png"></a></div>
-              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=submit&amp;param=01"><span>Submission Rules</span><img alt="Submission Rules" src="{$STD->tags['global_image_path']}/mainMainRules.png"></a></div>
-              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=page&amp;name=rules"><span>Comment Rules</span><img alt="Comment/Message Rules" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
+              <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=page&amp;name=rules"><span>Rules</span><img alt="Submission/Comment Rules" src="{$STD->tags['global_image_path']}/mainCommRules.png"></a></div>
               <div class="menuitemsidebar"><a href="{$STD->tags['root_url']}act=resdb&amp;param=05&amp;c=2"><span>Hall of Fame</span><img alt="MFGG Hall of Fame" src="{$STD->tags['global_image_path']}/mainMainHall.png"></a></div>
             </div>
           </div>
