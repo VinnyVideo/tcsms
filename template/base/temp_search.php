@@ -6,7 +6,7 @@ function simple_results_header () {
 global $STD;
 return <<<HTML
 <div class="sform">
-<table class="sformtable" style="border-spacing:0px;" cellpadding="0">
+<table class="sformtable" style="border-spacing:0px;">
 HTML;
 }
 
@@ -35,26 +35,26 @@ $result_thumbnail = '';
 $thumb_display = 'none';
 if (!$res['thumbnail'] == '')
 {
-	$result_thumbnail = '<img src="'.$res['thumbnail'].'" alt="Result Thumbnail"></img>';
+	$result_thumbnail = '<img src="'.$res['thumbnail'].'" alt="Result Thumbnail">';
 	$thumb_display = 'inline-block';
 }
 return <<<HTML
 <tr>
-  <td style="border-bottom:1px solid gray" align="left">
+  <td style="border-bottom:1px solid gray;text-align:left;">
     <div class="sformstrip"><span class="highlight">{$res['full_name']}</span> <b>-></b> 
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['type']}&id={$res['rid']}">
           <b>{$res['title']}</b></a></div>
-    <table cellpadding="2" style="border-spacing:0px;" width="100%" style="height: 100%">
+    <table style="border-spacing:0px;width:100%;height: 100%">
       <tr>
-        <td class="sformsubstrip" width="70%">
+        <td class="sformsubstrip" style="width:70%;padding:2px;">
           Relevance: <b>{$res['relevance']}</b>
         </td>
-        <td class="sformsubstrip" width="30%">
+        <td class="sformsubstrip" style="width:30%;padding:2px;">
 	      By: <b>{$res['author']}</b>
         </td>
       </tr>
       <tr>
-        <td valign="top" width="100%" height="50" colspan="3">
+        <td style="vertical-align:top;width:100%;height:50px;padding:2px;" colspan="2">
 				<div style="float:left; height: 100%; display: table;">{$result_thumbnail}</div>
 				<p style="display: inline">{$res['description']}</p>
         </td>
@@ -104,7 +104,7 @@ HTML;
 function constraint_block ($rows) {
 global $STD;
 return <<<HTML
-<table style="border-spacing:0px;" cellpadding="2" width="100%">
+<table style="border-spacing:0px;width:100%;" cellpadding="2">
 {$rows}
 </table>
 HTML;
@@ -114,7 +114,7 @@ function constraint_row ($name, $select) {
 global $STD;
 return <<<HTML
 <tr>
-  <td width="35%">&nbsp; &nbsp; {$name}</td>
+  <td style="width:35%;">&nbsp; &nbsp; {$name}</td>
   <td>{$select}</td>
 </tr>
 HTML;
