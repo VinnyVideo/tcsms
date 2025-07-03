@@ -43,13 +43,13 @@ HTML;
 function msg_list_header ($tab_index, $tab_url, $olinks) {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div style="width: 90%">
 <table style="border-spacing:0px;width:100%;">
 <tr>
-  <td style="width:20%;padding:0px;" valign="bottom"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">Open</a></div></td>
-  <td style="width:20%;padding:0px;" valign="bottom"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">Closed</a></div></td>
+  <td style="width:20%;padding:0px;vertical-align:bottom;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">Open</a></div></td>
+  <td style="width:20%;padding:0px;vertical-align:bottom;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">Closed</a></div></td>
   <td>&nbsp;</td>
 </tr>
 </table>
@@ -92,7 +92,7 @@ function msg_page ($msg, $close_url) {
 global $STD;
 return <<<HTML
 After handling a message, the message should be closed so it isn't responded to by multiple staff members.  After being closed, the message will be archived for future review.
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <form method="post" action="{$close_url}">
 <table style="border-spacing:0px;width:90%;">
