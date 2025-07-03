@@ -39,29 +39,29 @@ return <<<HTML
 <div class="sform">
 <table class="sformtable" style="border-spacing:0px;" cellpadding="3">
 <tr class="sformstrip">
-  <td style="height:25px;width:150px;text-align: center;">
+  <td style="height:25px;width:150px;padding:3px;text-align: center;">
     <b class="highlight stafflink">{$news['author']}</b>
   </td>
-  <td style="height:25px;">
+  <td style="height:25px;padding:3px;">
     <div style="font-weight:bold; font-size: 14pt; color:#FFF600;">{$news['title']}</div>
 	<div style="padding-top:4px; text-align:left; font-weight:normal; font-style:italic; font-size: 8pt; color:#CDCFFE;">{$news['date']}</div>
   </td>
 </tr>
 <tr>
-  <td align="center"><br>{$news['icon']}</td>
+  <td align="center" style="padding:3px;"><br>{$news['icon']}</td>
   <td colspan="2">
     {$news['message']}<br>&nbsp;
   </td>
 </tr>
 <tr>
-  <td class="topstrip"></td>
-  <td class="topstrip" colspan="2">
+  <td class="topstrip" style="padding:3px;"></td>
+  <td class="topstrip" colspan="2" style="padding:3px;">
     <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}">View Comments ({$news['comments']})</a> | 
     <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}&amp;exp=1#reply">Leave Comment</a>
   </td>
 </tr>
 <tr>
-  <td style="height:6px;" colspan="3" class="sformdark">
+  <td style="height:6px;padding:3px;" colspan="3" class="sformdark">
   </td>
 </tr>
 </table>
@@ -183,7 +183,7 @@ return <<<HTML
 </script>
 <table style="width:95%;">
     <tr>
-      <td class="tablecell1" colspan="2">
+      <td class="tablecell1" colspan="1">
         <span class="boxheader">Comments</span>
       </td>
     </tr>
