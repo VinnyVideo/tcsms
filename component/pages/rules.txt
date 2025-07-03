@@ -1,47 +1,158 @@
-Comment Rules
+Comment & Submission Rules
+<p>You are free to submit content to MFGG as long as it follows the rules. Content violating these rules will not be accepted to MFGG.</p>
+<p><i>Last updated on June 21, 2025</i></p>
+<br>
+<h2>Comment Rules</h2>
+<ul><li style="padding-bottom:12px;">Comments should be on topic - they should have something to do with the submission you're commenting on. For example, you might use the commenting system to critique someone's sprite sheet or ask for help on how to advance past a certain point in a fangame.
+<li style="padding-bottom:12px;">Be respectful of other users. Keep feedback constructive and civil.
+<li style="padding-bottom:12px;">Don't post or ask for commercial ROMs, software cracks, or other illegal content.
+<li style="padding-bottom:12px;">Don't post anything sexually provocative or otherwise not safe for work.
+<li style="padding-bottom:12px;">Avoid profanity and offensive language.
+<li style="padding-bottom:12px;">All comments should be written in English.
+<li style="padding-bottom:12px;">Don't constantly make requests for other people to make things for you. Requests should be polite and infrequent.
+<li style="padding-bottom:12px;">Spambots will be banned on sight.
+<li style="padding-bottom:12px;">Tell a staff member if someone might be breaking the rules or if something isn't working properly.
+<li style="padding-bottom:12px;">Consider the mainsite rules as an extension of the <a href="https://forums.mfgg.net/thread-195.html">forum rules</a>.
+</ul>
+<br>
+<h2>Submission Rules</h2>
+<dl>
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">1. General Rules of Thumb</dt>
+<dd>1.1 - Do not steal content from others, as that would be highly unethical.
+    <p style="margin-left: 40px;">1.1.1 - MFGG staff will check whether a submission is stolen from others or not, and will punish those who submit stolen work if proven.</p>
+    <p style="margin-left: 40px;">1.1.2 - Keep in mind that while rips from commercial games aren't technically being done with permission, they are permitted given the (rather obvious) circumstances.</p>
+    <p style="margin-left: 40px;">1.1.3 - If your submission is based on someone else's work like edits/revamps, please make sure to include proper credits.</p>
+    <p style="margin-left: 40px;">1.1.4 - Reuploads or slight modifications of others' work are not allowed, unless you're explicitly given permission by the original author.</p></dd>
 
-The commenting/messaging system is designed for purposes of providing feedbacks to the submission/updates. Consider the main site rules as an extension of the forum rules. <br><br>
-Version 3.1 (last updated on: Mar 10, 2020)<br><br><br>
- 
-<span style='font-size:14pt; font-weight:bold'>1. Stay on-topic and civil in tone</span><br><br>
-	<p style="margin-left: 40px;">1.1 - Do not threaten other members by any means! <b>if you don't have anything nice to say, don't say it at all.</b></p>
-	<p style="margin-left: 40px;">1.2 - Ensure all criticism are respectful, constructive, and civil in tone. Calling a game "sucks" with no proper explaination why you don't like won't fly around here.</p>
-	<p style="margin-left: 40px;">1.3 - Be respectful of groups such as their race, gender, sexual orientation, religion, disability, and any other related matters. We don't allow offensive terminology about someone's group. For example, negatively calling out a group that liked a certain TV show won't be tolerated here.</p>
-	<p style="margin-left: 40px;">1.4 - Always ask permission before revealing any sensitive personal information about someone else.</p>
-	<p style="margin-left: 40px;">1.5 - We unfortunately are not able to read mind. Please proceed with caution when using sarcasm.</p>
-	<p style="margin-left: 40px;">1.6 - Do not deliberately derail or disrupt conversations.</p>
-<br><br>
+<dd>1.2 - No inappropriate content.
+    <p style="margin-left: 40px;">1.2.1 - Pornography, fetish art, and anything of a sexually provocative nature is prohibited.</p>
+    <p style="margin-left: 40px;">1.2.2 - Keep swearing within your submission to a minimum. If you must include profanity, include a content warning in your submission's description.</p>
+    <p style="margin-left: 40px;">1.2.3 - Moderate violence is acceptable as long as a content warning is provided in the description. Games containing extreme levels of violence or highly offensive content will be declined.</p>
+    <p style="margin-left: 40px;">1.2.4 - Preview screenshots and thumbnails should not contain any kind of sexual or violent content.</p></dd>
 
-<span style='font-size:14pt; font-weight:bold'>2. No NSFW contents!</span><br><br>
-	<p style="margin-left: 40px;">2.1 - Do not post any comment and URL that are deemed NSFW.</p>
-	<p style="margin-left: 40px;">2.2 - Posting any illegal contents are not allowed. Such as steps that instruct the user to obtain an illegal content. We will remove that are deemed NSFW/illegal without further notice.</p>
-	<p style="margin-left: 40px;">2.3 - Do not request/ask on how to obtain ROM or other official game files.</p>
-<br><br>
+<dd>1.3 - All content should demonstrate basic care and effort. Rushed or useless sprites and empty games will be declined. Further explanation below.<br><br></dd>
 
-<span style='font-size:14pt; font-weight:bold'>3. General maturity</span><br><br>
-	<p style="margin-left: 40px;">3.1 - Stay on topic of the submission/discussion and avoid creating any forms of unwanted comments.</p>
-	<p style="margin-left: 40px;">3.2 - <b><u>Do not constant badger/annoy user with requests without any valid reason</u></b>.</p>
-	<p style="margin-left: 40px;">3.3 - <b>All posts must be in proper English. Do not leave comments in foreign languages. Comments in foreign language will be removed on sight.</b></p>
-	<p style="margin-left: 40px;">3.4 - Be patient. Please understand that the staff are people too and in some cases they might be dealing with many other life matters. Submission queue can take from few hours to several weeks.</p>
-	<p style="margin-left: 40px;">3.5 - Keep swearing to a minimum. Minor swears are acceptable as long as you don't constantly use it on almost every single comment.</p>
-	<p style="margin-left: 40px;">3.6 - When there's not a rule about certain questionable act doesn't mean you can do it. It is best to ask a staff if you are not sure.</p>
-	<p style="margin-left: 40px;">3.7 - You were told by several other users to stop the discussion, stop.</p>
-<br><br>
+<dd>1.4 - All submissions should include proper tags and categories. We may modify the submission if anything is labeled incorrectly.<br><br></dd>
 
-<span style='font-size:14pt; font-weight:bold'>4. Your account and general safety</span><br><br>
-	<p style="margin-left: 40px;">4.1 - You are responsible for your own account. Keep it secure. Do not register an account to be shared by more than one person unless with staff's approval.</p>
-	<p style="margin-left: 40px;">4.2 - If you already have an account, DO NOT make another account unless with staff's permissions. <b>Making a duplicate account to bypass your ban/mute will extend your ban/mute period.</b></p>
-	<p style="margin-left: 40px;">4.3 - If you need to change your username or any other special account changes, please contact a Main Site Admin.</p>
-	<p style="margin-left: 40px;">4.4 - Spambot will be banned on sight immediately.</p>
-	<p style="margin-left: 40px;">4.5 - Your user icon (avatar) must not contain any NSFW and other offensive contents (see section 1 and 2 above).</p>
-	<p style="margin-left: 40px;">4.6 - Username cannot contain any special characters like emojis, special Unicode such as cursed/Zalgo text, or foreign characters. User can only request two username change requests each year. At the first day of each year, the name change limit resets back to 2. Name change timing policy can be excluded for a rare occasion such as a username based event.</p>
-<br><br>
+<dd>1.5 - Animated submission thumbnail and/or screenshots are not accepted.<br><br></dd>
 
-<span style='font-size:14pt; font-weight:bold'>5. Other things to consider</span><br><br>
-	<p style="margin-left: 40px;">5.1 - Besides the commenting system, the comment rules applies to all of your direct messages.</p>
-	<p style="margin-left: 40px;">5.2 - Do not bring outside dispute to MFGG. Any dispute happened at MFGG shall not be brought outside to a different community. However, if it's a dispute over resources outside of MFGG used at MFGG, please contact a staff.</p>
-	<p style="margin-left: 40px;">5.3 - The rules are subjected to change over time. The rules will be effective immediately upon update. Any comments/messages that were made before the update date can be excused.</p>
-	<p style="margin-left: 40px;">5.4 - Do not abuse the staff messaging/reporting system. Sending a report is intended for notifying MFGG staff over important site related issues.</p>
-<br><br>
- 
-If you have any questions, concerns, interpretation, or inquires about your account. Please send a private message to the staff or send an email <a href="https://forums.mfgg.net/contact.php">at this page (registration required)</a>.<br>
+<dd>1.6 - If you have a set of related submissions, it might be a better idea to upload them as one submission instead of submitting them one by one. Don't spam us with dozens of submissions at once if they can fit in a single submission.<br><br></dd>
+
+<dd>1.7 - All submissions that contain malware will be removed. If we determine that the malware was submitted intentionally, the submitter will be banned.<br><br></dd>
+
+<dd>1.8 - By submitting resources to the mainsite, you recognize that other people may use them for nonprofit projects. MFGG does not allow graphics, audio, or other resources that include restrictive licenses, such as demanding permission before use.<br><br></dd>
+
+<dd>1.9 - The rules apply to anything submitted after the date the rules are updated. Some older submissions on the site might get declined if they had been submitted under current rules.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">2. Guidelines for Games</dt>
+
+<dd>2.1 - There must be some tangible form of gameplay.
+    <p style="margin-left: 40px;">2.1.1 - Games with little gameplay, or games made intentionally bad as a joke, will be declined. Please ensure that your game is at least attempting to be an entertaining and productive contribution to the website.</p>
+    <p style="margin-left: 40px;">2.1.2 - Games that lack instructions to play may be declined. If we can't figure out how to play your game, we can't accept it.</p>
+    <p style="margin-left: 40px;">2.1.3 - Your game should be possible to complete, and not just a level you can only walk halfway through.</p>
+    <p style="margin-left: 40px;">2.1.4 - Demos (or other incomplete games) must contain at least one full-length level for a developed engine and at least two for a more basic one.</p>
+</dd>
+
+<dd>2.2 - Any external files required to run the game must be included in its download, with the exception of commonly-used external libraries (such as DirectX and XNA Framework). Note that some older submissions might require files and converters that are listed under the Miscellaneous category of the site. Files that require the installation of game creation software such as Clickteam Fusion and RPG Maker will be declined. As a rule of thumb, the more effort we have to go through to play your game, the less likely it is to be accepted.<br><br></dd>
+
+<dd>2.3 - Games should not include installers unless absolutely necessary.<br><br></dd>
+
+<dd>2.4 - Level packs, such as those for Super Mario Bros. X, will be declined if submitted as a game. You may submit level files under our Miscellaneous category.<br><br></dd>
+
+<dd>2.5 - Games should have a defined beginning and end; games that end with an unintentional error message will most likely be declined.<br><br></dd>
+
+<dd>2.6 - MFGG now accepts game submissions that are as large as 100 megabytes in size. However, please do not abuse this privilege. Take care to keep game sizes manageable by removing unused resources and by encoding audio to minimize file sizes. For instance, if you submit a simple minigame that uses a 40-megabyte WAV file for background music, we will likely decline the submission for being needlessly large.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">3. Guidelines for Hacks and Mods</dt>
+
+<dd>3.1 - ROM hacks must use a proper format.
+    <p style="margin-left: 40px;">3.1.1 - All ROM hacks must be submitted in a patch format, such as BPS, IPS, or Xdelta. We recommend using BPS patches since we have an online BPS patcher that can be accessed from <a href="https://www.mfgg.net/index.php?act=page&name=patcher">here</a>.</p>
+    <p style="margin-left: 40px;">3.1.2 - Uploads containing a ROM file will be declined.</p>
+    <p style="margin-left: 40px;">3.1.3 - If your mod is intended to be run using a real-time file patching method, such as Riivolution, include all necessary files required to run in a ZIP archive - including, if applicable, the configuration file.</p>
+    <p style="margin-left: 40px;">3.1.4 - To play most hacks, find a ROM file of the base game (this will not be provided for you; we advocate dumping your own ROMs) and patch it using our online patcher or a patching program of your choice. If the staff can't figure out how to play a ROM hack, it will be declined.</p></dd>
+
+<dd>3.2 - All hacks are required to specify the base game (the one to apply the patch to), region, and hack types.<br><br></dd>
+
+<dd>3.3 - If you're not certain what kind of hack types to choose for your submission, this may help you:
+<ul><li>Cosmetic: The game plays the same but looks different.</li>
+<li>Tweak: Nearly the same game but with minor gameplay differences.</li>
+<li>Full Conversion: Games with heavy/full modifications.</li></ul><br></dd>
+
+<dd>3.4 - As with games, all hacks must demonstrate effort. For instance:
+    <p style="margin-left: 40px;">3.4.1 - A very basic cosmetic hack with changes only applying to the player or a few enemies will likely be declined unless there is a substantial reason for such a small change.</p>
+    <p style="margin-left: 40px;">3.4.2 - Hacks must be beatable. Impassable final levels with no ending dialogue/message will be declined.</p>
+    <p style="margin-left: 40px;">3.4.3 - Levels/maps filled with random globs of tiles and/or glitched graphics will be declined.</p><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">4. Guidelines for Graphics</dt>
+
+<dd>4.1 - All graphics submissions must be in a proper format.
+    <p style="margin-left: 40px;">4.1.1 - Sprites and backgrounds must be in a lossless file format (such as PNG and GIF). We will not accept JPEG files unless they are high-resolution textures intended to be used in 3D games.</p>
+    <p style="margin-left: 40px;">4.1.2 - If you have multiple sheets/backgrounds to submit, we encourage you to archive them in a compressed .ZIP file.</p>
+    <p style="margin-left: 40px;">4.1.3 - All graphics submissions must be still images. Animated GIFs, APNGs, and other animated formats will be declined.</p>
+    <p style="margin-left: 40px;">4.1.4 - Sprites must be kept in a 1x pixel format. Resized sprites will be declined.</p>
+    <p style="margin-left: 40px;">4.1.5 - Make sure that tilesets tile properly before you submit them. Any practical size is permitted for the tiles; 16x16 is a common one. Unorganized rips of tiles taken directly from tileset viewers will be declined.</p>
+    <p style="margin-left: 40px;">4.1.6 - Sprite and tileset submissions must have a clean background, like a single-colored or transparent background. If your submission is difficult for people to use - like a sprite sheet with a gradient/textured background - it will be declined.</p>
+    <p style="margin-left: 40px;">4.1.7 - Clickteam (Klik) libs are significant to MFGG's history and remain in our archives. However, libs are now rarely used, and we discourage submitting libs nowadays.</p></dd>
+
+<dd>4.2 - Graphics submissions should be useful to fangame makers.
+    <p style="margin-left: 40px;">4.2.1 - Sprite sheets for characters should generally include enough frames to comprise a complete animation.</p>
+    <p style="margin-left: 40px;">4.2.2 - Custom-styled tilesets should generally provide enough content to design a simple level. Quick and small tilesets/sprites will not be accepted unless it's an addition to an existing set or style.</p>
+    <p style="margin-left: 40px;">4.2.3 - We will not accept submissions that have no use in fangame development. Even if they are of decent/acceptable quality, sprites can still be entirely useless to others. An example would be a sprite sheet for Super Saiya-jin Luigi holding a shotgun.</p>
+    <p style="margin-left: 40px;">4.2.4 - Character sprites must be of official characters respective to the franchise. Original characters (such as Bowsette or Weegee), popular or otherwise, will not be accepted regardless of the quality of the work.</p></dd>
+
+<dd>4.3 - All graphics submissions must demonstrate that effort was put into them.
+    <p style="margin-left: 40px;">4.3.1 - Recolors or other simple edits of existing sprites will be declined.</p>
+    <p style="margin-left: 40px;">4.3.2 - Graphics produced by generative artificial intelligence tools (such as Stable Diffusion and Midjourney) will be declined.</p></dd>
+
+<dd>4.4 - Sprites that are not recognizable of the respective character and/or object will be declined.<br><br></dd>
+
+<dd>4.5 - Sprite sheets and tilesets should be easy to use; sheets with large amounts of wasted space or obtrusive watermarks will be declined.<br><br></dd>
+
+<dd>4.6 - In the case of graphics ripped from official games, make sure that the graphics are not already available elsewhere on MFGG. Redundant graphics rips will be declined unless the new submission provides additional content or substantially improved organization compared with existing rips.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">5. Guidelines for Reviews</dt>
+
+<dd>5.1 - A review is a critical analysis of the game you're reviewing, so it's a little more substantial than a comment on the page saying "This is great!!! 10/10." When writing a review, you're trying to help other people determine whether or not they should play the game. To that end, you need to be descriptive. Simple descriptions like "GREAT!" for gameplay and "Really really bad" for sound don't cut it. You need to explain why you think they deserve the scores you give them. For example, explaining the basics of the gameplay and then stating what works and what doesn't will help the reader not only get the gist of the game but influence their decision on whether or not to play it. The same goes for graphics and sound - although to a lesser amount, as they aren't quite as important.<br><br></dd>
+
+<dd>5.2 - Ironically, your final words are the first thing the reader will see of your review on the game's page, so it should project your overall opinion of the game. Keep them short and to the point. Your final score should be determined by what you think is best - it does not have to be an average of the other scores or even a weighted average. It could be a score you simply feel the game deserves to have regardless of its individual qualities. Just do not make it too wildly different from the rest of your scores without good reason.<br><br></dd>
+
+<dd>5.3 - All reviews should follow the basic guidelines of proper English. While occasional misspellings or punctuation errors won't affect whether or not we will accept it, poorly-written reviews will be declined regardless of your actual criticism.<br><br></dd>
+
+<dd>5.4 - <a href='https://www.mfgg.net/index.php?act=page&name=rules'>Comment rules</a> still apply in reviews - be respectful when giving critique, don't be a jerk, and don't make reviews simply to troll the game's creator. Beyond that, feel free to be yourself in your review, injecting it with your humor and personality to make it an entertaining read.<br><br></dd>
+
+<dd>5.5 - Don't try to submit review scores outside of the 1-10 score range, they are only permitted on special occasions. Any such scores will be automatically readjusted.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">6. Guidelines for Tutorials</dt>
+
+<dd>6.1 - Tutorials should demonstrate an element or elements from games, or general-purpose game design information - for example, how to use external files in Game Maker or how to make an action RPG in Clickteam Fusion 2.5.<br><br></dd>
+
+<dd>6.2 - We allow tutorials for simple concepts if designed in a user-friendly and helpful manner, but tutorials for extremely simple concepts requiring one or two lines of code will not be accepted. Simple problems like these are best addressed on the forums.<br><br></dd>
+
+<dd>6.3 - Tutorials should be user-friendly and reasonably easy to understand. They should teach proper coding habits and include sufficient commenting that users can understand how the code works.<br><br></dd>
+
+<dd>6.4 - Tutorials that are riddled with bugs are not allowed. Double-check your work before submitting.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">7. Guidelines for Sounds</dt>
+
+<dd>7.1 - Sound files must be high-quality. We will not accept poorly-compressed or fuzzy sound effects.<br><br></dd>
+
+<dd>7.2 - Please submit all music files in Ogg format, as Oggs provide better compression than MP3s. .WAV music can be extremely large and is not allowed.<br><br></dd>
+
+<dd>7.3 - All custom music must be your own composition and not taken from another website, even if you cannot find the original composer's name. This obviously does not apply to rips.<br><br></dd>
+
+<dd>7.4 - Sound rips should be useful to fangame makers.<br><br></dd>
+
+<dd>7.5 - We do not accept rips of licensed songs from video games. All music rips must be music that was originally composed for the said game.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">8. Guidelines for Miscellaneous Files</dt>
+
+<dd>8.1 - The Miscellaneous section is designed for resources that prove helpful in either running or creating games. Feel free to submit resources such as fonts, 3D models, and system files, but not things like screensavers or wallpapers.<br><br></dd>
+
+<dd>8.2 - Level files are permitted in this category. When submitting levels, please specify the associated game/level editor in the description. All levels must demonstrate effort.<br><br><br></dd>
+
+<dt style="font-size:12pt; font-weight:bold; padding-bottom:12px;">9. Other Things to Consider</dt>
+
+<dd>9.1 - Remember that submissions must be checked by multiple main site moderators before they can appear on the site. Since MFGG staff have lives outside of the site, it may take a few weeks before a submission is accepted or declined.<br><br></dd>
+
+<dd>9.2 - If you have any questions or issues regarding these guidelines or the interpretation thereof, please send a message to a mainsite staff member.</dd>
+</dl>
