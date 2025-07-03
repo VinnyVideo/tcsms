@@ -37,7 +37,7 @@ $order_part = '<tr>
 </form>
 </td></tr>';
 if ($order_url == "") {
-  $order_part = '<td class="sformstrip" colspan="2" style="text-align:center; font-weight:bold; font-size: 14pt; color:#FFF600;"><b>Top 10 Games of '.$order.'</b></td>';
+  $order_part = '<tr><td class="sformstrip" colspan="2" style="text-align:center; font-weight:bold; font-size: 14pt; color:#FFF600;"><b>Top 10 Games of '.$order.'</b></td>';
 }
 return <<<HTML
 <div class="sform">
