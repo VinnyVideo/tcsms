@@ -220,11 +220,11 @@ Class std {
 	var $global_template_ui;
 	
 	function _clone ($obj) {
-		if (PHP_VERSION < 5) {
-			return $obj;
-		} else {
+		//if (PHP_VERSION < 5) {
+		//	return $obj;
+		//} else {
 			return clone $obj;
-		}
+		//}
 	}
 	
 	function error ($msg) {
