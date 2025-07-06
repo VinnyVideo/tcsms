@@ -67,22 +67,19 @@ function lost_password ($reg_url, $token) {
 global $STD;
 return <<<HTML
 <div class="sform">
-<form method="post" action="{$reg_url}">
-<input type="hidden" name="security_token" value="{$token}">
-<div class="sformstrip">Recover from a lost password</div>
-<div class="sformblock">Use this form to change your password if you've forgotton it.  A link to a page where you can
-  choose a new password will be emailed to the address on your account.
-</div>
-<div class="sformstrip">Fill out the form below</div>
-<table class="sformtable">
-<tr>
-  <td class="sformleft"><label for="username">Your username</label></td>
-  <td class="sformright"><input type="text" id="username" name="username" size="40" class="textbox"></td>
-</tr>
-</table>
-<div class="sformstrip" style="text-align:center"><input type="submit" value="Submit" class="button"></div>
-</div>
-</form>
+  <form method="post" action="{$reg_url}">
+    <input type="hidden" name="security_token" value="{$token}">
+    <div class="sformstrip">Recover a lost password</div>
+    <div class="sformblock">Use this form to change your password if you've forgotton it.  A link to a page where you can choose a new password will be emailed to the address on your account.</div>
+    <div class="sformstrip">Fill out the form below</div>
+      <table class="sformtable">
+        <tr>
+          <td class="sformleft"><label for="username">Your username</label></td>
+          <td class="sformright"><input type="text" id="username" name="username" size="40" class="textbox"></td>
+        </tr>
+      </table>
+    <div class="sformstrip" style="text-align:center"><input type="submit" value="Submit" class="button"></div>
+  </form>
 </div>
 HTML;
 }
