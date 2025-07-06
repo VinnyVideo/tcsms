@@ -30,7 +30,9 @@ There will be very little content at first. You may want to create a couple of t
 
 - Retriever II - Original author of TCSMS
 - VinnyVideo - Updated TCSMS to run in PHP 8.2
+- Sean - Made mainsite themes more mobile-friendly and massively improved database performance
 - Hypernova - Added a lot of upgrades in the early 2020's
-- Mors - md5 fixes and other upgrades in the early 2020's
-- HylianDev, Char, Guinea, Techokami, Kritter, probably other people I'm forgetting - Other contributions
+- Mors - The current theme, and md5 fixes and other upgrades in the early 2020's
+- Kritter - The original theme
+- HylianDev, Char, Guinea, Techokami, probably other people I'm forgetting - Other contributions
 - wtl420 - Creator of the repo
