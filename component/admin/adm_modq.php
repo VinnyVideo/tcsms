@@ -152,9 +152,13 @@ class component_adm_modq {
 		// Do we need to display a ghost?
 		$PREGHOST = null;
 		if ($RES->data['ghost'] > 0) {
-			$PREGHOST = $STD->_clone ($RES);
+			$PREGHOST = $STD->_clone($RES);
+			//var_dump(!$RES->get($RES->data['ghost']));
+			//var_dump(is_null($RES->get($RES->data['ghost'])));
 			if (!$RES->get($RES->data['ghost']))
-				$STD->error("Ghost ID \"{$RES->data['ghost']}\" does not exist.");
+			//if ((!is_null($RES->get($RES->data['ghost']))) && (!$RES->get($RES->data['ghost'])))
+				//$STD->error("Ghost ID {$RES->data['ghost']} does not exist.<br><br>This is a known bug; you will need to remove this entry from the database manually.");
+				$STD->error("Ghost ID does not exist.<br><br>This is a known bug; you will need to remove this entry from the database manually.");
 		}
 
 		//------------------------------------------------
