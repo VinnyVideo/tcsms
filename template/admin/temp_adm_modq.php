@@ -42,7 +42,7 @@ Here you can accept or decline new submissions, or modify older ones.  Submissio
  		    <input type="hidden" name="rid" id="rid_d" value="">
  		    <input type="hidden" name="omit_comment" value="0">
  		    <input type="hidden" name="virus_check" value="1">
-  		  <textarea id="admincomment" name="admincomment" rows="4" cols="30" class="textbox"></textarea>
+  		  <textarea id="admincomment" name="admincomment" rows="14" cols="60" class="textbox"></textarea>
   		  {$boxes['dq']}
   		</td>
  		</tr>
