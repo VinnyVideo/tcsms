@@ -431,9 +431,9 @@ class component_adm_modq {
 			}
 			
 			$res->remove();
-			$MSG->data['title'] = 'Submission Declined';
-			$MSG->data['message'] = "Your submission: <b>{$data['title']}</b>, was either declined from the queue, 
-									 or removed from the existing database by the site staff with the following comment:
+			$MSG->data['title'] = "Submission Declined: {$data['title']}";
+			$MSG->data['message'] = "Your submission, <b>{$data['title']}</b>, was either declined from the queue, 
+									 or removed from the existing database, by the site staff with the following comment:
 							 	     <br><br>{$IN['admincomment']}";
 		}
 		
