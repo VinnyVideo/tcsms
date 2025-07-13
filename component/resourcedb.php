@@ -508,14 +508,26 @@ class component_resourcedb {
 	}
 	
 	function do_play () {
-		global $DB, $IN, $CFG, $STD;
+		global $IN, $STD;
 		
 		$module = $STD->modules->new_module($IN['c']);
 		$module->init();
 		$module_record = $STD->modules->get_module($IN['c']);
 		$RES = new resource;
+		$RES->query_use('extention', $module_record['mid']);
 		
-		$RES->data['plays']++;
+		if (!in_array($RES->data['queue_code'], array(0,2)) && $RES->data['uid'] != $STD->user['uid'])
+			$STD->error("You do not have permission to view this resource.");
+		
+		//var_dump($module);
+		//var_dump($module_record);
+		var_dump($IN['c']);
+		//var_dump($RES);
+		//var_dump($module_record['mid']);
+		//var_dump($RES->data);
+		//var_dump($RES->data['queue_code']);
+		//var_dump($RES->data['plays']);
+		$RES->data['plays']++; // 7/6/2025 bug progress - still getting assigned a value of null; not sure why
 		$RES->update();
 	}
 	
