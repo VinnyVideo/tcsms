@@ -230,7 +230,7 @@ google_ad_height = 90;
     <tr>
       <td style="text-align:center;padding:2px;">
         <br>
-        <textarea name="message" title="Enter your comment here" cols="50" rows="10" class="textbox"></textarea>
+        <textarea name="message" title="Enter your comment here" cols="55" rows="12" class="textbox"></textarea>
         <br>
         <input type="submit" value="Add Comment" class="button">
         <br>&nbsp;
