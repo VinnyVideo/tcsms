@@ -304,7 +304,7 @@ class template_global
         submitter or a third party. All remaining material is &copy; MFGG. MFGG is a non-profit site with no affiliation to Nintendo.
         </p>
         <p style="text-align:center">
-          Powered by Taloncrossing SMS v1.2, &copy; 2006-2025 <a href='https://www.taloncrossing.com' class='outlink'>Taloncrossing.com</a>. Modified by Hypernova, Mors, VinnyVideo, and Sean.
+          Powered by Taloncrossing SMS v1.2.1, &copy; 2006-2025 <a href='https://www.taloncrossing.com' class='outlink'>Taloncrossing.com</a>. Modified by Hypernova, Mors, VinnyVideo, and Sean.
         </p>
         <br>
       </footer>
