@@ -516,19 +516,31 @@ class component_resourcedb {
 		$RES = new resource;
 		$RES->query_use('extention', $module_record['mid']);
 		
+		if (!$RES->get($IN['id']))
+			$STD->error("Invalid resource selected");
+		
 		if (!in_array($RES->data['queue_code'], array(0,2)) && $RES->data['uid'] != $STD->user['uid'])
 			$STD->error("You do not have permission to view this resource.");
 		
-		//var_dump($module);
-		//var_dump($module_record);
-		var_dump($IN['c']);
-		//var_dump($RES);
-		//var_dump($module_record['mid']);
-		//var_dump($RES->data);
-		//var_dump($RES->data['queue_code']);
-		//var_dump($RES->data['plays']);
-		$RES->data['plays']++; // 7/6/2025 bug progress - still getting assigned a value of null; not sure why
+		/*var_dump("Module: ", $module, "<br><br>");
+		var_dump("Module Record: ", $module_record, "<br><br>");
+		var_dump("IN['c']: ", $IN['c'], "<br><br>");
+		var_dump("IN['id']: ", $IN['id'], "<br><br>");
+		var_dump("RES: ", $RES, "<br><br>");
+		var_dump("module_record[mid]: ", $module_record['mid'], "<br><br>");
+		var_dump("RES->data: ", $RES->data, "<br><br>");
+		var_dump("Queue Code: ", $RES->data['queue_code'], "<br><br>");
+		var_dump("RES->data[plays]: ", $RES->data['plays'], "<br><br>");
+		var_dump("RES->data[downloads]: ", $RES->data['downloads'], "<br><br>");
+		var_dump("RES->data[file_html5]: ", $RES->data['file_html5'], "<br><br>");
+		var_dump($STD->encode_url("https://mfgg.net/html5/{$RES->data['file_html5']}/"));*/
+		$RES->data['plays']++;
 		$RES->update();
+		
+		$redirect_url = $STD->encode_url("https://mfgg.net/html5/{$RES->data['file_html5']}/");
+		
+		header("Location: $redirect_url");
+		exit;
 	}
 	
 	function version_history () {
