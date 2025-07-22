@@ -265,7 +265,7 @@ class mod_games extends module {
 		$data['thumbnail'] = $this->get_thumbnail($row);
 		$data['preview'] = $this->get_image($row, 'preview');
 		$data['file'] = "file/{$IN['c']}/{$row['file']}";
-		$data['file_html5'] = "html5/{$row['file_html5']}";
+		$data['file_html5'] = "{$row['file_html5']}";
 		
 		//NEW AVERAGE SCORE SYSTEM (written by Hypernova)
 		
@@ -728,6 +728,8 @@ class mod_games extends module {
 		
 		if (!empty($IN['file_name']))
 			$RES->data['file'] = $IN['file_name'];
+		if (!empty($IN['file_html5']))
+			$RES->data['file_html5'] = $IN['file_html5'];
 		if (!empty($IN['preview_name']))
 			$RES->data['preview'] = $IN['preview_name'];
 		if (!empty($IN['thumbnail_name']))
