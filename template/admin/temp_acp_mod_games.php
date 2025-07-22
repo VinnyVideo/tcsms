@@ -103,7 +103,7 @@ return <<<HTML
     <label for="description">Description</label>
   </td>
   <td class='field_fixed'>
-    <textarea rows='6' cols='38' id='description' name='description' class='textbox'>{$res['description']}</textarea>
+    <textarea rows='8' cols='55' id='description' name='description' class='textbox'>{$res['description']}</textarea>
   </td>
 </tr>
 <tr>
