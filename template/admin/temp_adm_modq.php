@@ -345,7 +345,7 @@ return <<<HTML
   		    &nbsp;
   		  </td>
   		  <td class='field_fixed' style='background-color:#FBFCCE'>
-  		    If this user has made unacceptable changes to the submission, or another problem has ouccured, use this button to restore the submission to its previous state.  The user's changes will be dropped.
+  		    If this user has made unacceptable changes to the submission, or another problem has occurred, use this button to restore the submission to its previous state.  The user's changes will be dropped.
   		  </td>
   		</tr>
   		<tr style="{$form['ghost_style']}">
