@@ -180,6 +180,18 @@ return <<<HTML
 </tr>
 <tr>
   <td class='title_fixed'>
+    <label for="file_html5">HTML5 Folder Path</label>
+  </td>
+  <td class='field_fixed'>
+    <input type='text' id='file_html5' name='file_html5' value="{$res['file_html5']}" size='50' class='textbox'>
+  </td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td class='title_fixed'>
     Preview <a href="javascript:show_hide('f1_4a');show_hide('f1_4b');show_hide('f1_4c');">(Replace)</a>
   </td>
   <td class='field_fixed'>
