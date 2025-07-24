@@ -84,7 +84,7 @@ if ($pages == "") {
   $pages_part = '
   <tr>
   <td class="sformtitle" colspan="2" style="text-align: center">
-  <input type="submit" value="View All Top Games" class="button" onclick=location.href="'.$STD->tags['root_url'].'act=resdb&param=01&c=2&st=0&o=b,d";>
+  <br>
   </td></tr>
   </table>
   <div class="sformstrip">
