@@ -1095,7 +1095,7 @@ class component_user {
 			//format GFX, Games, Hacks 
 			if (($IN['c'] == 1) || ($IN['c'] == 2) || ($IN['c'] == 7)) {
 				$thumb_file = $result['thumbnail'];
-				$result['thumbnail'] = "<img src='{$STD->tags['root_path']}/thumbnail/{$IN['c']}/{$thumb_file}' alt='Thumbnail'></img>"; //Thumbnail
+				$result['thumbnail'] = "<img src='{$STD->tags['root_path']}/thumbnail/{$IN['c']}/{$thumb_file}' alt='Thumbnail'>"; //Thumbnail
 				return format_favrow_thumb($result); //OUTPUT - use $list .= fav_row_pull($result);
 			}
 			//format How-Tos
@@ -1105,7 +1105,7 @@ class component_user {
 			//format Sounds, Misc
 			if (($IN['c'] == 5) || ($IN['c'] == 6)) {
 				$ico_file = $result['type1'];
-				$result['type1'] = "<img src='{$STD->tags['root_path']}/template/modules/{$IN['c']}/{$ico_file}.gif' img='Icon'></img>"; //Thumbnail
+				$result['type1'] = "<img src='{$STD->tags['root_path']}/template/modules/{$IN['c']}/{$ico_file}.gif' img='Icon'>"; //Thumbnail
 				return format_favrow_icon($result); //OUTPUT - use $list .= fav_row_pull($result);
 			}
 		}
@@ -1150,10 +1150,10 @@ class component_user {
 				case (6): $hssk_name = "Views"; break;
 			}
 			if ($i == $IN['sort']) {
-				$html_select_sort_kind .= '<option value="'.$i.'" test="Sort Type" selected="selected">'.$hssk_name.'</option>';
+				$html_select_sort_kind .= '<option value="'.$i.'" title="'.$hssk_name.'" selected="selected">'.$hssk_name.'</option>';
 			}
 			else {
-				$html_select_sort_kind .= '<option value="'.$i.'" test="Sort Type" >'.$hssk_name.'</option>';
+				$html_select_sort_kind .= '<option value="'.$i.'" title="'.$hssk_name.'">'.$hssk_name.'</option>';
 			}
 		}
 		
