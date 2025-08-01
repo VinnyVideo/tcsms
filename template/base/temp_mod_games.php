@@ -306,33 +306,32 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;text-align:center;">
-    <a id="res_{$res['rid']}" />
-    <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
+    <a id="res_{$res['rid']}" href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
     {$res['thumbnail']}</a>
   </td>
   <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td style="height:25px;width:60%;" class="sformsubstrip">
+        <td style="height:25px;width:60%;padding:2px;" class="sformsubstrip">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td class="sformstrip" style="height:25px;width:25%;background-position:right top;">
+        <td class="sformstrip" style="height:25px;width:25%;padding:2px;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px">
+        <td class="sformstrip" style="height:25px;width:15%;padding:2px;text-align:right;">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td style="width:100%;height:50px;" colspan="3">
+        <td style="width:100%;height:50px;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td class="bottom" style="height:25px;">
+        <td class="bottom" style="height:25px;padding:2px;">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;">
@@ -344,7 +343,7 @@ return <<<HTML
             </tr>
           </table>
         </td>
-        <td class="bottom" style="width:100%;" colspan="2">
+        <td class="bottom" style="width:100%;padding:2px;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
