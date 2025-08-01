@@ -89,14 +89,14 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td style="width:60%;" class="sformsubstrip">
+        <td style="width:60%;padding:2px;" class="sformsubstrip">
           <span style="display:inline; vertical-align:middle;">
           <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td style="width:25%;" class="sformstrip">
+        <td style="width:25%;padding:2px;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
         <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
@@ -104,15 +104,15 @@ return <<<HTML
         </td>
       </tr>
       <tr>
-        <td style="width:100%;" height="50" colspan="3">
+        <td style="width:100%;height:50px;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom">
+        <td style="vertical-align:bottom;padding:2px;">
           Score: <b>{$res['score']} / 10</b>
         </td>
-        <td valign="bottom" style="width:100%;" colspan="2">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
@@ -136,15 +136,15 @@ global $STD;
 return <<<HTML
 <tr>
   <td class="sformlowline" style="padding:0px;text-align:left;">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100%;">
+    <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td style="width:60%;" class="sformsubstrip">
+        <td style="width:60%;padding:2px;" class="sformsubstrip">
           {$res['page_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td style="width:25%;" class="sformstrip">
+        <td style="width:25%;padding:2px;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
         <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
@@ -152,15 +152,15 @@ return <<<HTML
         </td>
       </tr>
       <tr>
-        <td valign="top" style="width:100%;height:50px;" colspan="3">
+        <td style="width:100%;height:50px;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom">
+        <td style="vertical-align:bottom;padding:2px;">
           Score: <b>{$res['score']} / 10</b>
         </td>
-        <td valign="bottom" style="width:100%;" colspan="2">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
@@ -286,7 +286,7 @@ return <<<HTML
 <tr>
   <td class="sformleft">Title</td>
   <td class="sformright">{$res['game_title']} (ID #{$res['gid']})
-    <input type="hidden" name="gid" value="{$res['gid']}" /></td>
+    <input type="hidden" name="gid" value="{$res['gid']}"></td>
 </tr>
 <tr>
   <td class="sformleft">Author</td>
