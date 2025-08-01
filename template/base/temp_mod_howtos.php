@@ -212,7 +212,7 @@ return <<<HTML
         </td>
       </tr>
       <tr>
-        <td style="width:100%;" height="25" colspan="3">
+        <td style="width:100%;height:25px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
@@ -260,7 +260,7 @@ return <<<HTML
         </td>
       </tr>
       <tr>
-        <td style="width:100%;" height="25" colspan="3">
+        <td style="width:100%;height:25px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
