@@ -13,39 +13,39 @@ HTML;
 function ucp_list_header ($tab_index, $tab_url, $olinks) {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div style="width: 90%">
-<table cellpadding="0" style="border-spacing:0px;width:100%;">
+<table style="border-spacing:0px;width:100%;">
 <tr>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">ALL</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">#</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[2]}"><a href="{$tab_url}&amp;tab=2">A</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[3]}"><a href="{$tab_url}&amp;tab=3">B</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[4]}"><a href="{$tab_url}&amp;tab=4">C</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[5]}"><a href="{$tab_url}&amp;tab=5">D</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[6]}"><a href="{$tab_url}&amp;tab=6">E</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[7]}"><a href="{$tab_url}&amp;tab=7">F</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[8]}"><a href="{$tab_url}&amp;tab=8">G</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[9]}"><a href="{$tab_url}&amp;tab=9">H</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[10]}"><a href="{$tab_url}&amp;tab=10">I</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[11]}"><a href="{$tab_url}&amp;tab=11">J</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[12]}"><a href="{$tab_url}&amp;tab=12">K</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[13]}"><a href="{$tab_url}&amp;tab=13">L</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[14]}"><a href="{$tab_url}&amp;tab=14">M</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[15]}"><a href="{$tab_url}&amp;tab=15">N</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[16]}"><a href="{$tab_url}&amp;tab=16">O</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[17]}"><a href="{$tab_url}&amp;tab=17">P</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[18]}"><a href="{$tab_url}&amp;tab=18">Q</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[19]}"><a href="{$tab_url}&amp;tab=19">R</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[20]}"><a href="{$tab_url}&amp;tab=20">S</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[21]}"><a href="{$tab_url}&amp;tab=21">T</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[22]}"><a href="{$tab_url}&amp;tab=22">U</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[23]}"><a href="{$tab_url}&amp;tab=23">V</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[24]}"><a href="{$tab_url}&amp;tab=24">W</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[25]}"><a href="{$tab_url}&amp;tab=25">X</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[26]}"><a href="{$tab_url}&amp;tab=26">Y</a></div></td>
-  <td style="vertical-align:bottom;"><div class="{$tab_index[27]}"><a href="{$tab_url}&amp;tab=27">Z</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[0]}"><a href="{$tab_url}&amp;tab=0">ALL</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[1]}"><a href="{$tab_url}&amp;tab=1">#</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[2]}"><a href="{$tab_url}&amp;tab=2">A</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[3]}"><a href="{$tab_url}&amp;tab=3">B</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[4]}"><a href="{$tab_url}&amp;tab=4">C</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[5]}"><a href="{$tab_url}&amp;tab=5">D</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[6]}"><a href="{$tab_url}&amp;tab=6">E</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[7]}"><a href="{$tab_url}&amp;tab=7">F</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[8]}"><a href="{$tab_url}&amp;tab=8">G</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[9]}"><a href="{$tab_url}&amp;tab=9">H</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[10]}"><a href="{$tab_url}&amp;tab=10">I</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[11]}"><a href="{$tab_url}&amp;tab=11">J</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[12]}"><a href="{$tab_url}&amp;tab=12">K</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[13]}"><a href="{$tab_url}&amp;tab=13">L</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[14]}"><a href="{$tab_url}&amp;tab=14">M</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[15]}"><a href="{$tab_url}&amp;tab=15">N</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[16]}"><a href="{$tab_url}&amp;tab=16">O</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[17]}"><a href="{$tab_url}&amp;tab=17">P</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[18]}"><a href="{$tab_url}&amp;tab=18">Q</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[19]}"><a href="{$tab_url}&amp;tab=19">R</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[20]}"><a href="{$tab_url}&amp;tab=20">S</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[21]}"><a href="{$tab_url}&amp;tab=21">T</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[22]}"><a href="{$tab_url}&amp;tab=22">U</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[23]}"><a href="{$tab_url}&amp;tab=23">V</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[24]}"><a href="{$tab_url}&amp;tab=24">W</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[25]}"><a href="{$tab_url}&amp;tab=25">X</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[26]}"><a href="{$tab_url}&amp;tab=26">Y</a></div></td>
+  <td style="vertical-align:bottom;padding:0px;"><div class="{$tab_index[27]}"><a href="{$tab_url}&amp;tab=27">Z</a></div></td>
   <td>&nbsp;</td>
 </tr>
 </table>
@@ -164,7 +164,7 @@ HTML;
 function ucp_find_list_header () {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div class="rowfield">
 <table class="rowtable" style="border-spacing:1px;">
@@ -204,9 +204,9 @@ Use this page to modify the selected user.  To change the user's password, fill 
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=03">
 <input type="hidden" name="uid" value="{$user['uid']}">
 <input type="hidden" name="security_token" value="{$token}">
-<div align="center">
+<div style="margin-left:60px;">
 <br>
-<table border="0" cellspacing="0" cellpadding="1" style="width:90%;">
+<table style="border-spacing:0px;width:90%;">
 <tr>
   <td style="width:30%;" class="title">User ID</td>
   <td style="width:70%;" class="field"><b>{$user['uid']}</b></td>
@@ -311,14 +311,14 @@ HTML;
 function group_list_header ($olinks) {
 global $STD;
 return <<<HTML
-<div align="center">
+<div style="margin-left:60px;">
 <br>
 <div class="rowfield">
 <table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td class="rowtitle" width="50%"><a href="{$olinks['g']['url']}">Group</a> {$olinks['g']['img']}</td>
-  <td class="rowtitle" width="25%">ACP Access</td>
-  <td class="rowtitle" width="25%">Moderator</td>
+  <td class="rowtitle" style="width:50%;"><a href="{$olinks['g']['url']}">Group</a> {$olinks['g']['img']}</td>
+  <td class="rowtitle" style="width:25%;">ACP Access</td>
+  <td class="rowtitle" style="width:25%;">Moderator</td>
 </tr>
 HTML;
 }
@@ -331,9 +331,9 @@ return <<<HTML
 <div style="width: 90%; text-align: left">Pages: {$pages}</div>
 <br>
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=10">
-<table border="0" cellspacing="0" cellpadding="2" width="90%">
+<table style="border-spacing:0px;width:90%;">
 <tr>
-  <td width="100%" colspan="3" align="center">
+  <td style="width:100%;padding:2px;text-align:center;" colspan="1">
     <input type="submit" value="Create Group Based On" class="button"> {$menu}
   </td>
 </tr>
@@ -413,39 +413,39 @@ Use this page to modify the selected group.
 <div class="rowtitle">General Permissions</div>
 <table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3" valign="top">Can Submit</td>
-  <td width="60%" class="rowcell2">{$form_elements['can_submit']}</td>
+  <td style="width:40%;vertical-align:top;" class="rowcell3">Can Submit</td>
+  <td style="width:60%;" class="rowcell2">{$form_elements['can_submit']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Add Comment</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Add Comment</td>
   <td class="rowcell2">{$form_elements['can_comment']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Send Reports</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Send Reports</td>
   <td class="rowcell2">{$form_elements['can_report']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Modify Own Submissions</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Modify Own Submissions</td>
   <td class="rowcell2">{$form_elements['can_modify']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Use Messenger</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Use Messenger</td>
   <td class="rowcell2">{$form_elements['can_msg']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Message Other Users</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Message Other Users</td>
   <td class="rowcell2">{$form_elements['can_msg_users']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Edit Own Comments</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Edit Own Comments</td>
   <td class="rowcell2">{$form_elements['edit_comment']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Delete Own Comments</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Delete Own Comments</td>
   <td class="rowcell2">{$form_elements['delete_comment']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Can Use BBCode</td>
+  <td class="rowcell3" style="vertical-align:top;">Can Use BBCode</td>
   <td class="rowcell2">{$form_elements['use_bbcode']}</td>
 </tr>
 </table>
@@ -455,34 +455,34 @@ Use this page to modify the selected group.
 <div class="rowtitle">Elevated Permissions</div>
 <table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3" valign="top">Moderator</td>
-  <td width="60%" class="rowcell2">{$form_elements['moderator']}</td>
+  <td style="width:40%;vertical-align:top;" class="rowcell3">Moderator</td>
+  <td style="width:60%;" class="rowcell2">{$form_elements['moderator']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">ACP Access</td>
+  <td class="rowcell3" style="vertical-align:top;">ACP Access</td>
   <td class="rowcell2">{$form_elements['acp_access']}</td>
 </tr>
 </table>
 <div class="rowtitle">Specific ACP Permissions</div>
 <table class="rowtable" style="border-spacing:1px;">
 <tr>
-  <td width="40%" class="rowcell3" valign="top">Mod Queue</td>
-  <td width="60%" class="rowcell2">{$form_elements['acp_modq']}</td>
+  <td style="width:40%;vertical-align:top;" class="rowcell3">Mod Queue</td>
+  <td style="width:60%;" class="rowcell2">{$form_elements['acp_modq']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">User Control</td>
+  <td class="rowcell3" style="vertical-align:top;">User Control</td>
   <td class="rowcell2">{$form_elements['acp_users']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">News</td>
+  <td class="rowcell3" style="vertical-align:top;">News</td>
   <td class="rowcell2">{$form_elements['acp_news']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Messages</td>
+  <td class="rowcell3" style="vertical-align:top;">Messages</td>
   <td class="rowcell2">{$form_elements['acp_msg']}</td>
 </tr>
 <tr>
-  <td class="rowcell3" valign="top">Root Admin</td>
+  <td class="rowcell3" style="vertical-align:top;">Root Admin</td>
   <td class="rowcell2">{$form_elements['acp_super']}</td>
 </tr>
 </table>
@@ -504,9 +504,9 @@ Select a new group to merge existing users into
 <form method="post" action="{$STD->tags['root_url']}act=ucp&amp;param=12">
 <input type="hidden" name="gid" value="{$group['gid']}">
 <input type="hidden" name="security_token" value="{$token}">
-<div align="center">
+<div style="margin-left:60px;">
 <br>
-<table border="0" cellspacing="0" cellpadding="1" width="90%">
+<table cellspacing="0" cellpadding="1" width="90%">
 <tr>
   <td width="30%" class="title">Group to Drop</td>
   <td width="70%" class="field"><b>{$group['group_name']}</b></td>
