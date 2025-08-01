@@ -377,7 +377,7 @@ global $STD;
 return <<<HTML
 Select a root type for the new submission
 <br><br>
-<div align='center'>
+<div style='text-align:center;'>
   <form method='post' action='{$url}'>
   <input type='hidden' name='security_token' value='{$token}'>
   <table style='border-spacing:0px;width:90%;'>
