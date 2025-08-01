@@ -91,7 +91,7 @@ return <<<HTML
       </td>
     </tr>
     <tr>
-    <td rowspan="2" style="width:320px; height:240px;" align="center">
+    <td rowspan="2" style="width:320px; height:240px;text-align:center;">
       {$res['preview']}
     </td>
     <td align="left" style="height:212px;">
@@ -155,7 +155,7 @@ return <<<HTML
         </div>
 		
         <div style="padding-top:4px">
-          <img src="{$STD->tags['image_path']}/report.gif" alt="[!]" style="display:inline; vertical-align:middle">
+          <img src="{$STD->tags['image_path']}/report.gif" alt="[!]" style="display:inline; vertical-align:middle;">
           <a href="{$res['report_url']}" style="vertical-align: middle" class="outlink">Report This Submission</a>
         </div>
       </td>
@@ -235,7 +235,7 @@ function public_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;text-align:center;">
     <a id="res_{$res['rid']}"></a>
     <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
     {$res['thumbnail']}</a>
@@ -274,7 +274,7 @@ return <<<HTML
             </tr>
           </table>
         </td>
-        <td valign="bottom" style="width:100%;" colspan="2">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
           <table style="border-spacing:0px;width:100%;">
             <tr>
               <td style="width:50%;font-size:8pt;">
@@ -297,52 +297,52 @@ function manage_row ($res, $cat) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;text-align:center;">
     <a id="res_{$res['rid']}"></a>
     <a href="{$STD->tags['root_url']}act=resdb&amp;param=02&amp;c={$cat}&amp;id={$res['rid']}">
     {$res['thumbnail']}</a>
   </td>
   <td class="sformlowline" style="padding:0px;text-align:left;height:100px;">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height: 100%">
+    <table style="border-spacing:0px;width:100%;height:100%;">
       <tr>
-        <td style="height:25px;width:60%;" class="sformsubstrip">
+        <td style="height:25px;width:60%;padding:2px;" class="sformsubstrip">
           {$res['page_icon']}{$res['dl_icon']}
           <span style="display:inline; vertical-align:middle">
           <a href="{$STD->tags['root_url']}act=user&amp;param=06&amp;c={$cat}&amp;rid={$res['rid']}">
           <b>{$res['title']}</b></a></span>
         </td>
-        <td class="sformstrip" style="height:25px;width:25%;background-position:right top;">
+        <td class="sformstrip" style="height:25px;width:25%;padding:2px;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px">
+        <td class="sformstrip" style="height:25px;width:15%;text-align:right;padding:2px;">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
       <tr>
-        <td style="width:100%; height:50px;" colspan="3">
+        <td style="width:100%;height:50px;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom" style="height:25px;">
+        <td style="vertical-align:bottom;height:25px;padding:2px;">
           <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td style="width:50%;">
+              <td style="width:50%;padding:2px;">
                 Downloads: <b>{$res['downloads']}</b>
               </td>
-              <td style="width:50%;">
+              <td style="width:50%;padding:2px;">
                 Score: <b>{$res['average_score']}</b>
               </td>
             </tr>
           </table>
         </td>
-        <td valign="bottom" style="width:100%; colspan="2">
-          <table style="border-spacing:0px;width:100%;>
+        <td style="vertical-align:bottom;width:100%;padding:2px;" colspan="2">
+          <table style="border-spacing:0px;width:100%;padding:2px;">
             <tr>
-              <td style="width:50%;font-size:8pt">
+              <td style="width:50%;font-size:8pt;padding:2px;">
                 Added: {$res['created']}
               </td>
-              <td style="width:50%;font-size:8pt;">
+              <td style="width:50%;font-size:8pt;padding:2px;">
                 {$res['updated']}
               </td>
             </tr>
@@ -566,7 +566,7 @@ function news_update_block_row ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td style='width:100px;height:100px;' rowspan='3' align='center'>{$res['thumbnail']}</td>
+  <td style='width:100px;height:100px;text-align:center;' rowspan='3'>{$res['thumbnail']}</td>
   <td class='newsleftw' colspan='2' style='height:20px;'><a href='{$res['url']}'><b>{$res['title']}</b></a></td>
 </tr>
 <tr>
@@ -574,7 +574,7 @@ return <<<HTML
   <td class='newsleftw' style='width:30%;'>By {$res['username']}</td>
 </tr>
 <tr>
-  <td class='newsleftw' colspan='2' valign='top'>{$res['description']}</td>
+  <td class='newsleftw' colspan='2' style='vertical-align:top;'>{$res['description']}</td>
 </tr>
 HTML;
 }
