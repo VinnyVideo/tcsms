@@ -292,7 +292,7 @@ return <<<HTML
 <div class="sform">
 <form method="post" name="changetype" action="{$STD->tags['root_url']}act=user&param=09&uid={$uid}">
 <div class="sformstrip">
-Currently Viewing: {$select} <input type="submit" value="Change" class="button" />
+Currently Viewing: {$select} <input type="submit" value="Change" class="button">
 </div>
 </form>
 HTML;
@@ -304,7 +304,7 @@ return <<<HTML
 <div class="sform">
 <form method="post" name="changetype" action="{$STD->tags['root_url']}act=user&param=03">
 <div class="sformstrip">
-Currently Viewing: {$select} <input type="submit" value="Change" class="button" />
+Currently Viewing: {$select} <input type="submit" value="Change" class="button">
 </div>
 </form>
 HTML;
