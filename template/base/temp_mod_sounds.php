@@ -253,7 +253,7 @@ return <<<HTML
         <td class="sformstrip" style="width:25%;background-position:right top;">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td class="sformstrip" style="width:15%;style="text-align:right;padding:2px">
+        <td class="sformstrip" style="width:15%;text-align:right;padding:2px">
           {$res['email_icon']} {$res['website_icon']}
         </td>
       </tr>
@@ -261,7 +261,7 @@ return <<<HTML
         <td rowspan="2" style="width:3%;padding:5px;">
           {$res['type1']}
         </td>
-        <td style="width:97%;" height="25" colspan="3">
+        <td style="width:97%;height:25px" colspan="3">
            {$res['description']}
         </td>
       </tr>
