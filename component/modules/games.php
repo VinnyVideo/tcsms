@@ -569,7 +569,7 @@ class mod_games extends module {
 		$dblist = $this->get_version_history($IN['id']);
 		$rows_returned = $DB->get_num_rows();
 		if ($rows_returned == 0)
-			$data['version_history'] = "<tr><td colspan='2' align='center'>No History</td></tr>";
+			$data['version_history'] = "<tr><td colspan='2' style='text-align:center;'>No History</td></tr>";
 
 		for ($x=0; $x<min(2,$rows_returned); $x++) {
 			$row = $DB->fetch_row($dblist);
@@ -579,7 +579,7 @@ class mod_games extends module {
 		}
 		
 		if ($rows_returned > 2)	
-			$data['version_history'] .= "<tr><td colspan='2' align='center'><br><a href='javascript:version_history()'>
+			$data['version_history'] .= "<tr><td colspan='2' style='text-align:center;'><br><a href='javascript:version_history()'>
 										 View Complete History</a></td></tr>";
 		
 		// Game Reviews
