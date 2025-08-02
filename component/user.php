@@ -1105,7 +1105,7 @@ class component_user {
 			//format Sounds, Misc
 			if (($IN['c'] == 5) || ($IN['c'] == 6)) {
 				$ico_file = $result['type1'];
-				$result['type1'] = "<img src='{$STD->tags['root_path']}/template/modules/{$IN['c']}/{$ico_file}.gif' img='Icon'>"; //Thumbnail
+				$result['type1'] = "<img src='{$STD->tags['root_path']}/template/modules/{$IN['c']}/{$ico_file}.gif' alt='Icon'>"; //Thumbnail
 				return format_favrow_icon($result); //OUTPUT - use $list .= fav_row_pull($result);
 			}
 		}
