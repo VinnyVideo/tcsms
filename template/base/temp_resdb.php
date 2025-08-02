@@ -31,10 +31,10 @@ function start_rows ($order, $order_url) {
 global $STD;
 $order_part = '<tr>
 <td class="sformsubstrip" colspan="2">
-<form method="post" action="'.$order_url.'">
-<input type="submit" name="reorder" value="Re-Order" class="button">
-'.$order.'
-</form>
+  <form method="post" action="'.$order_url.'">
+    <input type="submit" name="reorder" value="Re-Order" class="button">
+    '.$order.'
+  </form>
 </td></tr>';
 if ($order_url == "") {
   $order_part = '<tr><td class="sformstrip" colspan="2" style="text-align:center; font-weight:bold; font-size: 14pt; color:#FFF600;"><b>Top 10 Games of '.$order.'</b></td>';
@@ -127,9 +127,9 @@ global $STD;
 return <<<HTML
 <div class="sform">
 <div class="sformstrip">Complete Update History: {$title}</div>
-<table class="sformtable" style="border-spacing:1px;">
-  {$vh}
-</table>
+  <table class="sformtable" style="border-spacing:1px;">
+    {$vh}
+  </table>
 </div>
 HTML;
 }
