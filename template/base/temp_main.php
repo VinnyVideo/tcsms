@@ -12,16 +12,16 @@ function news_archive_header ($from, $to) {
 global $STD;
 return <<<HTML
 <div class="sform">
-<form method="post" action="{$STD->tags['root_url']}act=main&amp;param=08">
-<div class="sformstrip">Select a range of updates</div>
-<table class="sformtable" style="border-spacing:1px;">
-<tr>
-  <td class="sformleftw" style="width:50%; font-weight:bold">From: &nbsp; {$from['m']} {$from['d']} {$from['y']}</td>
-  <td class="sformleftw" style="width:50%; font-weight:bold">To: &nbsp; {$to['m']} {$to['d']} {$to['y']}</td>
-</tr>
-</table>
-<div class="sformstrip" style="text-align:center"><input type="submit" value="Go" class="button"></div>
-</form>
+  <form method="post" action="{$STD->tags['root_url']}act=main&amp;param=08">
+    <div class="sformstrip">Select a range of updates</div>
+      <table class="sformtable" style="border-spacing:1px;">
+        <tr>
+          <td class="sformleftw" style="width:50%; font-weight:bold;">From: &nbsp; {$from['m']} {$from['d']} {$from['y']}</td>
+          <td class="sformleftw" style="width:50%; font-weight:bold;">To: &nbsp; {$to['m']} {$to['d']} {$to['y']}</td>
+        </tr>
+      </table>
+    <div class="sformstrip" style="text-align:center;"><input type="submit" value="Go" class="button"></div>
+  </form>
 </div>
 <br>
 HTML;
@@ -37,34 +37,33 @@ function news_row ($news) {
 global $STD;
 return <<<HTML
 <div class="sform">
-<table class="sformtable" style="border-spacing:0px;" cellpadding="3">
-<tr class="sformstrip">
-  <td style="height:25px;width:150px;padding:3px;text-align: center;">
-    <b class="highlight stafflink">{$news['author']}</b>
-  </td>
-  <td style="height:25px;padding:3px;">
-    <div style="font-weight:bold; font-size: 14pt; color:#FFF600;">{$news['title']}</div>
-	<div style="padding-top:4px; text-align:left; font-weight:normal; font-style:italic; font-size: 8pt; color:#CDCFFE;">{$news['date']}</div>
-  </td>
-</tr>
-<tr>
-  <td align="center" style="padding:3px;"><br>{$news['icon']}</td>
-  <td colspan="2">
-    {$news['message']}<br>&nbsp;
-  </td>
-</tr>
-<tr>
-  <td class="topstrip" style="padding:3px;"></td>
-  <td class="topstrip" colspan="2" style="padding:3px;">
-    <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}">View Comments ({$news['comments']})</a> | 
-    <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}&amp;exp=1#reply">Leave Comment</a>
-  </td>
-</tr>
-<tr>
-  <td style="height:6px;padding:3px;" colspan="3" class="sformdark">
-  </td>
-</tr>
-</table>
+  <table class="sformtable" style="border-spacing:0px;">
+    <tr class="sformstrip">
+      <td style="height:25px;width:150px;padding:3px;text-align:center;">
+        <b class="highlight stafflink">{$news['author']}</b>
+      </td>
+      <td style="height:25px;padding:3px;">
+        <div style="font-weight:bold; font-size: 14pt; color:#FFF600;">{$news['title']}</div>
+        <div style="padding-top:4px; text-align:left; font-weight:normal; font-style:italic; font-size: 8pt; color:#CDCFFE;">{$news['date']}</div>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;padding:3px;"><br>{$news['icon']}</td>
+      <td colspan="2">
+        {$news['message']}<br>&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td class="topstrip" style="padding:3px;"></td>
+      <td class="topstrip" colspan="2" style="padding:3px;">
+        <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}">View Comments ({$news['comments']})</a> | 
+        <a href="{$STD->tags['root_url']}act=main&amp;param=02&amp;id={$news['nid']}&amp;exp=1#reply">Leave Comment</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:6px;padding:3px;" colspan="3" class="sformdark"></td>
+    </tr>
+  </table>
 </div>
 <br>
 HTML;
@@ -90,7 +89,7 @@ function news_no_updates () {
 global $STD;
 return <<<HTML
 <table class='sformtable' style='border-spacing:1px;'><tr>
-<td class='newsstrip' style='height:25px;text-align:center;'>No recent additions since last update.</td>
+  <td class='newsstrip' style='height:25px;text-align:center;'>No recent additions since last update.</td>
 </tr></table>
 HTML;
 }
