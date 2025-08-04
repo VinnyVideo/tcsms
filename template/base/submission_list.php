@@ -51,49 +51,49 @@ function format_favrow_thumb ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
+  <td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;text-align:center;">
     <a id="res_{$res['rid']}" href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['c']}&id={$res['rid']}">
     {$res['thumbnail']}</a>
   </td>
-  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;" valign="top">
-    <table cellpadding="2" style="border-spacing:0px;width:100%;height:100px">
+  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;vertical-align:top;">
+    <table style="border-spacing:0px;width:100%;height:100px">
       <tr>
-        <td style="height:25%;width:50%;" class="sformsubstrip">
+        <td style="height:25%;width:50%;padding:2px;" class="sformsubstrip">
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['c']}&id={$res['rid']}">
           <b>{$res['title']}</b></a>
         </td>
-        <td style="height:25%;width:20%;" class="sformstrip">
+        <td style="height:25%;width:20%;padding:2px;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td class="sformstrip" style="height:25%;width:30%;text-align:right;padding:1px;">
+        <td class="sformstrip" style="height:25%;width:30%;text-align:right;padding:2px;">
           {$res['type_title']}
         </td>
       </tr>
       <tr>
-        <td valign="top" style="width:100%;height:50%" colspan="3">
+        <td style="vertical-align:top;width:100%;height:50%;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td style="vertical-align:bottom;">
-          <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+        <td style="vertical-align:bottom;padding:2px;">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td style="width:33%;" class="subtext">
+              <td style="width:33%;padding:0px;" class="subtext">
                 <span class="vertical-align:middle">Downloads: <b>{$res['downloads']}</b></span>
               </td>
-              <td style="width:33%;">
+              <td style="width:33%;padding:0px;">
                 &nbsp;
               </td>
             </tr>
           </table>
         </td>
-        <td style="vertical-align:bottom;width:100%;" colspan="2">
-          <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+        <td style="vertical-align:bottom;width:100%;padding:2px;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td style="width:50%;" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 Added: {$res['created']}
               </td>
-              <td style="width:50%;" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 {$res['updated']}
               </td>
             </tr>
@@ -113,45 +113,45 @@ return <<<HTML
   <!--<td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100%;" align="center">
     <a id="res_{$res['rid']}" />
   </td>-->
-  <td class="sformlowline" style="padding:0px;text-align:left" height="100" valign="top">
-    <table border="0" cellpadding="2" cellspacing="0" style="width:100%;" height="100">
+  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;vertical-align:top;">
+    <table style="border-spacing:0px;width:100%;height:100px;">
       <tr>
-        <td height="25%" style="width:50%;" class="sformsubstrip">
+        <td style="height:25%;width:50%;padding:2px;" class="sformsubstrip">
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['c']}&id={$res['rid']}">
           <b>{$res['title']}</b></a>
         </td>
-        <td height="25%" style="width:20%;" class="sformstrip">
+        <td style="height:25%;width:20%;padding:2px;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td height="25%" class="sformstrip" style="width:30%;text-align:right;padding:1px">
+        <td class="sformstrip" style="height:25%;width:30%;text-align:right;padding:1px">
           {$res['type_title']}
         </td>
       </tr>
       <tr>
-        <td valign="top" width="100%" height="50%" colspan="3">
+        <td style="vertical-align:top;width:100%;height:50%;padding:2px;" colspan="3">
            {$res['description']}
         </td>
       </tr>
       <tr>
-        <td valign="bottom">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <td>
+          <table style="vertical-align:bottom;border-spacing:0px;width:100%;">
             <tr>
-              <td width="33%" class="subtext">
+              <td style="width:33%;padding:0px;" class="subtext">
                 <span class="vertical-align:middle">Downloads: <b>{$res['downloads']}</b></span>
               </td>
-              <td width="33%">
+              <td style="width:33%;padding:0px;">
                 &nbsp;
               </td>
             </tr>
           </table>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 Added: {$res['created']}
               </td>
-              <td width="50%" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 {$res['updated']}
               </td>
             </tr>
@@ -168,51 +168,51 @@ function format_favrow_icon ($res) {
 global $STD;
 return <<<HTML
 <tr>
-  <!--<td class="sformlowline" style="padding:0px;border-right:1px solid gray" width="100" align="center">
+  <!--<td class="sformlowline" style="padding:0px;border-right:1px solid gray;width:100px;" align="center">
     <a id="res_{$res['rid']}" />
   </td>-->
-  <td class="sformlowline" style="padding:0px;text-align:left" height="100" valign="top">
-    <table border="0" cellpadding="2" cellspacing="0" width="100%" height="100">
+  <td class="sformlowline" style="padding:0px;text-align:left;height:100px;vertical-align:top;">
+    <table style="border-spacing:0px;width:100%;height:100px;">
       <tr>
-        <td height="25%" width="50%" class="sformsubstrip">
+        <td style="height:25%;width:50%;padding:2px;" class="sformsubstrip">
           <a href="{$STD->tags['root_url']}act=resdb&param=02&c={$res['c']}&id={$res['rid']}">
           <b>{$res['title']}</b></a>
         </td>
-        <td height="25%" width="20%" class="sformstrip">
+        <td style="height:25%;width:20%;padding:2px;" class="sformstrip">
 	      By: <b>{$res['author']}</b>
         </td>
-        <td height="25%" width="30%" class="sformstrip" style="text-align:right;padding:1px">
+        <td class="sformstrip" style="height:25%;width:30%;text-align:right;padding:1px">
           {$res['type_title']}
         </td>
       </tr>
       <tr>
-        <td valign="top" width="100%" height="50%" colspan="3">
-			<table border="0"><tr>
+        <td style="vertical-align:top;width:100%;height:50%;padding:2px;" colspan="3">
+			<table><tr>
 				<td>{$res['type1']}</td>
 				<td><span>{$res['description']}</span></td>
 			</tr></table>
         </td>
       </tr>
       <tr>
-        <td valign="bottom">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <td style="vertical-align:bottom;">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="33%" class="subtext">
+              <td style="width:33%;padding:0px;" class="subtext">
                 <span class="vertical-align:middle">Downloads: <b>{$res['downloads']}</b></span>
               </td>
-              <td width="33%">
+              <td style="width:33%;padding:0px;">
                 &nbsp;
               </td>
             </tr>
           </table>
         </td>
-        <td valign="bottom" width="100%" colspan="2">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <td style="vertical-align:bottom;width:100%;" colspan="2">
+          <table style="border-spacing:0px;width:100%;">
             <tr>
-              <td width="50%" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 Added: {$res['created']}
               </td>
-              <td width="50%" class="subtext">
+              <td style="width:50%;padding:0px;" class="subtext">
                 {$res['updated']}
               </td>
             </tr>
