@@ -119,8 +119,8 @@ return <<<HTML
           <td style="width:50%;padding:2px:">Completion: <b>{$res['completion']}</b></td>
           <td style="width:50%;padding:2px:">Genre: <b>{$res['genre']}</b></td>
         </tr>
-	<tr>
-          <td style="width:50%;">Franchise: <b>{$res['franchise']}</b></td>
+        <tr>
+          <td colspan="2" style="width:50%;">Franchise: <b>{$res['franchise']}</b></td>
         </tr>
       </table>
     </td>
@@ -134,23 +134,19 @@ return <<<HTML
       <td style="width:50%;">
         <div class="sform">
         <div class="sformstrip">Update History</div>
-        <table class="sformtable" style="border-spacing:0px;">
-  	    <tr>
-  	      <td colspan="2" style="height: 0.5em;">
-  	          
-  	      </td>
-  	    </tr>
-          {$res['version_history']}
-		  <tr>
-  	      <td colspan="2" style="height: 0.5em;">
-  	          
-  	      </td>
-  	    </tr>
-        </table>
+          <table class="sformtable" style="border-spacing:0px;">
+            <tr>
+              <td colspan="2" style="height: 0.5em;"></td>
+            </tr>
+            {$res['version_history']}
+            <tr>
+              <td colspan="2" style="height: 0.5em;"></td>
+            </tr>
+          </table>
         </div>
-		<!-- FAVORITE -->
-		<div style="padding-top:4px">
-			{$fav_element}
+	<!-- FAVORITE -->
+	<div style="padding-top:4px">
+	  {$fav_element}
         </div>
 		
         <div style="padding-top:4px">
