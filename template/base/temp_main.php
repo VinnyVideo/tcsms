@@ -212,15 +212,6 @@ return <<<HTML
 </div>
 <br>
 <div style="text-align: center; margin-left: auto; margin-right: auto;">
-<script><!--
-google_ad_client = "pub-2961670651465400";
-/* 728x90, created 9/5/08 */
-google_ad_slot = "3082258390";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<!--<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>-->
 </div>
 <br>
 <div class="sform" id="addc" style="$aexpand">
