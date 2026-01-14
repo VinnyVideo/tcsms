@@ -83,7 +83,7 @@ if ($pages == "") {
   }
   $pages_part = '
   <tr>
-  <td class="sformtitle" colspan="2" style="text-align: center">
+  <td class="sformtitle" colspan="2" style="text-align: center;">
   <br>
   </td></tr>
   </table>
