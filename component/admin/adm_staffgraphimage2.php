@@ -43,13 +43,14 @@ $segdat[11667] = 0;		// EvilYoshiToes
 $segdat[12896] = 0;		// Langton
 $segdat[13124] = 0;		// Cruise Elroy
 $segdat[14509] = 0;		// SilverVortex
+$segdat[14533] = 0;		// Littlelum
 $segdat[14786] = 0;		// Fun With Despair
 $segdat[16161] = 0;		// ReynLynxPSI
 $segdat[17063] = 0;		// Luigibonus
 $segdat[19113] = 0;		// Matrix
 $segdat[20531] = 0;		// MewMewPsychic
 
-$key_list = array(2,5,6,7,8,13,17,41,53,68,562,579,785,1847,2369,2567,2687,2867,3575,3586,3751,4237,4335,4748,5993,6330,6896,7029,7253,7546,9318,9691,10567,11138,11667,12896,13124,14509,14786,16161,17063,19113,20531);
+$key_list = array(2,5,6,7,8,13,17,41,53,68,562,579,785,1847,2369,2567,2687,2867,3575,3586,3751,4237,4335,4748,5993,6330,6896,7029,7253,7546,9318,9691,10567,11138,11667,12896,13124,14509,14533,14786,16161,17063,19113,20531);
 
 // Others: 1828, 1844, 2627, 10277, 11878, 12949
 
@@ -243,6 +244,10 @@ foreach( $segdat as $k=>$v ) {
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'SilverVortex');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '6666FF');
 		break;
+	case 14533:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Littlelum');
+		$color_data[] = array('name' => 'c'.$x, 'color' => '2C99D5');
+		break;
 	case 14786:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Fun With Despair');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '9500E5');
@@ -273,7 +278,7 @@ $data = array('center_x' => 330,
 			  'circle_width' => 640,
 			  'circle_height' => 640,
 			  'image_width' => 880,
-			  'image_height' => 1320,
+			  'image_height' => 1360,
 			  'colors_data' => $color_data,
 			  'split_chart' => 0,
 			  'segment_data' => $segment_data);

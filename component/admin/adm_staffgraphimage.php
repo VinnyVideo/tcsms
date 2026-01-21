@@ -10,11 +10,11 @@ $segdat[7546] = 0;		// VinnyVideo
 $segdat[9691] = 0;		// Mors
 $segdat[10567] = 0;		// Shikaternia
 $segdat[12896] = 0;		// Langton
+$segdat[14533] = 0;		// Littlelum
 $segdat[14786] = 0;		// Fun With Despair
 $segdat[16161] = 0;		// ReynLynxPSI
 $segdat[17063] = 0;		// Luigibonus
 $segdat[19113] = 0;		// Matrix
-$segdat[20531] = 0;		// MewMewPsychic
 
 //retired
 
@@ -52,8 +52,9 @@ $segdat[20531] = 0;		// MewMewPsychic
 //$segdat[11667] = 0;	// EvilYoshiToes
 //$segdat[2] = 0;			// Retriever II
 //$segdat[53] = 0;		// Techokami
+//$segdat[20531] = 0;		// MewMewPsychic
 
-$key_list = array(6330,7546,9691,10567,12896,14786,16161,17063,19113,20531);
+$key_list = array(6330,7546,9691,10567,12896,14533,14786,16161,17063,19113);
 
 $cutoff = 0;
 if (!empty($_GET['time']) && $_GET['time'] == 'week') {
@@ -218,6 +219,10 @@ foreach( $segdat as $k=>$v ) {
 	case 13124:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Cruise Elroy');
 		$color_data[] = array('name' => 'c'.$x, 'color' => '2FB6FF');
+		break;
+	case 14533:
+		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Littlelum');
+		$color_data[] = array('name' => 'c'.$x, 'color' => '2C99D5');
 		break;
 	case 14786:
 		$segment_data[] = array('data' => $v, 'exp' => 0, 'border' => 1, 'name' => 'Fun With Despair');
