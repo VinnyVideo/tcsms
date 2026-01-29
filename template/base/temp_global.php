@@ -80,11 +80,11 @@ class template_global
         <title>{$title}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <base href="https://mfgg.net/">
         <link rel="shortcut icon" href="{$STD->tags['template_path']}/favicon.ico">
         <link rel="stylesheet" href="{$STD->tags['template_path']}/css/style.css" type="text/css">
         <link rel="stylesheet" href="{$STD->tags['base_template_path']}/css/style.css" type="text/css">
         <!--<script src="https://mfgg.net/snow.js"></script>-->
-        <base href="https://mfgg.net/">
       </head>
       HTML;
   }
