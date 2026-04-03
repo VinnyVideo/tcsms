@@ -133,22 +133,11 @@ class template_global
             <div class="menutitle2">Community</div>
             <div class="menusection">
               <div class="menuitemsidebar"><a href="https://forums.mfgg.net/">Forums<img alt="Forums" src="{$STD->tags['global_image_path']}/mainCommForums.png"></a></div>
-              <!--<div class="menuitemsidebar"><a href="https://discord.gg/jchgfw5" target="_blank">Discord<img alt="Discord" src="{$STD->tags['global_image_path']}/mainCommDiscord.png"></a></div>-->
+              <div class="menuitemsidebar"><a href="https://discord.gg/jchgfw5" target="_blank">Discord<img alt="Discord" src="{$STD->tags['global_image_path']}/mainCommDiscord.png"></a></div>
               <div class="menuitemsidebar"><a href="https://wiki.mfgg.net/">Wiki<img alt="Wiki" src="template/images/mainCommWiki.png"></a></div>
               <!--<div class="menuitemsidebar"><a href="https://twitter.com/OfficialMFGG">Twitter<img alt="Twitter" src="template/images/mainCommTwitter.png"></a></div>-->
             </div>
           </div>
-
-          <div class="menu">
-            <div class="menutitle2">Taylor Stuff</div>
-            <div class="menusection">
-              <div class="menuitemsidebar"><a href="https://www.taylorswift.com/">Taylor's Site<img alt="Taylor's Site" src="{$STD->tags['global_image_path']}/mainContentHowto.png"></a></div>
-              <div class="menuitemsidebar"><a href="https://en.wikipedia.org/wiki/Taylor_Swift">Wikipedia<img alt="Wikipedia" src="template/images/mainCommWiki.png"></a></div>
-              <div class="menuitemsidebar"><a href="https://www.instagram.com/taylorswift">Taylor's Insta<img alt="Taylor's Instagram" src="{$STD->tags['global_image_path']}/mainMainHall.png"></a></div>
-              <div class="menuitemsidebar"><a href="https://www.instagram.com/killatrav">Trav's Insta!<img alt="Travis's Instagram" src="{$STD->tags['global_image_path']}/mainMainHall.png"></a></div>
-            </div>
-          </div>
-
           <div class="menu">
             <div class="menutitle2">Content</div>
             <div class="menusection">
@@ -294,7 +283,6 @@ class template_global
         HTML;
     }
 
-
     return <<<HTML
       <div class="navigation">{$title}</div>
       <div class="header_region" style="text-align:center"></div>
@@ -315,7 +303,7 @@ class template_global
         submitter or a third party. All remaining material is &copy; MFGG. MFGG is a non-profit site with no affiliation to Nintendo.
         </p>
         <p style="text-align:center">
-          Powered by Taloncrossing SMS v1.2.1, &copy; 2006-2025 <a href='https://www.taloncrossing.com' class='outlink'>Taloncrossing.com</a>. Modified by Hypernova, Mors, VinnyVideo, and Sean.
+          Powered by Taloncrossing SMS v1.2.1, &copy; 2006-2026 <a href='https://www.taloncrossing.com' class='outlink'>Taloncrossing.com</a>. Modified by various contributors.
         </p>
         <br>
       </footer>
