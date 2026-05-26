@@ -376,6 +376,7 @@ class session {
 	var $bots		= array (
 		'7Siters'				=> '7Siters',
 		'AhrefsBot'				=> 'Ahrefs',
+		'AIWebIndex'				=> 'AIWebIndex',
 		'Alexa'				=> 'ia_archiver',
 		'Amazon'				=> 'Amazon',
 		'Applebot'				=> 'Applebot',
@@ -406,6 +407,7 @@ class session {
 		'PetalBot'		=> 'PetalBot',
 		'Qwantbot'		=> 'Qwant',
 		'SemrushBot'		=> 'Semrush',
+		'SleepBot'		=> 'SleepBot',
 		'Sogou'		=> 'Sogou',
 		'TikTokSpider'		=> 'TikTok',
 		//'Twiceler'			=> 'Twiceler',
