@@ -99,7 +99,7 @@ class component_user {
 		$user->data['youtube'] = (!empty($user->data['youtube'])) ? "<a href='https://youtube.com/".$user->data['youtube']."'>YouTube Channel</a>" : "<i>Not Provided</i>";
 		$user->data['steam'] = (!empty($user->data['steam'])) ? "<a href='https://steamcommunity.com/id/".$user->data['steam']."'>".$user->data['steam']."</a>" : "<i>Not Provided</i>";
 		$user->data['reddit'] = (!empty($user->data['reddit'])) ? "<a href='https://reddit.com/u/".$user->data['reddit']."'>/u/".$user->data['reddit']."</a>" : "<i>Not Provided</i>";
-		$user->data['bluesky'] = (!empty($user->data['bluesky'])) ? "<a href='https://bsky.app/profile/".$user->data['bluesky'].".bsky.social'>".$user->data['bluesky']."</a>" : "<i>Not Provided</i>";
+		$user->data['bluesky'] = (!empty($user->data['bluesky'])) ? "<a href='https://bsky.app/profile/" . ((strpos($user->data['bluesky'], '.') !== false) ? $user->data['bluesky'] : $user->data['bluesky'] . '.bsky.social') . "'>" . $user->data['bluesky'] . "</a>" : "<i>Not Provided</i>";
 		$user->data['comments'] = $count;
 		
 		//get user avatar
